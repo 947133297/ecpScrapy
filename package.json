@@ -1,0 +1,19 @@
+{
+  "name": "nodeBug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "fstart": "forever start index.js",
+    "fend": "forever stop index.js",
+    "flog": "forever list"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http": "0.0.0",
+    "querystring": "^0.2.0"
+  },
+  "devDependencies": {}
+}
