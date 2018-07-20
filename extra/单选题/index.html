@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+
+<img src="qs/0.jpg" alt="" id="qs">
+<button onclick="pre()">上一题</button>
+<button onclick="next()">下一题</button>
+<button onclick="show()">显示答案</button>
+<br>
+<img src="as/0.jpg" alt="" class="hide" id="as">
+<script>
+    let cur = 0;
+    let qsEle = document.querySelector("#qs");
+    let asEle = document.querySelector("#as");
+    function pre(){
+        cur--;
+        reShow();
+    }
+    function next(){
+        cur++;
+        reShow();
+    }
+    function reShow(){
+        qsEle.setAttribute("src",`qs/${cur}.jpg`);
+        asEle.setAttribute("src",`as/${cur}.jpg`);
+        hide();
+    }
+    function show(){
+        asEle.setAttribute("class","");
+    }
+    function hide(){
+        asEle.setAttribute("class","hide");
+    }
+</script>
+</body>
+</html>
