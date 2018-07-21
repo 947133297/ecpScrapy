@@ -23,15 +23,17 @@
 </body>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
 <script>
+    let size = 0;
     $(() => {
         $.ajax({
             url: "/size", success: function (result) {
-                $("#title").html(`问题长度 :${result.size}`);
+                size = result.size;
+                $("#title").html(`问题长度 :${size}`);
             }
         });
-    })
+    });
 
-    var cur = 0;
+    let cur = 0;
     let qsEle = document.querySelector("#qs");
     let asEle = document.querySelector("#as");
     function fetchData(index){
@@ -45,6 +47,7 @@
         qsEle.innerHTML = data.question;
         asEle.innerHTML = data.answer + '<br />' + data.content;
         hide();
+        $("#title").html(`问题长度 :${cur}/${size}`);
     }
     function show(){
         asEle.setAttribute("class","");

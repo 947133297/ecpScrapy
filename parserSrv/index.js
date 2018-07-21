@@ -22,6 +22,9 @@ function handleSingleItem(val) {
     let lines = val.trim().split('\r\n');
     let head = lines.splice(0, 1)[0];
     let answerIndex = head.lastIndexOf("正确答案");
+    if(answerIndex === -1){
+        answerIndex = head.length;
+    }
     let question = head.substr(0, answerIndex);
     let answer = head.substr(answerIndex);
     let content = lines.reduce((res, val) => {
@@ -40,7 +43,11 @@ function openSrv(items) {
             })
         } else if (req.url.startsWith("/fetch")) {
             let index = url.parse(req.url, true).query.index;
-            resp(res, items[index]);
+            if(index < items.length){
+                resp(res, items[index]);
+            }else{
+                resp(res,{})
+            }
         } else if (req.url.startsWith("/page")) {
             let page = rf.readFileSync("index.html", "utf-8");
             respHtml(res, page);
@@ -48,7 +55,7 @@ function openSrv(items) {
 
     }).listen(8888);
 
-    console.log('服务器开启成功');
+    console.log('服务器开启成功，访问http://localhost:8888/page');
 }
 
 function resp(res, json) {
