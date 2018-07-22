@@ -43,7 +43,7 @@ function openSrv(items) {
             })
         } else if (req.url.startsWith("/fetch")) {
             let index = url.parse(req.url, true).query.index;
-            if(index < items.length){
+            if(index < items.length && index >= 0){
                 resp(res, items[index]);
             }else{
                 resp(res,{})

@@ -149,7 +149,7 @@ B)	items
 C)	services
 D)	typeDefine
 ##6685##
-C 23.元数据模型中取数运算表达式是在（    ）上的？ 
+B 23.元数据模型中取数运算表达式是在（    ）上的？ 
 A)	实体类型
 B)	实体项目
 C)	实体行为
@@ -503,6 +503,12 @@ A)	CommonDAO
 B)	GeneralEntityDAO 
 C)	EntityDAO 
 D)	DynamicCommonDAO 
+回顾31题：
+B 31.数据访问服务提供的PO固定实体基类是？（   ）
+A)	CommonEntity
+B)	AbstractEntity
+C)	PersistEntity
+D)	AbstractGeneralEntity
 ##6685##
 A 82.--classId、typeId和（）可以唯一标示一个行为（      ）
 A)	name
@@ -560,7 +566,7 @@ D)	菜单管理
 E)	系统日志监控
 F)	用户登录验证
 ##6685##
-4、	配置缓存扩展点必填属性有（ACD）
+4、	配置缓存扩展点必填属性有（ABC）
 A)	classId
 B)	typeId
 C)	maxElementsInMemory

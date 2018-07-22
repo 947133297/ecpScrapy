@@ -15,8 +15,8 @@
 </head>
 <body>
     <h3 id="title"></h3>
-    <button onclick="fetchData(cur--)">上一题</button>
-    <button onclick="fetchData(cur++)">下一题</button>
+    <button onclick="fetchData(--cur)">上一题</button>
+    <button onclick="fetchData(++cur)">下一题</button>
     <button onclick="show()">显示答案</button>
     <div id="qs"></div>
     <br>
@@ -56,5 +56,6 @@
     function hide(){
         asEle.setAttribute("class","hide");
     }
+	fetchData(0);
 </script>
 </html>
