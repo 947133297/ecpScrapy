@@ -1,0 +1,741 @@
+##6685##
+A 0.ECP采用了什么体系架构？（     ） 
+A)	SOA
+B)	OOP
+C)	TOGAF
+D)	CMMI
+##6685##
+C 1.ECP以什么为企业架构方法论为指导？（        ） 
+A)	SOA
+B)	OOP
+C)	TOGAF
+D)	CMMI
+##6685##
+A 2.ECP平台异常抛出时使用的日志记录级别？（      ）
+A)	error
+B)	trace
+C)	debug
+D)	warn
+##6685##
+A 3.ECP平台流程支持什么规范？（      ）
+A)	BPMN 2.0
+B)	SOA
+C)	OOP
+D)	TOGAF
+##6685##
+D 4.ECP流程目前暂不支持？（       ）
+A)	A.规则引擎
+B)	B.实体转换
+C)	C.多实体
+D)	D.动态子流程
+##6685##
+B 5.ECP平台业务层中未发布为OSGIService服务的是哪个层次（   ）？
+A)	场景层
+B)	角色层
+C)	数据访问层
+D)	都发布
+##6685##
+C 6.ECP采用的对象关系映射框架（ORM）是（  ）
+A)	iBatis
+B)	MyBatis
+C)	Hibernate
+D)	EclipseLink
+##6685##
+B 7.ECP服务端中在（ B ）中处理PO和VO的转换。
+A)	Context
+B)	Role
+C)	Dao
+D)	service
+##6685##
+A 8.哪个是ECP平台国际化的工具类？（  ）
+A)	EcpI18nUtil
+B)	EcpInterUtil
+C)	EcpI18nDataUtil
+D)	EcpDataUtil
+##6685##
+
+C 9.以下哪个不属于参考模型的内容？（     ）
+A.实体的数据结构
+B.实体的格式
+C.实体所属的业务目录
+D.实体的行为、规则、高级属性
+##6685##
+B 10.配置传送的载体是什么？（    ）  
+A)	功能
+B)	模型	
+C)	数据表
+D)	版本
+##6685##
+B 11.处理数据操作的模型是？（    ）
+A)	元数据模型
+B)	数据模型
+C)	转换模型
+D)	显示模型
+##6685##
+B 12.ECP平台实现对日期的操作处理的工具类为？（     ） 
+A)	DateUtil
+B)	EcpDate
+C)	EcpDateUtil
+D)	以上答案都不是
+##6685##
+C 13.树根据数据默认选中，需在数据中添加什么属性？（   ）
+A)	selected:true
+B)	select:true
+C)	checked:true
+D)	check:true
+##6685##
+A 14.表格通过那个属性实现滚动分页? （  ）
+A)	scroll:true
+B)	pageScroll:true
+C)	scrollPage:true
+D)	page:true
+##6685##
+A 15.行为引擎对应ECP五大模型的（  ）模型。
+A)	功能
+B)	数据
+C)	组织
+D)	行为
+##6685##
+B 16.下列哪个不是ECP核心引擎之一？（        ）
+A 流程引擎
+B取数运算引擎
+C行为引擎
+D规则引擎
+##6685##
+C 17.实体生成的VO元数据配置文件存放在哪个项目下面？（       ）
+A)	data
+B)	impl
+C)	service
+D)	test
+##6685##
+A 18.执行下列代码 将显示 
+function A(a){ this.a = a;}
+function B(a,b){ A.call(this,a);  this.b= b;}
+     B.prototype = new A() ;
+     var b = new B(1,2);
+     alert( [ b instanceof A , Object.prototype.isPrototypeOf(b) ] );（      ）
+A)	true,true 
+B)	true,false
+C)	false,false
+D)	有语法错误
+##6685##
+C 19.执行下列代码 将显示(   ):  
+var obj = {name: 'ABC'},
+   name='XYZ';
+ function ff(name){
+     alert(this.name);
+  }
+  ff.call(obj,'123');
+A)	123
+B)	XYZ
+C)	ABC
+D)	undefined
+##6685##
+B 20.行为对象的viewType属性标识了（   ）
+A)	行为打开界面方式
+B)	行为界面类型
+C)	行为界面配置方式
+D)	行为界面路径
+##6685##
+D 21.以下关于通用实体转换功能描述正确的是？（   ）
+A)	通用实体转换可以转换系统以外其他系统的实体
+B)	实体转换只能挂接在流程中进行，没有流程就不能进行实体转换
+C)	源实体和目标实体可以是同一个实体
+D)	只要是系统中已定义的实体都可以转换
+##6685##
+B 22.元数据模型中标识行为功能的节点是？（    ） 
+A)	rules
+B)	items
+C)	services
+D)	typeDefine
+##6685##
+B 23.元数据模型中取数运算表达式是在（    ）上的？ 
+A)	实体类型
+B)	实体项目
+C)	实体行为
+D)	实体格式
+##6685##
+D 24.区别客户端行为和服务端行为的状态位是？（    ）
+A)	Code
+B)	codeContext 
+C)	processType 
+D)	protocolCode 
+##6685##
+B 25.以下关于规则的说法正确的是？（  ）
+A)	规则模版只能由实施人员维护
+B)	规则模版是开发期实现的，由开发人员维护 
+C)	规则的引用只能由开发人员实现 
+D)	规则都是带参数的 
+##6685##
+B 26.扩展的取数函数名称定义规则为？（  ）
+A) Fun{具体函数名称}
+B) ECPFun{具体函数名称}
+C) FunECP{具体函数名称}
+D) ECP{具体函数名称}
+##6685##
+C 27.使用业务配置平台配置行为，无法配置行为的？（   ）
+A)	viewId
+B)	规则
+C)	事件
+D)	动作
+##6685##
+C 28.ECP平台通过扩展点的方式，提供实体的元数据实现类供元数据服务调用,需要继承的基类是？（  ）
+A)	MetaDataProvider
+B)	MetaModelProvider 
+C)	AbstractMetaModelProvider
+D)	不清楚
+##6685##
+A 29.构造元模型时,所需classid,typeid的解析次序优先级由高到低？（   ）
+A)	构造参数,url同名参数, body同名属性
+B)	构造参数, body同名属性,url同名参数
+C)	body同名属性, 构造参数, url同名参数
+D)	url同名参数,构造参数, body同名属性
+##6685##
+B 30.规则模版以（     ）格式存储在文件系统中
+A)	XML
+B)	JSON
+C)	String
+D)	plugin
+##6685##
+B 31.数据访问服务提供的PO固定实体基类是？（   ）
+A)	CommonEntity
+B)	AbstractEntity
+C)	PersistEntity
+D)	AbstractGeneralEntity
+##6685##
+B 32.用户登录管控需检验什么权限？（  ）
+A)	基础组织登录权限
+B)	财务组织登录权限
+C)	预算责任中心登录权限
+D)	系统单位登录权限
+##6685##
+D 33.在chrome developer tool的 Scripts panel 下怎么查找函数定义？（  ）
+A)	Ctrl+F
+B)	Ctrl+Shift+F
+C)	Ctrl+Shif+O
+D)	Ctrl+O
+##6685##
+C 34.二次登录的业务通过平台（  ）特性实现？ 
+A)	登录上下文
+B)	组织上下文
+C)	业务上下文
+D)	总线
+##6685##
+D 35.流程引擎几乎不关联访问业务对象，如可能存在访问业务对象的情况主要为了获取（  ）方面的内容？ 
+A)	组织权限角色
+B)	业务实体
+C)	总金额
+D)	扩展属性
+	##6685##
+D 36.下面哪个不属于平台预置的21中数据类型？（  ）
+A)	日期
+B)	管理对象
+C)	枚举
+D)	预算科目
+##6685##
+A 37.以下关于参考模型描述正确的是？（  ）
+A通过引用参考模型建立的实体依赖于参考模型，当参考模型变更时实体同步变更
+B通过引用参考模型建立的实体不依赖于参考模型，当参考模型变更时实体不同步变更
+C通过复制参考模型建立的实体依赖于参考模型，当参考模型变更时实体同步变更
+D通过映射参考模型建立的实体不依赖于参考模型，当参考模型变更时实体不同步变更
+##6685##
+B 38.以下关于实体格式的说法错误的是？（  ）
+A)	参考模型中可以包含实体格式
+B)	从GRIS导入单据时连同该单据格式一并导入
+C)	实体格式可以停用 
+D)	格式预览中输入的数据可直接反写到该实体的样例数据中 
+##6685##
+B 40.元数据模型中处理引用其他模型的节点是（  ）？
+A)	dataSource
+B)	refTypeValues
+C)	rules
+D)	dataType
+##6685##
+C 41.我们处理ID/名称转换时主要是根据显示模型，那通过显示模型的什么方法进行ID/名称转换的？（  ）
+A)	getIdToName()
+B)	getNameToId()
+C)	getMc()
+D)	getDisplayModel()
+##6685##
+C 42.以下关于实体输入器说法正确的是？（  ）
+A)	每个实体一定要设置输入器，否则无法使用
+B)	每个实体只有一个输入器
+C)	实体的输入器不是必须设置的
+D)	引用其他实体时所选择的输入器与当前实体设置的输入器是相同的
+##6685##
+B 43.行为在开发期存放的配置文件扩展名是（  ）
+A)	OIS
+B)	OPX
+C)	IPX
+D)	OPS
+##6685##
+B 44.触发客户端取数运算是通过对数据模型绑定（  ）事件触发的?
+A)	click
+B)	change
+C)	dbclick
+D)	select
+##6685##
+A 45.元数据模型配置文件定义的文件后缀名是（  ）？
+A)	mdmx
+B)	vcx
+C)	mx
+D)	refx
+##6685##
+C 46.在元数据中，取数运算存放在项目的（ ）节点下面？ 
+A) DataExpression
+B) Format
+C) DataSource
+D) Inputer
+##6685##
+C 47.ECP平台提供的工具类(FileUtil)中用于（  ）？
+A)	对xml的操作处理
+B)	文件编码解码等操作处理
+C)	文件操作的封装处理
+D)	实现文件和流操作的封装处理
+##6685##
+A 48.描述数据属性特征的模型是（  ）？
+A)	元数据模型
+B)	数据模型
+C)	转换模型
+D)	显示模型
+##6685##
+C 49.非结构化数据定义的扩张点名称是：（  ）
+A)	com.ygsoft.ecp.service.storage.point
+B)	com.ygsoft.ecp.service.attachment.point
+C)	com.ygsoft.ecp.service.unstructure.point
+D)	com.ygsoft.ecp.service.file.point
+##6685##
+B 50.行为（ B ）扩展允许在实施期编排执行顺序。
+A事件
+B动作
+C控制器
+D处理器
+##6685##
+A 51.下面哪个选项可以获取元数据模型的值？（  ）
+A)	$.ecp.getMetaDataModel().get(fieldName).value()
+B)	$.ecp.getMetaDataModel().get().value()
+C)	$.ecp.getMetaDataModel().value()
+D)	$.ecp.getMetaDataModel()
+##6685##
+A 52.关于元模型,数据模型,显示模型说法正确的是：（  ）
+A.	元模型用于指导页面渲染,缓存于全局缓存中
+B.	数据模型主要用于初始化控件的值, 缓存于页面缓存中
+C.	显示模型主要用于ID名称转换,缓存于全局缓存中
+D.	可以local模式拿元模型,而从远程拿数据模型
+##6685##
+B 53.流程的版本号在（  ）时产生？
+A)	流程保存
+B)	流程发布
+C)	流程启用
+D)	流程修改
+##6685##
+C 54.规则模版扩展名为（  ）。
+A)	OPX
+B)	RULES
+C)	RTX
+D)	RULE
+##6685##
+B 55.ECP平台封装了可通过反射调用调用对象的方法(callMethod)对应工具类是（  ）？ 
+A) ClsUtil
+B) ClassUtil
+C) ClsProcessorUtil
+D) OSGIUtil
+##6685##
+A 56.管理对象选择器的实现类是（ ）  
+A com.ygsoft.gris.basemanage.gldx.DxSelector
+B com.ygsoft.ecp.basemanage.gldx.DxSelector	
+C com.ygsoft.gris.ecp.basemanage.gldxselect.DxSelect.js
+D com.ygsoft.ecp.basemanage.gldxselect.DxSelect.js
+##6685##
+C 57.通过IDE新增行为动作，需要功能视图下的哪个集合下进行？（  ）
+A数据集
+B功能集
+C动作集
+D规则集
+##6685##
+ A 57.通过IDE新增取数函数，需要在功能视图下的哪个集合下进行？（）
+A取数集
+B功能集
+C动作集
+D规则集
+##6685##
+A 58.需求人员可以使用ECP平台做什么？（）
+A界面原型
+B需求挖掘
+C需求调研
+D需求分析
+E以上都是
+##6685##
+A 59.行为动作扩展须实现的方法是（）？
+A execute
+B action
+C executeOperator
+D actionOperator
+##6685##
+D 60.辅助实现数据模型ID值转换名称值的模型是（ ）。
+A)	元数据模型
+B)	数据模型
+C)	转换模型
+D)	显示模型
+##6685##
+A 61.综合查询的页签扩展，需要在查询主题扩展点的哪个子节点下设置？（  ）？
+A	SchemeEditTabsheets
+B	SchemeQueryPanels
+C	ExtendOperations
+D	ApplicationExtensions
+##6685##
+A 62. 查询主题服务端扩展是通过扩展____扩展点来实现的？（  ）
+A com.ygsoft.ecp.component.query.service.ext.QueryTopic
+B com.ygsoft.ecp.component.query.service.ext.Topic
+C com.ygsoft.ecp.component.query.service.ext.Query
+D com.ygsoft.ecp.component.query.service.ext.CustomQuery
+##6685##
+A 63.扩展查询主题时查询执行器需要实现接口 (    )?
+A BaseQueryExecutor
+B QueryExecutor
+C QuerySqlExecutor
+D IQueryExecutor
+##6685##
+A 64.定义的数据类型转换器实现类，需实现类型转换器接口（  ）
+A IItemTypeTranslateExecutor
+B IItemTypeTransExecutor
+C ICommonEntitySelector
+D ITranslateExecutor
+##6685##
+B 65.在页面控制器中，如何获得该页面的容器？（  ）？
+A this.container
+B this.getContainer
+C this.getContext
+D this.getContext().getContainer()
+##6685##
+A 66.ECP的英文是什么？（A）
+A Enterprise Cloud Platform 
+B Easy Can Play
+C Easy Cloud Platform
+D Enterprise Cloud Play.
+##6685##
+C 67.行为动作必须实现IOperatorActionAfter接口的（C）方法。
+A action
+B doAction
+C execute
+D doExecute
+##6685##
+B 68.在html页面中，我们只需要引入哪个js即可将所有的ECP平台前端js加载到页面？（ ）
+A com.ygsoft.ecp.startup.js 
+B com.ygsoft.ecp.initiator.js
+C com.ygsoft.gap.initiator.js
+D ecp.ui.layout.Frame.js
+##6685##
+B 69.判断一个变量是数组的方法, 最佳实践是？（  ）
+A !!x.length
+B x isntanceof Array
+C !!x.splice
+D !!x.push
+##6685##
+B 70.关于ecp.ui.layout.Frame与ecp.ui.layout.Window类说法正确的是? （  ）
+A Frame继承Window
+B Window继承Frame
+C Frame通过html的iframe标签实现, Window通过div实现
+D 可以同时打开多个活跃ecp.ui.layout.Window
+##6685##
+A 71.查询主题扩展点中的QueryExecutor元素的（）属性指向了查询执行器(     ) 
+A executor
+B path
+C interface
+D class
+##6685##
+A 72.取数函数模型中的（ ）属性用以识别时内部函数还是外部函数（控制是否可设置）
+A.	accessType
+B.	type
+C.	optionType
+D.	fixType
+##6685##
+C 73.行为对象的mainModel属性标识了（  ）。
+A)	主数据模型的路径
+B)	数据模型的Main状态
+C)	标识该参数是否是主模型
+D)	数据模型的主要属性状态
+##6685##
+D 74.统一权限管理不包括下面？（  ）。
+A)	控制建模
+B)	统一授权
+C)	权限检查
+D)	数据建模
+##6685##
+B 75.规则引擎所包含的技术组件中，（     ）是必须在开发期完成的。
+A)	规则生成
+B)	规则模版配置
+C)	规则执行引擎配置
+D)	规则关系配置
+##6685##
+D 76.流程事件扩展的订阅器默认执行方法是（  ）。 
+A)	execute
+B)	subscriber
+C)	listener
+D)	action
+##6685##
+D 77.下面哪个不是流程对业务开发暴露出的扩展表？ （   ）
+A)	ECP_WF_TASK_PROCESSINSTOPTION
+B)	ECP_WF_TASK_ENTITYRELATION
+C)	ECP_WF_TASK_PARTICIPANT
+D)	ECP_WF_TASK_EXTENDSDETAILS
+##6685##
+B 78.---元数据模型类型节点中表示当前模型根据参考模型创建的参考模型typeId属性（  ）？
+A)	typeId
+B)	upperTypeId
+C)	upperGid
+D)	typeAttrVOs
+##6685##
+A 79.PO模型是在业务领域的哪个项目下创建的（  ）？
+A)	data
+B)	impl
+C)	service
+D)	web
+##6685##
+B 80.设置缓存最长过期时间限制，需设置扩展点哪个属性（    ）
+A)	timeToIdleSeconds
+B)	timeToLiveSeconds
+C)	idleTimeSeconds
+D)	liveSeconds
+##6685##
+C 81.---数据访问服务DAO基类名称是（      ）
+A)	CommonDAO
+B)	GeneralEntityDAO 
+C)	EntityDAO 
+D)	DynamicCommonDAO 
+回顾31题：
+B 31.数据访问服务提供的PO固定实体基类是？（   ）
+A)	CommonEntity
+B)	AbstractEntity
+C)	PersistEntity
+D)	AbstractGeneralEntity
+##6685##
+A 82.--classId、typeId和（）可以唯一标示一个行为（      ）
+A)	name
+B)	type
+C)	id
+D)	gidREST
+##6685##
+D 83.--解决ECP和GAP平台相互调用时VPD问题的服务端工具类是（     ）
+A.	com.ygsoft.ecp.service.tool.OSGiUtil
+B.	com.ygsoft.ecp.service.tool.StringUtil
+C.	com.ygsoft.ecp.service.tool.UuidUtil
+D.	com.ygsoft.ecp.service.tool.ClosureUtil
+##6685##
+A 84 .--如果实施人员在新增实体后发现与参考模型重复，在不想删除已新增实体的情况下可以采取哪种处理方式？（       ）
+A)	通过映射方式建立参考模型与已有实体的引用关系
+B)	通过引用参考模型方式解决
+C)	通过复制参考模型的方式解决
+D)	停用参考模型解决
+##6685##
+D 85.以下哪种方式不是ECP业务配置门户新增实体的方式？（            ）
+A)	手工新增
+B)	从GRIS导入
+C)	通过参考模型引用
+D)	自动生成
+##6685##
+A 86.下列数据权限，哪个默认有全部权限？（      ）
+A)	管理对象权限
+B)	业务数据权限
+C)	分类体系权限
+D)	报告模板权限
+##6685##
+B 87.调用存储过程方法返回结果集需要设置输出参数类型为（     ）
+A)	DataaccessResConst.CURSOR
+B)	DataaccessResConst.CURSOR_RESULT 
+C)	DataaccessResConst.MAP 
+D)	DataaccessResConst.ROW 
+##6685##
+1、	组件一般分为？（ABC）
+A)	技术组件
+B)	业务领域组件
+C)	业务组件
+D)	框架组件
+##6685##
+2、	规则模版常用处理器类型目前有两种，分别是（AB）？
+A)	Java
+B)	JavaScript
+C)	String
+D)	表达式
+##6685##
+3、	以下哪些不属于访问控制模型内容？（DEF） 
+A)	维护策略
+B)	组织权限
+C)	共享策略
+D)	菜单管理
+E)	系统日志监控
+F)	用户登录验证
+##6685##
+4、	配置缓存扩展点必填属性有（ABC）
+A)	classId
+B)	typeId
+C)	maxElementsInMemory
+D)	eternal
+##6685##
+5、	行为前置事件中，事件中可以获取的行为内容包括？（ABD）
+A)	行为对象
+B)	行为参数
+C)	行为执行结果
+D)	数据模型
+##6685##
+6、	假设var  x = ‘’; 下列等式返回true的有 （BD）
+A)	x==null
+B)	x==false
+C)	isNaN(x)
+D)	x==0
+##6685##
+7、	流程建模期，规则引擎主要应用在？(BD)
+A)	额外角色设置
+B)	参与者设置
+C)	岗位显示序列
+D)	流程连线设置
+E)	时间限制
+##6685##
+8、	PO/VO两种数据模型转换中必须遵从以下原则（AC）？
+A)	VO不能进入数据访问层
+B)	PO不能出业务场景层
+C)	PO不能进入业务场景层
+D)	VO能进入数据访问层
+##6685##
+9、	ECP平台数据上下文包含哪两类上下文信息（AB）？ 
+A)	登录上下文
+B)	业务上下文
+C)	组织上下文
+D)	总线上下文
+##6685##
+10、	绘制流程时，流程节点哪些项目是必须填写或选择的（ABD）
+A)	组织
+B)	角色
+C)	操作员
+D)	功能单元
+##6685##
+11、	行为执行结果包括( ABC ) 三个部分？
+A)	处理器结果
+B)	附加结果
+C)	异常信息
+D)	参数信息
+##6685##
+12、	ECP平台的设计遵循哪些原则？（ABCDEF） 
+A)	分层原则
+B)	可扩展性原则
+C)	面向对象原则
+D)	职责分离原则
+E)	视图与数据分离原则
+F)	平台开放原则
+##6685##
+13、	ECP平台的前端缓存有哪些？（ABCD）
+A)	持久级缓存
+B)	全局级缓存
+C)	页面级缓存
+D)	cookies缓存
+E)	iframe缓存
+##6685##
+14、	关于$.ecp.rsImport方法,说法正确的是？（ABCD）
+A)	Ecp中一种类DWR技术
+B)	可以一次引入多个java接口
+C)	rsImport目前除引入接口的所有方法外,还引入了非接口方法
+D)	在页面控制器中,可以通过this.rs.接口名.方法名(参数)调用java接口方法
+E)	以上都不对
+F)	以上都对
+##6685##
+15、	如下属于ECP提供的工具类包括（ABDEF）。
+A)	字符串处理
+B)	日期处理
+C)	图片处理
+D)	压缩解压处理
+E)	流处理
+F)	XML处理
+##6685##
+16、	ECP异常框架依赖的底层两大框架为（CD）
+A)	核心引擎框架
+B)	取数框架
+C)	日志框架
+D)	国际化框架
+##6685##
+17、	根据实体项目来源不同，元数据模型存储的两种方式（AB）？
+A)	配置文件存储
+B)	数据库属性表存储
+C)	动态存储
+D)	暂不支持
+E)	实体行为
+##6685##
+18、	ECP平台是集（）于一体的平台。（ ABCD ）。
+A)	开发
+B)	集成
+C)	运行
+D)	管理
+E)	分发
+以上全都是
+##6685##
+1、	ECP平台是集什么一体的平台？(  )ABCD
+A)	开发
+B)	运行
+C)	集成
+D)	管理
+##6685##
+2、	ECP动态企业动态建模，包括哪个几个？（  ）ABDE
+A.	组织建模
+B.	流程建模
+C.	资源建模
+D.	访问控制
+E.	数据建模
+F.	服务建模
+##6685##
+20、	ECP平台的日志记录级别有（ ABCDE ）
+A)	info
+B)	trace
+C)	debug
+D)	warn
+E)	error
+##6685##
+4、	数据访问服务主要提供的接口有（  ）ABC
+A)	IEntityDAO
+B)	ISQLTemplate
+C)	IHibernateTemplate
+D)	IHQLTemplate
+##6685##
+5、	使用业务配置平台配置行为，可以配置行为的（  ）。ACD
+A)	格式
+B)	事件
+C)	动作
+D)	规则
+##6685##
+6、	在一个流程图中，必须包含哪些节点？（  ）ABC
+A)	开始
+B)	结束
+C)	人工活动
+D)	自由活动
+##6685##
+7、	以下属于参考模型内容的有？(  )ABC
+A)	实体数据结构
+B)	实体格式
+C)	实体规则
+D)	实体功能
+E)	实体行为
+##6685##
+21、	缓存对象清除策略evcitionPolicy属性，可选配置有（  ABC    ）
+A)	FIFO
+B)	LFU
+C)	LRU
+D)	URL
+##6685##
+22、	ECP Studio的“数据模型”功能中提供哪几类实体的创建？(  ABC  )
+A)	持久化实体
+B)	实体
+C)	查询实体
+D)	参考模型
+##6685##
+23、	行为动作的动作类型包括（ ABCD  ）。
+A)	服务端动作
+B)	客户端动作
+C)	前置动作
+D)	后置动作
+##6685##
+24、	ECP平台支持的一体化协作包括？（ ABCDEF）
+A)	需求
+B)	设计
+C)	开发
+D)	测试
+E)	实施
+F)	运维
+##6685##

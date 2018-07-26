@@ -1,741 +1,8931 @@
 ##6685##
-A 0.ECP采用了什么体系架构？（     ） 
-A)	SOA
-B)	OOP
-C)	TOGAF
-D)	CMMI
-##6685##
-C 1.ECP以什么为企业架构方法论为指导？（        ） 
-A)	SOA
-B)	OOP
-C)	TOGAF
-D)	CMMI
-##6685##
-A 2.ECP平台异常抛出时使用的日志记录级别？（      ）
-A)	error
-B)	trace
-C)	debug
-D)	warn
-##6685##
-A 3.ECP平台流程支持什么规范？（      ）
-A)	BPMN 2.0
-B)	SOA
-C)	OOP
-D)	TOGAF
-##6685##
-D 4.ECP流程目前暂不支持？（       ）
-A)	A.规则引擎
-B)	B.实体转换
-C)	C.多实体
-D)	D.动态子流程
-##6685##
-B 5.ECP平台业务层中未发布为OSGIService服务的是哪个层次（   ）？
-A)	场景层
-B)	角色层
-C)	数据访问层
-D)	都发布
-##6685##
-C 6.ECP采用的对象关系映射框架（ORM）是（  ）
-A)	iBatis
-B)	MyBatis
-C)	Hibernate
-D)	EclipseLink
-##6685##
-B 7.ECP服务端中在（ B ）中处理PO和VO的转换。
-A)	Context
-B)	Role
-C)	Dao
-D)	service
-##6685##
-A 8.哪个是ECP平台国际化的工具类？（  ）
-A)	EcpI18nUtil
-B)	EcpInterUtil
-C)	EcpI18nDataUtil
-D)	EcpDataUtil
-##6685##
+行为后动作扩展须实现的接口是 正确答案：B
+A:IOperatorAfter
+B:IOperatorActionAfter
+C:IOperatorActionExecute
+D:IActionAfter
+【解析】：IOperatorActionAfter
+##7785##
 
-C 9.以下哪个不属于参考模型的内容？（     ）
-A.实体的数据结构
-B.实体的格式
-C.实体所属的业务目录
-D.实体的行为、规则、高级属性
-##6685##
-B 10.配置传送的载体是什么？（    ）  
-A)	功能
-B)	模型	
-C)	数据表
-D)	版本
-##6685##
-B 11.处理数据操作的模型是？（    ）
-A)	元数据模型
-B)	数据模型
-C)	转换模型
-D)	显示模型
-##6685##
-B 12.ECP平台实现对日期的操作处理的工具类为？（     ） 
-A)	DateUtil
-B)	EcpDate
-C)	EcpDateUtil
-D)	以上答案都不是
-##6685##
-C 13.树根据数据默认选中，需在数据中添加什么属性？（   ）
-A)	selected:true
-B)	select:true
-C)	checked:true
-D)	check:true
-##6685##
-A 14.表格通过那个属性实现滚动分页? （  ）
-A)	scroll:true
-B)	pageScroll:true
-C)	scrollPage:true
-D)	page:true
-##6685##
-A 15.行为引擎对应ECP五大模型的（  ）模型。
-A)	功能
-B)	数据
-C)	组织
-D)	行为
-##6685##
-B 16.下列哪个不是ECP核心引擎之一？（        ）
-A 流程引擎
-B取数运算引擎
-C行为引擎
-D规则引擎
-##6685##
-C 17.实体生成的VO元数据配置文件存放在哪个项目下面？（       ）
-A)	data
-B)	impl
-C)	service
-D)	test
-##6685##
-A 18.执行下列代码 将显示 
-function A(a){ this.a = a;}
-function B(a,b){ A.call(this,a);  this.b= b;}
-     B.prototype = new A() ;
-     var b = new B(1,2);
-     alert( [ b instanceof A , Object.prototype.isPrototypeOf(b) ] );（      ）
-A)	true,true 
-B)	true,false
-C)	false,false
-D)	有语法错误
-##6685##
-C 19.执行下列代码 将显示(   ):  
-var obj = {name: 'ABC'},
-   name='XYZ';
- function ff(name){
-     alert(this.name);
-  }
-  ff.call(obj,'123');
-A)	123
-B)	XYZ
-C)	ABC
-D)	undefined
-##6685##
-B 20.行为对象的viewType属性标识了（   ）
-A)	行为打开界面方式
-B)	行为界面类型
-C)	行为界面配置方式
-D)	行为界面路径
-##6685##
-D 21.以下关于通用实体转换功能描述正确的是？（   ）
-A)	通用实体转换可以转换系统以外其他系统的实体
-B)	实体转换只能挂接在流程中进行，没有流程就不能进行实体转换
-C)	源实体和目标实体可以是同一个实体
-D)	只要是系统中已定义的实体都可以转换
-##6685##
-B 22.元数据模型中标识行为功能的节点是？（    ） 
-A)	rules
-B)	items
-C)	services
-D)	typeDefine
-##6685##
-B 23.元数据模型中取数运算表达式是在（    ）上的？ 
-A)	实体类型
-B)	实体项目
-C)	实体行为
-D)	实体格式
-##6685##
-D 24.区别客户端行为和服务端行为的状态位是？（    ）
-A)	Code
-B)	codeContext 
-C)	processType 
-D)	protocolCode 
-##6685##
-B 25.以下关于规则的说法正确的是？（  ）
-A)	规则模版只能由实施人员维护
-B)	规则模版是开发期实现的，由开发人员维护 
-C)	规则的引用只能由开发人员实现 
-D)	规则都是带参数的 
-##6685##
-B 26.扩展的取数函数名称定义规则为？（  ）
-A) Fun{具体函数名称}
-B) ECPFun{具体函数名称}
-C) FunECP{具体函数名称}
-D) ECP{具体函数名称}
-##6685##
-C 27.使用业务配置平台配置行为，无法配置行为的？（   ）
-A)	viewId
-B)	规则
-C)	事件
-D)	动作
-##6685##
-C 28.ECP平台通过扩展点的方式，提供实体的元数据实现类供元数据服务调用,需要继承的基类是？（  ）
-A)	MetaDataProvider
-B)	MetaModelProvider 
-C)	AbstractMetaModelProvider
-D)	不清楚
-##6685##
-A 29.构造元模型时,所需classid,typeid的解析次序优先级由高到低？（   ）
-A)	构造参数,url同名参数, body同名属性
-B)	构造参数, body同名属性,url同名参数
-C)	body同名属性, 构造参数, url同名参数
-D)	url同名参数,构造参数, body同名属性
-##6685##
-B 30.规则模版以（     ）格式存储在文件系统中
-A)	XML
-B)	JSON
-C)	String
-D)	plugin
-##6685##
-B 31.数据访问服务提供的PO固定实体基类是？（   ）
-A)	CommonEntity
-B)	AbstractEntity
-C)	PersistEntity
-D)	AbstractGeneralEntity
-##6685##
-B 32.用户登录管控需检验什么权限？（  ）
-A)	基础组织登录权限
-B)	财务组织登录权限
-C)	预算责任中心登录权限
-D)	系统单位登录权限
-##6685##
-D 33.在chrome developer tool的 Scripts panel 下怎么查找函数定义？（  ）
-A)	Ctrl+F
-B)	Ctrl+Shift+F
-C)	Ctrl+Shif+O
-D)	Ctrl+O
-##6685##
-C 34.二次登录的业务通过平台（  ）特性实现？ 
-A)	登录上下文
-B)	组织上下文
-C)	业务上下文
-D)	总线
-##6685##
-D 35.流程引擎几乎不关联访问业务对象，如可能存在访问业务对象的情况主要为了获取（  ）方面的内容？ 
-A)	组织权限角色
-B)	业务实体
-C)	总金额
-D)	扩展属性
-	##6685##
-D 36.下面哪个不属于平台预置的21中数据类型？（  ）
-A)	日期
-B)	管理对象
-C)	枚举
-D)	预算科目
-##6685##
-A 37.以下关于参考模型描述正确的是？（  ）
-A通过引用参考模型建立的实体依赖于参考模型，当参考模型变更时实体同步变更
-B通过引用参考模型建立的实体不依赖于参考模型，当参考模型变更时实体不同步变更
-C通过复制参考模型建立的实体依赖于参考模型，当参考模型变更时实体同步变更
-D通过映射参考模型建立的实体不依赖于参考模型，当参考模型变更时实体不同步变更
-##6685##
-B 38.以下关于实体格式的说法错误的是？（  ）
-A)	参考模型中可以包含实体格式
-B)	从GRIS导入单据时连同该单据格式一并导入
-C)	实体格式可以停用 
-D)	格式预览中输入的数据可直接反写到该实体的样例数据中 
-##6685##
-B 40.元数据模型中处理引用其他模型的节点是（  ）？
-A)	dataSource
-B)	refTypeValues
-C)	rules
-D)	dataType
-##6685##
-C 41.我们处理ID/名称转换时主要是根据显示模型，那通过显示模型的什么方法进行ID/名称转换的？（  ）
-A)	getIdToName()
-B)	getNameToId()
-C)	getMc()
-D)	getDisplayModel()
-##6685##
-C 42.以下关于实体输入器说法正确的是？（  ）
-A)	每个实体一定要设置输入器，否则无法使用
-B)	每个实体只有一个输入器
-C)	实体的输入器不是必须设置的
-D)	引用其他实体时所选择的输入器与当前实体设置的输入器是相同的
-##6685##
-B 43.行为在开发期存放的配置文件扩展名是（  ）
-A)	OIS
-B)	OPX
-C)	IPX
-D)	OPS
-##6685##
-B 44.触发客户端取数运算是通过对数据模型绑定（  ）事件触发的?
-A)	click
-B)	change
-C)	dbclick
-D)	select
-##6685##
-A 45.元数据模型配置文件定义的文件后缀名是（  ）？
-A)	mdmx
-B)	vcx
-C)	mx
-D)	refx
-##6685##
-C 46.在元数据中，取数运算存放在项目的（ ）节点下面？ 
-A) DataExpression
-B) Format
-C) DataSource
-D) Inputer
-##6685##
-C 47.ECP平台提供的工具类(FileUtil)中用于（  ）？
-A)	对xml的操作处理
-B)	文件编码解码等操作处理
-C)	文件操作的封装处理
-D)	实现文件和流操作的封装处理
-##6685##
-A 48.描述数据属性特征的模型是（  ）？
-A)	元数据模型
-B)	数据模型
-C)	转换模型
-D)	显示模型
-##6685##
-C 49.非结构化数据定义的扩张点名称是：（  ）
-A)	com.ygsoft.ecp.service.storage.point
-B)	com.ygsoft.ecp.service.attachment.point
-C)	com.ygsoft.ecp.service.unstructure.point
-D)	com.ygsoft.ecp.service.file.point
-##6685##
-B 50.行为（ B ）扩展允许在实施期编排执行顺序。
-A事件
-B动作
-C控制器
-D处理器
-##6685##
-A 51.下面哪个选项可以获取元数据模型的值？（  ）
-A)	$.ecp.getMetaDataModel().get(fieldName).value()
-B)	$.ecp.getMetaDataModel().get().value()
-C)	$.ecp.getMetaDataModel().value()
-D)	$.ecp.getMetaDataModel()
-##6685##
-A 52.关于元模型,数据模型,显示模型说法正确的是：（  ）
-A.	元模型用于指导页面渲染,缓存于全局缓存中
-B.	数据模型主要用于初始化控件的值, 缓存于页面缓存中
-C.	显示模型主要用于ID名称转换,缓存于全局缓存中
-D.	可以local模式拿元模型,而从远程拿数据模型
-##6685##
-B 53.流程的版本号在（  ）时产生？
-A)	流程保存
-B)	流程发布
-C)	流程启用
-D)	流程修改
-##6685##
-C 54.规则模版扩展名为（  ）。
-A)	OPX
-B)	RULES
-C)	RTX
-D)	RULE
-##6685##
-B 55.ECP平台封装了可通过反射调用调用对象的方法(callMethod)对应工具类是（  ）？ 
-A) ClsUtil
-B) ClassUtil
-C) ClsProcessorUtil
-D) OSGIUtil
-##6685##
-A 56.管理对象选择器的实现类是（ ）  
-A com.ygsoft.gris.basemanage.gldx.DxSelector
-B com.ygsoft.ecp.basemanage.gldx.DxSelector	
-C com.ygsoft.gris.ecp.basemanage.gldxselect.DxSelect.js
-D com.ygsoft.ecp.basemanage.gldxselect.DxSelect.js
-##6685##
-C 57.通过IDE新增行为动作，需要功能视图下的哪个集合下进行？（  ）
-A数据集
-B功能集
-C动作集
-D规则集
-##6685##
- A 57.通过IDE新增取数函数，需要在功能视图下的哪个集合下进行？（）
-A取数集
-B功能集
-C动作集
-D规则集
-##6685##
-A 58.需求人员可以使用ECP平台做什么？（）
-A界面原型
-B需求挖掘
-C需求调研
-D需求分析
-E以上都是
-##6685##
-A 59.行为动作扩展须实现的方法是（）？
-A execute
-B action
-C executeOperator
-D actionOperator
-##6685##
-D 60.辅助实现数据模型ID值转换名称值的模型是（ ）。
-A)	元数据模型
-B)	数据模型
-C)	转换模型
-D)	显示模型
-##6685##
-A 61.综合查询的页签扩展，需要在查询主题扩展点的哪个子节点下设置？（  ）？
-A	SchemeEditTabsheets
-B	SchemeQueryPanels
-C	ExtendOperations
-D	ApplicationExtensions
-##6685##
-A 62. 查询主题服务端扩展是通过扩展____扩展点来实现的？（  ）
-A com.ygsoft.ecp.component.query.service.ext.QueryTopic
-B com.ygsoft.ecp.component.query.service.ext.Topic
-C com.ygsoft.ecp.component.query.service.ext.Query
-D com.ygsoft.ecp.component.query.service.ext.CustomQuery
-##6685##
-A 63.扩展查询主题时查询执行器需要实现接口 (    )?
-A BaseQueryExecutor
-B QueryExecutor
-C QuerySqlExecutor
-D IQueryExecutor
-##6685##
-A 64.定义的数据类型转换器实现类，需实现类型转换器接口（  ）
-A IItemTypeTranslateExecutor
-B IItemTypeTransExecutor
-C ICommonEntitySelector
-D ITranslateExecutor
-##6685##
-B 65.在页面控制器中，如何获得该页面的容器？（  ）？
-A this.container
-B this.getContainer
-C this.getContext
-D this.getContext().getContainer()
-##6685##
-A 66.ECP的英文是什么？（A）
-A Enterprise Cloud Platform 
-B Easy Can Play
-C Easy Cloud Platform
-D Enterprise Cloud Play.
-##6685##
-C 67.行为动作必须实现IOperatorActionAfter接口的（C）方法。
-A action
-B doAction
-C execute
-D doExecute
-##6685##
-B 68.在html页面中，我们只需要引入哪个js即可将所有的ECP平台前端js加载到页面？（ ）
-A com.ygsoft.ecp.startup.js 
-B com.ygsoft.ecp.initiator.js
-C com.ygsoft.gap.initiator.js
-D ecp.ui.layout.Frame.js
-##6685##
-B 69.判断一个变量是数组的方法, 最佳实践是？（  ）
-A !!x.length
-B x isntanceof Array
-C !!x.splice
-D !!x.push
-##6685##
-B 70.关于ecp.ui.layout.Frame与ecp.ui.layout.Window类说法正确的是? （  ）
-A Frame继承Window
-B Window继承Frame
-C Frame通过html的iframe标签实现, Window通过div实现
-D 可以同时打开多个活跃ecp.ui.layout.Window
-##6685##
-A 71.查询主题扩展点中的QueryExecutor元素的（）属性指向了查询执行器(     ) 
-A executor
-B path
-C interface
-D class
-##6685##
-A 72.取数函数模型中的（ ）属性用以识别时内部函数还是外部函数（控制是否可设置）
-A.	accessType
-B.	type
-C.	optionType
-D.	fixType
-##6685##
-C 73.行为对象的mainModel属性标识了（  ）。
-A)	主数据模型的路径
-B)	数据模型的Main状态
-C)	标识该参数是否是主模型
-D)	数据模型的主要属性状态
-##6685##
-D 74.统一权限管理不包括下面？（  ）。
-A)	控制建模
-B)	统一授权
-C)	权限检查
-D)	数据建模
-##6685##
-B 75.规则引擎所包含的技术组件中，（     ）是必须在开发期完成的。
-A)	规则生成
-B)	规则模版配置
-C)	规则执行引擎配置
-D)	规则关系配置
-##6685##
-D 76.流程事件扩展的订阅器默认执行方法是（  ）。 
-A)	execute
-B)	subscriber
-C)	listener
-D)	action
-##6685##
-D 77.下面哪个不是流程对业务开发暴露出的扩展表？ （   ）
-A)	ECP_WF_TASK_PROCESSINSTOPTION
-B)	ECP_WF_TASK_ENTITYRELATION
-C)	ECP_WF_TASK_PARTICIPANT
-D)	ECP_WF_TASK_EXTENDSDETAILS
-##6685##
-B 78.---元数据模型类型节点中表示当前模型根据参考模型创建的参考模型typeId属性（  ）？
-A)	typeId
-B)	upperTypeId
-C)	upperGid
-D)	typeAttrVOs
-##6685##
-A 79.PO模型是在业务领域的哪个项目下创建的（  ）？
-A)	data
-B)	impl
-C)	service
-D)	web
-##6685##
-B 80.设置缓存最长过期时间限制，需设置扩展点哪个属性（    ）
-A)	timeToIdleSeconds
-B)	timeToLiveSeconds
-C)	idleTimeSeconds
-D)	liveSeconds
-##6685##
-C 81.---数据访问服务DAO基类名称是（      ）
-A)	CommonDAO
-B)	GeneralEntityDAO 
-C)	EntityDAO 
-D)	DynamicCommonDAO 
-回顾31题：
-B 31.数据访问服务提供的PO固定实体基类是？（   ）
-A)	CommonEntity
-B)	AbstractEntity
-C)	PersistEntity
-D)	AbstractGeneralEntity
-##6685##
-A 82.--classId、typeId和（）可以唯一标示一个行为（      ）
-A)	name
-B)	type
-C)	id
-D)	gidREST
-##6685##
-D 83.--解决ECP和GAP平台相互调用时VPD问题的服务端工具类是（     ）
-A.	com.ygsoft.ecp.service.tool.OSGiUtil
-B.	com.ygsoft.ecp.service.tool.StringUtil
-C.	com.ygsoft.ecp.service.tool.UuidUtil
-D.	com.ygsoft.ecp.service.tool.ClosureUtil
-##6685##
-A 84 .--如果实施人员在新增实体后发现与参考模型重复，在不想删除已新增实体的情况下可以采取哪种处理方式？（       ）
-A)	通过映射方式建立参考模型与已有实体的引用关系
-B)	通过引用参考模型方式解决
-C)	通过复制参考模型的方式解决
-D)	停用参考模型解决
-##6685##
-D 85.以下哪种方式不是ECP业务配置门户新增实体的方式？（            ）
-A)	手工新增
-B)	从GRIS导入
-C)	通过参考模型引用
-D)	自动生成
-##6685##
-A 86.下列数据权限，哪个默认有全部权限？（      ）
-A)	管理对象权限
-B)	业务数据权限
-C)	分类体系权限
-D)	报告模板权限
-##6685##
-B 87.调用存储过程方法返回结果集需要设置输出参数类型为（     ）
-A)	DataaccessResConst.CURSOR
-B)	DataaccessResConst.CURSOR_RESULT 
-C)	DataaccessResConst.MAP 
-D)	DataaccessResConst.ROW 
-##6685##
-1、	组件一般分为？（ABC）
-A)	技术组件
-B)	业务领域组件
-C)	业务组件
-D)	框架组件
-##6685##
-2、	规则模版常用处理器类型目前有两种，分别是（AB）？
-A)	Java
-B)	JavaScript
-C)	String
-D)	表达式
-##6685##
-3、	以下哪些不属于访问控制模型内容？（DEF） 
-A)	维护策略
-B)	组织权限
-C)	共享策略
-D)	菜单管理
-E)	系统日志监控
-F)	用户登录验证
-##6685##
-4、	配置缓存扩展点必填属性有（ABC）
-A)	classId
-B)	typeId
-C)	maxElementsInMemory
-D)	eternal
-##6685##
-5、	行为前置事件中，事件中可以获取的行为内容包括？（ABD）
-A)	行为对象
-B)	行为参数
-C)	行为执行结果
-D)	数据模型
-##6685##
-6、	假设var  x = ‘’; 下列等式返回true的有 （BD）
-A)	x==null
-B)	x==false
-C)	isNaN(x)
-D)	x==0
-##6685##
-7、	流程建模期，规则引擎主要应用在？(BD)
-A)	额外角色设置
-B)	参与者设置
-C)	岗位显示序列
-D)	流程连线设置
-E)	时间限制
-##6685##
-8、	PO/VO两种数据模型转换中必须遵从以下原则（AC）？
-A)	VO不能进入数据访问层
-B)	PO不能出业务场景层
-C)	PO不能进入业务场景层
-D)	VO能进入数据访问层
-##6685##
-9、	ECP平台数据上下文包含哪两类上下文信息（AB）？ 
-A)	登录上下文
-B)	业务上下文
-C)	组织上下文
-D)	总线上下文
-##6685##
-10、	绘制流程时，流程节点哪些项目是必须填写或选择的（ABD）
-A)	组织
-B)	角色
-C)	操作员
-D)	功能单元
-##6685##
-11、	行为执行结果包括( ABC ) 三个部分？
-A)	处理器结果
-B)	附加结果
-C)	异常信息
-D)	参数信息
-##6685##
-12、	ECP平台的设计遵循哪些原则？（ABCDEF） 
-A)	分层原则
-B)	可扩展性原则
-C)	面向对象原则
-D)	职责分离原则
-E)	视图与数据分离原则
-F)	平台开放原则
-##6685##
-13、	ECP平台的前端缓存有哪些？（ABCD）
-A)	持久级缓存
-B)	全局级缓存
-C)	页面级缓存
-D)	cookies缓存
-E)	iframe缓存
-##6685##
-14、	关于$.ecp.rsImport方法,说法正确的是？（ABCD）
-A)	Ecp中一种类DWR技术
-B)	可以一次引入多个java接口
-C)	rsImport目前除引入接口的所有方法外,还引入了非接口方法
-D)	在页面控制器中,可以通过this.rs.接口名.方法名(参数)调用java接口方法
-E)	以上都不对
-F)	以上都对
-##6685##
-15、	如下属于ECP提供的工具类包括（ABDEF）。
-A)	字符串处理
-B)	日期处理
-C)	图片处理
-D)	压缩解压处理
-E)	流处理
-F)	XML处理
-##6685##
-16、	ECP异常框架依赖的底层两大框架为（CD）
-A)	核心引擎框架
-B)	取数框架
-C)	日志框架
-D)	国际化框架
-##6685##
-17、	根据实体项目来源不同，元数据模型存储的两种方式（AB）？
-A)	配置文件存储
-B)	数据库属性表存储
-C)	动态存储
-D)	暂不支持
-E)	实体行为
-##6685##
-18、	ECP平台是集（）于一体的平台。（ ABCD ）。
-A)	开发
-B)	集成
-C)	运行
-D)	管理
-E)	分发
-以上全都是
-##6685##
-1、	ECP平台是集什么一体的平台？(  )ABCD
-A)	开发
-B)	运行
-C)	集成
-D)	管理
-##6685##
-2、	ECP动态企业动态建模，包括哪个几个？（  ）ABDE
-A.	组织建模
-B.	流程建模
-C.	资源建模
-D.	访问控制
-E.	数据建模
-F.	服务建模
-##6685##
-20、	ECP平台的日志记录级别有（ ABCDE ）
-A)	info
-B)	trace
-C)	debug
-D)	warn
-E)	error
-##6685##
-4、	数据访问服务主要提供的接口有（  ）ABC
-A)	IEntityDAO
-B)	ISQLTemplate
-C)	IHibernateTemplate
-D)	IHQLTemplate
-##6685##
-5、	使用业务配置平台配置行为，可以配置行为的（  ）。ACD
-A)	格式
-B)	事件
-C)	动作
-D)	规则
-##6685##
-6、	在一个流程图中，必须包含哪些节点？（  ）ABC
-A)	开始
-B)	结束
-C)	人工活动
-D)	自由活动
-##6685##
-7、	以下属于参考模型内容的有？(  )ABC
-A)	实体数据结构
-B)	实体格式
-C)	实体规则
-D)	实体功能
-E)	实体行为
-##6685##
-21、	缓存对象清除策略evcitionPolicy属性，可选配置有（  ABC    ）
-A)	FIFO
-B)	LFU
-C)	LRU
-D)	URL
-##6685##
-22、	ECP Studio的“数据模型”功能中提供哪几类实体的创建？(  ABC  )
-A)	持久化实体
-B)	实体
-C)	查询实体
-D)	参考模型
-##6685##
-23、	行为动作的动作类型包括（ ABCD  ）。
-A)	服务端动作
-B)	客户端动作
-C)	前置动作
-D)	后置动作
-##6685##
-24、	ECP平台支持的一体化协作包括？（ ABCDEF）
-A)	需求
-B)	设计
-C)	开发
-D)	测试
-E)	实施
-F)	运维
 ##6685##
+行为动作扩展须实现的方法是 正确答案：A
+A:execute
+B:action
+C:executeOperator
+D:actionOperator
+【解析】：行为动作实现自IOperatorActionBefore和IOperatorActionAfter接口（分别对应行为前置动作和后置动作），通过实现该接口的execute方法处理业务逻辑
+##7785##
+
+##6685##
+以下关于规则的说法正确的是？ 正确答案：B
+A:规则模版只能由实施人员维护
+B:规则模版是开发期实现的，由开发人员维护
+C:规则的引用只能由开发人员实现
+D:规则都是带参数的
+【解析】：业务人员在绘制流程或者设置取数函数时可以设置规则。
+##7785##
+
+##6685##
+规则模版以（ ）格式存储在文件系统中 正确答案：B
+A:XML
+B:JSON
+C:String
+D:plugin
+【解析】：ECP平台的元数据模型、规则模版、行为等都是以JSON格式存储在文件系统中。
+##7785##
+
+##6685##
+元数据模型中取数运算表达式是在（ ）上设置的。 正确答案：B
+A:实体类型
+B:实体项目
+C:实体行为
+D:实体格式
+【解析】：元数据模型中取数运算表达式是在实体项目上设置的。
+##7785##
+
+##6685##
+扩展的取数函数名称定义规则为 正确答案：B
+A:Fun{具体函数名称}
+B:ECPFun{具体函数名称}
+C:FunECP{具体函数名称}
+D:ECP{具体函数名称}
+【解析】：取数函数扩展开发类定义时，遵从以下规则：取数函数实现接口IECPFunctionBaseLib，实现接口定义的如下方法；函数名称定义规则为 ECPFun{具体函数名称}；取数函数模型中的属性“访问类型”(accessType),用以识别时内部函数还是外部函数，即是否可在取数运算设置中可设置此函数。
+
+##7785##
+
+##6685##
+ECP平台流程支持（）规范。 正确答案：A
+A:BPMN 2.0
+B:SOA
+C:OOP
+D:TOGAF
+【解析】：ECP采用SOA体系架构，基于开放的JavaEE技术体系，支持BPMN2.0规范，以TOGAF企业架构方法论为指导。
+##7785##
+
+##6685##
+ECP流程目前暂不支持（）。 正确答案：D
+A:规则引擎
+B:实体转换
+C:多实体
+D:动态子流程
+【解析】：在四个选项中，只有动态子流程是ECP流程暂不支持的。
+##7785##
+
+##6685##
+流程引擎几乎不关联访问业务对象，如可能存在访问业务对象的情况主要为了获取（  ）方面的内容？ 正确答案：D
+A:组织权限角色
+B:业务实体
+C:总金额
+D:扩展属性
+【解析】：在新建流程时，有个流程扩展属性设置。
+##7785##
+
+##6685##
+流程建模期，规则引擎主要应用在？ 正确答案：BD
+A:额外角色设置
+B:参与者设置
+C:岗位显示序列
+D:流程连线设置
+E:时间限制
+【解析】：流程建模时，参与者设置和流程连线设置涉及到规则引擎。
+##7785##
+
+##6685##
+流程的状态要为（），在门户中才可应用。 正确答案：C
+A:已发布
+B:已启用
+C:已发布且已启用
+D:新建
+【解析】：在配置平台中流程状态必须设置为已发布且已启用时，在业务门户中才可应用。
+##7785##
+
+##6685##
+在ECP业务配置平台中，自定义URL生成模式是ECP预置的生成菜单模式。 正确答案：A
+A:正确
+B:错误
+【解析】：ECP预置的生成菜单模式是自定义URL生成模式。
+##7785##
+
+##6685##
+在ECP业务门户导航栏中增加一个模块的方式有： 正确答案：AB
+A:通过脚本的方式往菜单模块表中添加模块记录
+B:通过ECP“导航栏扩展”的方式
+【解析】：在ECP业务门户导航栏中增加一个模块的方式有：数据库脚本和“导航栏扩展”方式。
+##7785##
+
+##6685##
+ECP表格控件支持ID名称转换，需要在table标签的inputer属性中指定afterFormat属性值 正确答案：A
+A:正确
+B:错误
+【解析】：采用afterFormat是实现ID/Name转换的一种方式，也可通过服务端ID/Name转换类实现。
+##7785##
+
+##6685##
+ECP支持业务门户短地址扩展。 正确答案：A
+A:正确
+B:错误
+【解析】：ECP支持业务门户短地址扩展。在bundleContext.xml 配置文件中配置短地址，并通过该短地址访问长地址资源。
+##7785##
+
+##6685##
+导入数据连接的方式比手工新建数据数据连接的方式方便 正确答案：A
+A:正确
+B:错误
+【解析】：建议在ECP Studio的数据库视图下通过导入导出方式配置数据源信息。
+##7785##
+
+##6685##
+在ECP data项目下，只能有一个数据主题。 正确答案：B
+A:正确
+B:错误
+【解析】：在ECP data项目下，可以有多个数据主题，通常将完成某个功能的相关的所有数据模型放到单独的数据主题，这样有利于维护。
+##7785##
+
+##6685##
+ECP控件渲染方式有几种？ 正确答案：C
+A:1
+B:2
+C:3
+D:4
+【解析】：ECP控件的渲染方式有三种，分别是直接new、通过元数据配置dataType，或者指定具体的inputer和通过dom元素的inputer的code属性直接创建。
+##7785##
+
+##6685##
+在页面控制器中，如何获得该页面的容器？ 正确答案：B
+A:this.container
+B:this.getContainer()
+C:this.getContext()
+D:this.getContext().getContainer()
+【解析】：在页面控制器中，通过this.getContainer()获得页面容器。
+##7785##
+
+##6685##
+根据数据模型，通过（）方法可以获得页面元素已修改的值。 正确答案：A
+A:getModifyData()
+B:getModifyDataModel()
+C:getAddData()
+D:getDeletedData()
+【解析】：undefined
+##7785##
+
+##6685##
+在页面控制器中，将服务端接口加入到前端上下文中，通过什么方法引入？ 正确答案：C
+A:cssImport
+B:jsImport
+C:rsImport
+D:import
+【解析】：rsImport可以引入服务端Java服务
+##7785##
+
+##6685##
+在html页面中，我们只需要引入哪个js即可将所有的ECP平台前端js加载到页面？ 正确答案：B
+A:com.ygsoft.ecp.startup.js
+B:com.ygsoft.ecp.initiator.js
+C:com.ygsoft.gap.initiator.js
+D:ecp.ui.layout.Frame.js
+【解析】：com.ygsoft.ecp.initiator.js是ECP前端的资源加载器，将js库加载到前端。
+##7785##
+
+##6685##
+下面哪个选项可以获取元数据模型的值？ 正确答案：A
+A:$.ecp.getMetaDataModel().get(fieldName).value()
+B:$.ecp.getMetaDataModel().get().value()
+C:$.ecp.getMetaDataModel().value()
+D:$.ecp.getMetaDataModel()
+【解析】：undefined
+##7785##
+
+##6685##
+在ie中怎么通过键盘快捷键启动HttpWatch 正确答案：C
+A:Alt+F1
+B:Shift+F1
+C:Shift+F2
+D:Alt+F2
+【解析】：undefined
+##7785##
+
+##6685##
+在哪个浏览器调试能进行js文件修改保存，然后进行调试 正确答案：A
+A:Chrome
+B:firefox
+C:ie
+D:不能
+【解析】：undefined
+##7785##
+
+##6685##
+在浏览器调试工具中调试js时 F8有什么作用 正确答案：A
+A:继续、下个断点
+B:单步进入
+C:单步跳过
+D:单步跳出
+【解析】：undefined
+##7785##
+
+##6685##
+判断一个变量是数组的方法, 最佳实践是 正确答案：B
+A:!!x.length
+B: x isntanceof Array
+C:!!x.splice
+D:!!x.push
+【解析】：undefined
+##7785##
+
+##6685##
+构造元模型时,所需classid,typeid的解析次序优先级由高到低 正确答案：A
+A:构造参数,url同名参数, body同名属性
+B:构造参数, body同名属性,url同名参数
+C:body同名属性, 构造参数, url同名参数
+D:url同名参数,构造参数, body同名属性
+【解析】：构造元模型时,所需classid,typeid的解析次序优先级由高到低是：构造参数,url同名参数, body同名属性。
+##7785##
+
+##6685##
+关于ecp.ui.layout.Frame与ecp.ui.layout.Window类说法正确的是 正确答案：B
+A: Frame继承Window
+B:Window继承Frame
+C:Frame通过html的iframe标签实现, Window通过div实现
+D:可以同时打开多个活跃ecp.ui.layout.Window
+【解析】：undefined
+##7785##
+
+##6685##
+关于Ecp前端消息服务,说法错误的是 正确答案：B
+A:消息服务分两种,分别是平台级消息服务和页面间消息服务
+B:只能通过页面间消息服务向一个打开的窗口发送消息
+C:平台消息服务有同步和异步之分
+D:一个消息主题可以注册多个处理器
+【解析】：undefined
+##7785##
+
+##6685##
+关于Ecp前端缓存服务,说法错误的是 正确答案：C
+A:有四种缓存: 持久缓存、全局缓存、页面缓存、服务端缓存
+B:服务端缓存与用户相关，永不过期
+C:全局缓存在用户退出系统后，继续保留
+D: 页面的html代码在第一次下载后缓存于全局缓存中
+【解析】：undefined
+##7785##
+
+##6685##
+ECP平台的设计遵循哪些原则？ 正确答案：ABCDEF
+A:分层原则
+B:可扩展性原则
+C:面向对象原则
+D:职责分离原则
+E:视图与数据分离原则
+F:平台开放原则
+【解析】：undefined
+##7785##
+
+##6685##
+ECP平台的前端缓存有哪些？ 正确答案：ABCD
+A:持久级缓存
+B:全局级缓存
+C:页面级缓存
+D:cookies缓存
+E:iframe缓存
+【解析】：undefined
+##7785##
+
+##6685##
+有时候我们需要监听某个 DOM 被修改情况，而不关心是哪行代码做的修改（也可能有多处都会对其做修改）。那么我们可以直接在 DOM 上设置断点。在chrome下支持哪几种类型 正确答案：ABC
+A:子节点修改
+B:自身属性修改
+C:自身节点被删除
+D:子节点属性修改
+【解析】：undefined
+##7785##
+
+##6685##
+关于构造控件, 下列说法正确的是: 正确答案：AB
+A: inputer覆盖元模型同名属性
+B:元模型覆盖itemType的缺省属性
+C: itemType的缺省属性覆盖元模型的同名属性
+D:以上说法都不对
+【解析】：前端的UI控件设置，采用三层叠加的方式，优先级从低到高分别是：itemType中的控件配置、元模型的inputer配置、页面的inputer配置。
+
+##7785##
+
+##6685##
+关于页面控制器,下列说法正确的是 正确答案：BC
+A:一个页面必须定义至少一个继承了pagecontroller的控制器
+B:一个页面可以定义多个继承了pagecontroller的控制器
+C:页面控制器通过向thisWindow发送消息onLoad触发其构造方法
+D:D. 页面控制器在jsImport后,自我构造.
+【解析】：undefined
+##7785##
+
+##6685##
+对于mode=”local”模式,页面加载元模型正确的说法是 正确答案：AB
+A:必须在页面所在目录的model子目录下定义元模型文件
+B:元模型文件命名模式为: {classid}_{typeid}_MetaDataModel.json
+C:元模型文件命名模式为: MetaDataModel _{classid}_{typeid}.json
+D:元模型文件命名模式为: {classid}_{typeid}_MetaDataModel.js
+【解析】：元数据模型的提供方式可以是延迟模式（通过控制器提供模型）。元数据模型存放在service项目的config\metaModel目录中，body中属性mode=“lazy”指示通过控制器代码提供模型；元数据模型的提供方式也可以是本地模式（使用本地JSON作为模型）。元数据模型定义在一个json文件中，body中用mode=“json”指示，并且在html文件所在目录的model子目录下定义一个文件，文件名命名规则如下：classid_typeid_MetaDataModel.json
+##7785##
+
+##6685##
+关于$.ecp.rsImport方法,说法正确的是 正确答案：ABCD
+A:Ecp中一种类DWR技术
+B:可以一次引入多个java接口
+C: rsImport目前除引入接口的所有方法外,还引入了非接口方法
+D:在页面控制器中,可以通过this.rs.接口名.方法名(参数)调用java接口方法
+【解析】：undefined
+##7785##
+
+##6685##
+chrome的调试工具支持哪些断点类型 正确答案：ABCD
+A:js断点(Breakpoints)
+B:DOM Breakpoints
+C:XHR Breakpoints
+D:Event Listener Breakpoints
+【解析】：undefined
+##7785##
+
+##6685##
+创建一个窗口ecp.ui.layout.Window时可以在调用show()方法以后绑定事件 正确答案：A
+A:正确
+B:错误
+【解析】：undefined
+##7785##
+
+##6685##
+前端页面html在引用模型时，只需要在body标签中配置classId和typeId中的一个即可。 正确答案：B
+A:正确
+B:错误
+【解析】：前端页面html可以通过在body标签中的classId和typeId绑定模型，两者缺一不可。
+##7785##
+
+##6685##
+应用开发者可以通过以下哪个工具类获取当前上下文信息？ 正确答案：D
+A:DataModelUtil
+B:EcpContextUtil
+C:EcpDataContextUtil
+D:DataContextUtil
+E:GeneralContext
+【解析】：ECP平台中将不再保留原GAP平台数据总线（dataBus）的概念，取而代之的是ECP数据上下文管理机制。ECP数据上下文组件包括以下两类上下文信息。应用开发者可以通过DataContextUtil工具类获取当前上下文信息。
+##7785##
+
+##6685##
+取数函数模型中的（）属性用以识别时内部函数还是外部函数（控制是否可设置）。 正确答案：A
+A:accessType
+B:type
+C:optionType
+D:fixType
+【解析】：某取数函数扩展开发类定义时，遵从以下规则：1.取数函数实现接口IECPFunctionBaseLib，实现接口中的若干方法；2.函数名称定义规则为 ECPFun{具体函数名称}；3.取数函数模型中的属性“访问类型”(accessType),用以识别时内部函数还是外部函数，即是否可在取数运算设置中可设置此函数。
+##7785##
+
+##6685##
+扩展函数，需要实现的接口为（）。 正确答案：D
+A:IECPFuncBaseLib
+B:IFunctionBaseLib
+C:IECPFunctionLib
+D:IECPFunctionBaseLib
+【解析】：某取数函数扩展开发类定义时，遵从以下规则：1.取数函数实现接口IECPFunctionBaseLib，实现接口中的若干方法；2.函数名称定义规则为 ECPFun{具体函数名称}；3.取数函数模型中的属性“访问类型”(accessType),用以识别时内部函数还是外部函数，即是否可在取数运算设置中可设置此函数。
+##7785##
+
+##6685##
+ECP平台异常抛出时使用的日志记录级别（）？ 正确答案：A
+A:error
+B:trace
+C:debug
+D:warn
+【解析】：ECP平台异常抛出时使用的日志记录级别是error。
+##7785##
+
+##6685##
+ECP平台异常分层要求，数据访问层的异常定义需要继承的异常基类为。 正确答案：D
+A:EcpRuntimeException
+B:EcpInfoException
+C:EcpDebugException
+D:EcpDaoException
+【解析】：数据访问层的异常定义需要继承的异常基类为EcpDaoException
+##7785##
+
+##6685##
+ECP平台国际化的工具类是（）。 正确答案：A
+A:EcpI18nUtil 
+B:EcpInterUtil
+C:EcpI18nDataUtil
+D:EcpDataUtil
+【解析】：ECP平台国际化的工具类是 EcpI18nUtil，通过该工具类调用国际化资源服务，产生一个本地化字符串，完成国际化转换。
+
+##7785##
+
+##6685##
+ECP平台封装了可通过反射调用调用对象的方法(callMethod)对应工具类是（）？ 正确答案：B
+A:ClsUtil
+B:ClassUtil
+C:ClsProcessorUtil
+D:OSGIUtil
+【解析】：ECP平台封装了可通过反射调用调用对象的方法(callMethod)对应工具类是ClassUtil。
+##7785##
+
+##6685##
+ECP平台提供的工具类(FileUtil)中用于（）。 正确答案：C
+A:对xml的操作处理
+B:文件编码解码等操作处理
+C:文件操作的封装处理
+D:实现文件和流操作的封装处理
+【解析】：FileUtil提供文件操作相关功能
+##7785##
+
+##6685##
+ECP取数运算框架包含的基础组件包括有（）。 正确答案：ABCD
+A:表达式设计器
+B:取数运算组件
+C:勾稽运算组件
+D:表达式运算组件
+【解析】：取数运算框架包含如下4个基础组件：1.表达式设计器。表达式设计器是ECP平台提供的用于取数运算、勾稽运算及表达式运算的表达式设置通用组件，并实现对设置的表达式进行合法性校验，实现模型项目间的取数运算勾稽等约束性功能；2.取数运算。取数运算兼容GAP平台的取数函数，并可在新平台中扩展开发新的取数函数。可支持客户端、服务端根据设置的取数运算表达式动态生成运算模型，对数据模型进行运算；3.勾稽运算。数据在保存、传递过程中，可以设置勾稽表达式，对数据模型进行勾稽检查，以判断是否满足勾稽条件。目前勾稽运算多数用于客户端的勾稽运算，其中包含是否即时提醒、是否强制约束的限定；4.表达式运算。通用表达式运算，可以根据需要对合法的表达式进行运算，同时，也可以针对数据模型进行运算、数据过滤、表达式解析，而不用像取数运算、勾稽运算那样，表达式必须存在固定的元数据模型节点中。 目前表达式运算广泛应用于：实体转换、数据过滤、流程条件分支等。
+
+
+##7785##
+
+##6685##
+ECP平台的日志记录级别有（）。 正确答案：ABCDE
+A:info
+B:trace
+C:debug
+D:warn
+E:error
+【解析】：ECP平台的日志记录级别分为显示信息 （info）、跟踪(trace)、调试(debug)、警告(warn)、错误(error)、致命错误(fatal),来指定日志信息的重要程度。高级别的日志信息会屏蔽低级别的日志信息输出。 ??
+##7785##
+
+##6685##
+以下属于业务上下文记录的业务信息包括（）？ 正确答案：ABC
+A:业务日期
+B:业务组织
+C:业务场景
+D:业务客户端IP
+【解析】：ECP数据上下文组件包括以下两类上下文信息。应用开发者可以通过DataContextUtil工具类获取当前上下文信息。1.登录上下文（loginContext）：存储当前登录用户信息及登录单位等；
+2.业务上下文（businessContext），存储业务相关日期、业务组织、及业务场景信息等。可实现二次登陆、跨单位业务及固定业务信息的存放。
+
+##7785##
+
+##6685##
+如下属于ECP提供的工具类包括（）。 正确答案：ABCDE
+A:字符串处理
+B:日期处理
+C:压缩解压处理
+D:流处理
+E:XML处理
+【解析】：本题考查ECP提供的通用工具类。
+##7785##
+
+##6685##
+异常错误代码中异常类型字符包括（）。 正确答案：ABCD
+A:提示I
+B:警告W
+C:验证V
+D:错误E
+【解析】：由于业务需要，需要抛出的异常进行级别定义，根据应用需求，结合定义异常错误代码中异常类型字符（提示I、警告W、验证V、错误E），抛出的对应级别的异常：
+##7785##
+
+##6685##
+ECP异常框架依赖的底层两大框架为（）。 正确答案：CD
+A:核心引擎框架
+B:取数框架
+C:日志框架
+D:国际化框架
+【解析】：ECP平台提供统一的、有不同的层次的、具有唯一异常代码的、支持多语言、支持不同级别的异常处理框架。ECP异常框架依赖的底层两大框架为日志框架和国际化框架。
+##7785##
+
+##6685##
+ECP上下文组件包括哪两类上下文（）。 正确答案：AC
+A:LoginContext
+B:DataContext
+C:BusinessContext
+D:GeneralContext
+【解析】：ECP数据上下文组件包括以下两类上下文信息。应用开发者可以通过DataContextUtil工具类获取当前上下文信息。1.登录上下文（loginContext）：存储当前登录用户信息及登录单位等；
+2.业务上下文（businessContext），存储业务相关日期、业务组织、及业务场景信息等。可实现二次登陆、跨单位业务及固定业务信息的存放。
+
+##7785##
+
+##6685##
+ECP平台的业务上下文和登录上下文均可设置当前会话的上下文属性值。 正确答案：B
+A:正确
+B:错误
+【解析】：登陆上下文记录用户登录相关信息，属线程级变量。同一登录用户的交互可访问，只有登录组件可以设置登陆上下文；业务上下文记录用户进行业务操作时的业务相关信息。包括有：业务日期、业务领域、业务场景及业务组织等，任何应用的时候可以对业务上下文属性进行修改和调整；
+##7785##
+
+##6685##
+ECP平台扩展的取数函数需实现接口IECPFunctionBaseLib。 正确答案：A
+A:正确
+B:错误
+【解析】：某取数函数扩展开发类定义时，遵从以下规则：1.取数函数实现接口IECPFunctionBaseLib，实现接口中的若干方法；2.函数名称定义规则为 ECPFun{具体函数名称}；3.取数函数模型中的属性“访问类型”(accessType),用以识别时内部函数还是外部函数，即是否可在取数运算设置中可设置此函数。
+
+##7785##
+
+##6685##
+目前IDE开发平台已支持取数函数的扩展配置。 正确答案：A
+A:正确
+B:错误
+【解析】：取数运算兼容GAP平台的取数函数，并可在新平台中扩展开发新的取数函数。可支持客户端、服务端根据设置的取数运算表达式动态生成运算模型，对数据模型进行运算。
+##7785##
+
+##6685##
+ECP平台定义日志输出级别时，低级别的日志信息（如DEBUG）会屏蔽高级别的日志信息（如INFO）输出。 正确答案：B
+A:正确
+B:错误
+【解析】：ECP平台的日志记录级别分为显示信息 （info）、跟踪(trace)、调试(debug)、警告(warn)、错误(error)、致命错误(fatal),来指定日志信息的重要程度。高级别的日志信息会屏蔽低级别的日志信息输出。
+##7785##
+
+##6685##
+程序代码中使用日志输出信息前，需要使用“isXXXEnabled()”方法判断当前日志级别能否输出日志信息。 正确答案：A
+A:正确
+B:错误
+【解析】：ECP平台的日志记录级别分为显示信息 （info）、跟踪(trace)、调试(debug)、警告(warn)、错误(error)、致命错误(fatal),来指定日志信息的重要程度。高级别的日志信息会屏蔽低级别的日志信息输出。程序代码中使用日志输出信息前，需要使用“.isXXXEnabled()”方法判断当前日志级别能 否输出日志信息。
+##7785##
+
+##6685##
+ECP平台每一个异常都要有唯一的异常代码与之对应。 正确答案：A
+A:正确
+B:错误
+【解析】：ECP平台提供统一的、有不同的层次的、具有唯一异常代码的、支持多语言、支持不同级别的异常处理框架。其框架具备特性包含：1.统一的异常处理模式： 系统有统一的异常模式并可扩展，统一的异常展现界面。2.异常分层： 异常有不同的层次，不同层次的异常可以有不同的处理方式。3.异常代码： 每个异常都有唯一的代码。
+
+##7785##
+
+##6685##
+ECP平台实现字符串常用操作的工具类是StringUtil。 正确答案：A
+A:正确
+B:错误
+【解析】：ECP平台提供了实现字符串常用操作的工具类StringUtil
+##7785##
+
+##6685##
+描述数据属性特征的模型是（）。 正确答案：A
+A:元数据模型
+B:数据模型
+C:转换模型
+D:显示模型
+【解析】：处理数据操作的模型是数据模型，元数据模型是描述数据模型的模型，显示模型用于ID/NAME的转换。
+##7785##
+
+##6685##
+处理数据操作的模型是（）。 正确答案：B
+A:元数据模型
+B:数据模型
+C:转换模型
+D:显示模型
+【解析】：处理数据操作的模型是数据模型，元数据模型是描述数据模型的模型，显示模型用于ID/NAME的转换。
+##7785##
+
+##6685##
+辅助实现数据模型ID值转换名称值的模型是（）。 正确答案：D
+A:元数据模型
+B:数据模型
+C:转换模型
+D:显示模型
+【解析】：处理数据操作的模型是数据模型，元数据模型是描述数据模型的模型，显示模型用于ID/NAME的转换。
+##7785##
+
+##6685##
+ECP平台通过扩展点的方式，提供实体的元数据实现类供元数据服务调用,需要继承的基类是（）？ 正确答案：C
+A:MetaDataProvider
+B:MetaModelProvider
+C:AbstractMetaModelProvider
+D:不清楚
+【解析】：平台通过扩展点的方式，提供实体的元数据实现类供元数据服务调用。在扩展点的配置文件中，className指向继承抽象类AbstractMetaModelProvider的元数据实现类，根据元数据的结构代码控制实现动态实体的元数据。
+
+##7785##
+
+##6685##
+元数据模型配置文件定义的文件后缀名是（）。 正确答案：A
+A:mdmx
+B:vcx
+C:mx
+D:refx
+【解析】：元数据模型配置文件定义的文件后缀名是mdmx，存储文件名格式为“{classId} _{typeId}.mdmx”
+##7785##
+
+##6685##
+数据模型状态modelState表示删除的状态是（）？ 正确答案：B
+A:1
+B:2
+C:4
+D:8
+【解析】：调用generalContext的add或save等方法时，需要指定模型的更新方式：DataModelState有6个状态，分别是1、2、4、8、16、64其中DataModelState.DELETE也就是2，代表删除。
+##7785##
+
+##6685##
+定义的数据类型转换器实现类，需实现类型转换器接口（）。 正确答案：A
+A:IItemTypeTranslateExecutor
+B:IItemTypeTransExecutor
+C:ICommonEntitySelector
+D:ITranslateExecutor
+【解析】：定义的数据类型转换器实现类，需实现类型转换器接口IItemTypeTranslateExecutor，实现接口的id2Name、name2Id等方法完成ID名称值转换处理。转换器实现类增加@OSGIService注解，注解属性properties为对应数据类型名称（name）。
+
+##7785##
+
+##6685##
+统一类型体系的扩展配置文件的文件后缀名是（）？ 正确答案：B
+A:vcx
+B:dtx
+C:mdmx
+D:opx
+【解析】：ECP平台支持按照统一类型体系的扩展标准通过配置文件扩展统一类型。配置文件名称统一格式“{业务领域名称} _itemType.dtx”，如“gris.mdm_itemType.dtx”，其中gris.mdm为应用的业务
+领域名称。并且配置文件统一存储在业务领域impl项目的META-INF/config/itemtype/ 目录下面即可。
+##7785##
+
+##6685##
+统一类型体系的扩展配置文件存放在impl项目的（）目录下面。 正确答案：A
+A:META-INF/config/itemtype
+B:META-INF/config/metaModel
+C:META-INF/config/operator
+D:META-INF/config/type
+【解析】：ECP平台支持按照统一类型体系的扩展标准通过配置文件扩展统一类型。配置文件名称统一格式“{业务领域名称} _itemType.dtx”，如“gris.mdm_itemType.dtx”，其中gris.mdm为应用的业务
+领域名称。并且配置文件统一存储在业务领域impl项目的META-INF/config/itemtype/ 目录下面即可。
+##7785##
+
+##6685##
+PO模型是在业务领域的哪个项目下创建的（）？ 正确答案：A
+A:data
+B:impl
+C:service
+D:web
+【解析】：通过IDE的数据建模并保存后，会自动在data项目下创建PO模型。
+##7785##
+
+##6685##
+ECP平台统一类型扩展配置文件名称定义使用（）作为统一格式定义。 正确答案：A
+A:业务领域名称
+B:业务类别类型名称
+C:业务实体名称
+D:业务目录
+【解析】：ECP平台支持按照统一类型体系的扩展标准通过配置文件扩展统一类型。配置文件名称统一格式“{业务领域名称} _itemType.dtx”，如“gris.mdm_itemType.dtx”，其中gris.mdm为应用的业务
+领域名称。并且配置文件统一存储在业务领域impl项目的META-INF/config/itemtype/ 目录下面即可。
+
+##7785##
+
+##6685##
+类型的扩展体系中定义了哪些处理器？ 正确答案：ABC
+A:输入器
+B:转换器
+C:设计器
+D:选择器
+【解析】：统一类型是对实体属性业务类型的归纳和描述，通过对实体属性数据类型的归类，定义出平台内置的业务数据类型并定义相应的类型输入器、转换器、设计器及处理器。实现平台中业务数据类型的统
+一定义管理，解决了平台应用中无法对应业务数据类型和基本数据类型的差异矛盾。ECP支持统一类型的扩展。
+
+##7785##
+
+##6685##
+选择“ECP领域代码生成向导”时，可创建的领域代码文件包括（）？ 正确答案：ABCDE
+A:实体VO模型
+B:实体查询角色类
+C:PO/VO转换类
+D:单元测试代码 
+E:客户端HTML页面及控制类
+【解析】：右键data项目-功能向导-ECP领域代码生成向导，可以生成选项中的列出的领域代码。
+##7785##
+
+##6685##
+声明的@Topic注解是加在业务层的（）。 正确答案：ABC
+A:PO
+B:VO
+C:场景层
+D:角色层
+E:数据访问层
+【解析】：在PO、VO和场景层中，通过声明@Topic注解，定义关联实体的classId和typeId。
+
+##7785##
+
+##6685##
+目前ECP平台统一类型的使用者包括哪些框架模型（）？ 正确答案：ABD
+A:规则引擎
+B:行为引擎
+C:流程引擎
+D:元数据模型
+【解析】：统一类型是对实体属性业务类型的归纳和描述，通过对实体属性数据类型的归类，定义出平台内置的业务数据类型并定义相应的类型输入器、转换器、设计器及处理器。实现平台中业务数据类型的统一定义管理，解决了平台应用中无法对应业务数据类型和基本数据类型的差异矛盾。统一类型涉及到平台各种模型中数据类型的使用者，包括规则模型、行为模型、元数据模型等。类型的扩展体系遵循类型扩展模型结构，包括类型基本信息描述及对应4种类型处理器，从而在平台运行期间类型处理引擎触发对应处理器的功能实现。
+
+
+##7785##
+
+##6685##
+元数据模型中勾稽列表存放于实体项目列表中。 正确答案：B
+A:正确
+B:错误
+【解析】：本题考查：元数据模型类型模型结构。元数据模型中勾稽列表存放于类型描述（typeDefine）中
+##7785##
+
+##6685##
+元数据模型中类型定义的高级属性时按行存储展示的。 正确答案：A
+A:正确
+B:错误
+【解析】：本题考查：元数据模型类型模型结构。
+##7785##
+
+##6685##
+场景层的接口方法中均具有数据上下文DataContext参数。 正确答案：A
+A:正确
+B:错误
+【解析】：场景层的接口方法中均具有数据上下文DataContext参数，可获取当前上下文中的登录信息，为数据和组织、身份校验提供基础。
+##7785##
+
+##6685##
+声明@Transfer注解用于定义转换器描述的PO及VO对应的模型类。 正确答案：A
+A:正确
+B:错误
+【解析】：Transfer转换器用于实现PO实体与VO实体之间的转换；Transfer转换器继承基类转换器AbstractValueObjectTransfer，并且实现基类的toVO和toPO两个方法；可以根据需要选择重写public List<PO> toPO(final List<VO> voList)和public List<VO> toVO(final List<PO> poList)两个集合转换方法；声明@Transfer注解，定义poClass以及voClass两个参数。
+
+##7785##
+
+##6685##
+ECP平台固定实体通过扩展点的方式，提供实体的元数据实现类供元数据服务调用。 正确答案：B
+A:正确
+B:错误
+【解析】：ECP平台固定实体的元数据使用以mdmx为文件后缀的配置文件存储。
+##7785##
+
+##6685##
+ECP平台动态实体通过元数据模型配置文件实现元数据服务调用。 正确答案：B
+A:正确
+B:错误
+【解析】：ECP平台动态实体的元数据存储在对应实体的数据库属性表。
+##7785##
+
+##6685##
+数据模型VO基类DynamicValueObject增加了类别（classId）和类型（typeId）属性。 正确答案：B
+A:正确
+B:错误
+【解析】：本题考查数据模型VO基类继承关系。DynamicEntityValueObject继承数据模型基类AbstractValueObject，并增加了classId和typeId属性
+##7785##
+
+##6685##
+数据模型VO基类DynamicIdentifyData增加了主键（gid）属性。 正确答案：A
+A:正确
+B:错误
+【解析】：本题考查数据模型VO基类继承关系。DynamicIdentifyData继承数据模型基类AbstractValueObject，增加了主键（gid）属性
+##7785##
+
+##6685##
+动态实体与固定实体业务层继承的通用服务组件场景基类是相同的。 正确答案：B
+A:正确
+B:错误
+【解析】：固定实体继承com.ygsoft.ecp.core.framework.model.AbstractValueObject，动态实体继承com.ygsoft.ecp.core.framework.model.DynamicEntityValueObject
+##7785##
+
+##6685##
+IDE开发平台VO模型的高级属性中可设置统一类型及其输入器。 正确答案：A
+A:正确
+B:错误
+【解析】：IDE开发平台VO模型的高级属性中可设置统一类型、输入器、显示方式、固定标志等。
+##7785##
+
+##6685##
+ECP的中文含义是什么？ 正确答案：B
+A:企业应用平台
+B:企业云计算平台
+C:企业智能管理平台
+D:企业一体化平台
+【解析】：企业云计算平台
+##7785##
+
+##6685##
+ECP的英文是什么？ 正确答案：A
+A:Enterprise Cloud Platform
+B:Easy Can Play
+C:Easy Cloud Platform
+D:Enterprise Cloud Play
+【解析】：企业云平台，Enterprise Cloud Platform
+##7785##
+
+##6685##
+ECP的前身是什么？ 正确答案：C
+A:BCP
+B:EAP
+C:GAP
+D:UAP
+【解析】：ECP在GAP的基础上发展而来，继承了GAP的很多优点。
+##7785##
+
+##6685##
+下面那些不是ECP的特性？ 正确答案：D
+A:开放性
+B:先进性
+C:稳定性
+D:实效性
+【解析】：ECP的特性有开放性、先进性和稳定性。
+##7785##
+
+##6685##
+ECP采用了什么体系架构？ 正确答案：A
+A:SOA
+B:OOP
+C:TOGAF
+D:CMMI
+【解析】：ECP采用SOA体系架构，基于开放的JavaEE技术体系，支持BPMN2.0规范，以TOGAF企业架构方法论为指导。
+##7785##
+
+##6685##
+需求人员可以使用ECP平台做什么？ 正确答案：A
+A:界面原型
+B:需求挖掘
+C:需求调研
+D:需求分析
+【解析】：需求人员或实施人员可以利用格式设计工具设计原型。
+##7785##
+
+##6685##
+下面不属于可视化开发环境的是? 正确答案：B
+A:流程设计
+B:用户管理
+C:规则设计
+D:UI设计
+【解析】：流程设计有绘制界面，规则设计可以在功能视图的规则集下进行，UI设计可以使用ECP前端页面的图形化设计工具。
+##7785##
+
+##6685##
+下面不属于IDE集成的功能是？ 正确答案：C
+A:格式设计
+B:数据建模
+C:流程设计
+D:代码向导
+【解析】：四个选项中，只有流程设计不需要在ECP业务配置平台的流程绘制界面进行。
+##7785##
+
+##6685##
+ECP平台流程支持什么规范？ 正确答案：A
+A:BPMN 2.0
+B:SOA
+C:OOP
+D:TOGAF
+【解析】：ECP采用SOA体系架构，基于开放的JavaEE技术体系，支持BPMN2.0规范，以TOGAF企业架构方法论为指导。
+##7785##
+
+##6685##
+统一权限管理不包括下面？ 正确答案：D
+A:控制建模
+B:统一授权
+C:权限检查
+D:数据建模
+【解析】：数据建模属于ECP的可视化开发功能。
+##7785##
+
+##6685##
+ECP流程平台不能满足的是（）。 正确答案：C
+A:业务流
+B:流程建模
+C:功能建模
+D:运行需求
+【解析】：undefined
+##7785##
+
+##6685##
+ECP平台支持那些终端展示？ 正确答案：ABCDE
+A:IE
+B:PC
+C:IOS
+D:WP
+E:Safari
+【解析】：ECP平台的适配所有的操作系统或浏览器。
+##7785##
+
+##6685##
+组件一般分为（）。 正确答案：ABC
+A:技术组件
+B:业务领域组件
+C:业务组件
+D:框架组件
+【解析】：undefined
+##7785##
+
+##6685##
+ECP的核心理念包括（）。 正确答案：ABCD
+A:业务和技术分离
+B:按需组合
+C:开发、标准与跨平台
+D:支持国际化与本地化
+E:统一应用平台
+【解析】：undefined
+##7785##
+
+##6685##
+ECP平台是集（）于一体的平台。 正确答案：ABCD
+A:开发
+B:集成
+C:运行
+D:管理
+【解析】：所谓一体化协作，是指覆盖SOA应用全生命周期，包括从设计、开发、调试和部署，到运行、维护、管控和治理的整个过程。
+##7785##
+
+##6685##
+行为动作必须实现IOperatorActionAfter接口的（）方法。 正确答案：C
+A:action
+B:doAction
+C:execute
+D:doExecute
+【解析】：行为动作实现自IOperatorActionBefore和IOperatorActionAfter接口，分别对应行为前置动作和后置动作。行为动作必须实现IOperatorActionAfter接口的execute方法，行为动作execute方法处理业务逻辑
+##7785##
+
+##6685##
+查询主题扩展点中的QueryExecutor元素的（）属性指向了查询执行器 正确答案：D
+A:executor
+B:path
+C:interface
+D:class
+【解析】：undefined
+##7785##
+
+##6685##
+行为事件扩展中（）属性是必填项。 正确答案：ABCD
+A:classId
+B:typeId
+C:operatorName
+D:subscriber
+【解析】：undefined
+##7785##
+
+##6685##
+行为事件中的operatorName属性，可以不指向任何行为。 正确答案：B
+A:正确
+B:错误
+【解析】：行为事件必须依附于行为而存在，行为事件中的operatorName属性指定行为的名称。
+##7785##
+
+##6685##
+行为动作在行为事件之前执行。 正确答案：B
+A:正确
+B:错误
+【解析】：undefined
+##7785##
+
+##6685##
+自定义查询主题必须实现com.ygsoft.ecp.component.query.service.ext.QueryTopic扩展点 正确答案：A
+A:正确
+B:错误
+【解析】：undefined
+##7785##
+
+##6685##
+ECP门户框架中支持门户导航栏的扩展。 正确答案：A
+A:正确
+B:错误
+【解析】：ECP门户框架中支持门户导航栏的扩展及自定义菜单。
+##7785##
+
+##6685##
+下列哪个不是ECP核心引擎之一 正确答案：B
+A:流程引擎
+B:取数运算引擎
+C:行为引擎
+D:规则引擎
+【解析】：ECP三大引擎：行为引擎、流程引擎和规则引擎。
+##7785##
+
+##6685##
+从业务视角出发，ECP有五大模型：组织模型、流程模型、功能模型、访问控制模型和数据模型。规则引擎对应ECP五大模型的（）模型。 正确答案：D
+A:功能
+B:权限
+C:组织
+D:均不正确
+【解析】：规则引擎对应ECP五大模型的访问控制模型。
+##7785##
+
+##6685##
+行为在开发期存放的配置文件扩展名是（） 正确答案：B
+A:OIS
+B:OPX
+C:IPX
+D:OPS
+【解析】：行为定义文件以classId、typeId、行为名称作为文件名，以opx为扩展名，存储格式为json，存储位置为业务领域的impl Bundle，文件路径为META-INF\config\operator。
+
+##7785##
+
+##6685##
+行为加载时，行为引擎会查找实体的元数据模型中（）节点下的所有行为，包括通用行为。
+ 正确答案：B
+A:service
+B:services
+C:operator
+D:operators
+【解析】：实体的元数据模型中services节点包含了实体所有行为，包括通用行为。
+
+##7785##
+
+##6685##
+classId、typeId和（）可以唯一标识一个行为。 正确答案：A
+A:name
+B:type
+C:id
+D:gid
+【解析】：行类型ID、类别ID、行为名称三者组合可以确定唯一行为。
+
+##7785##
+
+##6685##
+行为对象的mainModel属性标识了（） 正确答案：C
+A:主数据模型的路径
+B:数据模型的Main状态
+C:标识该参数是否是主模型
+
+D:数据模型的主要属性状态
+【解析】：行为对象业务实体提供的业务动作或操作，描述了业务实体的动作或操作定义，用于定义行为和状态位信息。行为引擎提供对行为对象定义、配置、加载、解析、运行及事件处理的完整支持。行为对象的mainModel属性标识了该参数是否是主模型
+##7785##
+
+##6685##
+使用业务配置平台配置行为，无法配置行为的（） 正确答案：C
+A:viewId
+B:规则
+C:事件
+D:动作
+【解析】：使用业务配置平台只能配置行为及行为动作，无法配置行为事件。行为事件是有开发人员在开发期配置。
+##7785##
+
+##6685##
+对于使用ECP Studio继承的方式创建行为，不会变化的是行为的（）。 正确答案：A
+A:name
+B:classId
+C:typeId
+D:opx
+【解析】：undefined
+##7785##
+
+##6685##
+规则引擎通过（）组件负责处理当前模版所产生的所有规则的执行，并返回执行结果 正确答案：C
+A:规则模版
+B:规则控制器
+C:规则处理器
+D:规则引擎
+【解析】：规则引擎通过规则处理器组件负责处理当前模版所产生的所有规则的执行，并返回执行结果
+##7785##
+
+##6685##
+规则模版扩展名为（）。 正确答案：B
+A:OPX
+B:RTX
+C:RULES
+D:RULE
+【解析】：规则模版是规则应用的基础，模版包含规则基本属性、参数信息、处理器等；规则模版以以Json格式存储在文件系统中， 存储在目标Bundle的META-INF\config\rules文件夹下，以.rtx为扩展名，规则引擎通过扫描文件的方式加载规则模版；平台提供基本的规则模版供业务设置使用，如非空判断、只读控制、项目比较等；规则模版允许业务扩展，但只允许在系统开发期进行模版设置，运行期可以根据模版设置相关的规则
+
+##7785##
+
+##6685##
+对于规则模版的扩展，下列说法正确的是（） 正确答案：A
+A:仅在开发期
+B:实施期
+C:开发期实施期均可
+D:视用户需要
+【解析】：规则模版是规则应用的基础，模版包含规则基本属性、参数信息、处理器等；规则模版以以Json格式存储在文件系统中， 存储在目标Bundle的META-INF\config\rules文件夹下，以.rtx为扩展名，规则引擎通过扫描文件的方式加载规则模版；平台提供基本的规则模版供业务设置使用，如非空判断、只读控制、项目比较等；规则模版允许业务扩展，但只允许在系统开发期进行模版设置，运行期可以根据模版设置相关的规则
+
+##7785##
+
+##6685##
+在规则模版中，处理器的（）属性决定了处理器的执行方法。 正确答案：D
+A:code
+B:method
+C:control
+D:name
+【解析】：参考规则模版的定义。
+##7785##
+
+##6685##
+在规则模版中，模版参数的（）属性决定了参数的顺序 正确答案：D
+A:number
+B:order
+C:orderby
+D:sort
+【解析】：参考规则模版的定义。
+##7785##
+
+##6685##
+在规则模版描述中，（）属性中会引用参数的输入器进行参数设置，生成规则 正确答案：C
+A:flId
+B:description
+C:name
+D:fileName
+【解析】：参考规则模版的定义。
+##7785##
+
+##6685##
+规则控制器中，注册（）用于监听页面属性变化 正确答案：C
+A:watch
+B:watchModel
+C:watchData
+D:watchField
+【解析】：规则控制器用于规则的客户端控制逻辑注册，使规则可以根据注册的控制类型对逻辑进行控制，可以注册的属性有：watchData、checkBetween、checkLess、checkLessEquals及checkIn。其中注册watchData用于监听页面属性变化册
+
+##7785##
+
+##6685##
+新建流程时，通过（）来使流程能够被BPM引擎识别并正常使用。 正确答案：C
+A:绘制
+B:绘制流程
+C:发布
+D:启用
+【解析】：流程绘制后，需通过发布来使流程能够被BPM引擎识别并正常使用。
+##7785##
+
+##6685##
+在进行功能单元绑定之前，我们会使用（）功能将行为私有化 正确答案：C
+A:行为向导
+B:业务门户
+C:实体功能
+D:行为处理向导
+【解析】：通过业务配置平台设置实体的功能属性私有化行为。
+##7785##
+
+##6685##
+实施人员通过（）组件来定义规则。 正确答案：A
+A:规则引用组件
+B:规则模版
+C:规则返回结果
+D:规则执行引擎
+【解析】：规则模版是规则应用的基础，模版包含规则基本属性、参数信息、处理器等；规则模版以以Json格式存储在文件系统中， 存储在目标Bundle的META-INF\config\rules文件夹下，以.rtx为扩展名，规则引擎通过扫描文件的方式加载规则模版；平台提供基本的规则模版供业务设置使用，如非空判断、只读控制、项目比较等；规则模版允许业务扩展，但只允许在系统开发期进行模版设置，运行期可以根据模版设置相关的规则
+##7785##
+
+##6685##
+规则引擎所包含的技术组件中，（）是必须在开发期完成的 正确答案：B
+A:规则生成
+B:规则模版配置
+C:规则执行引擎配置
+D:规则关系配置
+【解析】：规则模版是规则应用的基础，模版包含规则基本属性、参数信息、处理器等；规则模版以以Json格式存储在文件系统中， 存储在目标Bundle的META-INF\config\rules文件夹下，以.rtx为扩展名，规则引擎通过扫描文件的方式加载规则模版；平台提供基本的规则模版供业务设置使用，如非空判断、只读控制、项目比较等；规则模版允许业务扩展，但只允许在系统开发期进行模版设置，运行期可以根据模版设置相关的规则
+
+##7785##
+
+##6685##
+流程引擎通过（）来使用规则引擎，用以控制页面元素规则。 正确答案：A
+A:行为引擎
+B:流程建模器
+C:页面勾稽
+D:取数运算
+【解析】：流程引擎通过行为引擎来使用规则引擎，用以控制页面元素规则。
+##7785##
+
+##6685##
+在使用一个功能行为进行流程人工活动节点配置之前，哪些是该行为必须具备的项目 正确答案：A
+A:格式
+B:行为
+C:规则
+D:勾稽关系
+【解析】：undefined
+##7785##
+
+##6685##
+下面哪个不是流程对业务开发暴露出的扩展表 正确答案：D
+A:ECP_WF_TASK_PROCESSINSTOPTION
+B:ECP_WF_TASK_ENTITYRELATION
+C:ECP_WF_TASK_PARTICIPANT
+D:ECP_WF_TASK_EXTENDSDETAILS
+【解析】：流程对业务开发暴露出的扩展表有三个，分别是：ECP_WF_TASK_PROCESSINSTOPTION、ECP_WF_TASK_ENTITYRELATION用于已完成/未完成单据查询；
+ECP_WF_TASK_PARTICIPANT用与用户参与的单据流程查询
+##7785##
+
+##6685##
+下列流程事件类型哪个是拥有前置/后置事件的 正确答案：A
+A:流程发起
+B:流程结束
+C:流程作废
+D:流程挂起
+【解析】：四个选项中，只有流程发起具有前置和后置事件。
+##7785##
+
+##6685##
+流程引擎通过（）来提高性能，避免与BPM引擎进行多次交互 正确答案：B
+A:流程服务
+B:流程数据冗余
+C:BPM服务
+D:列存储
+【解析】：选项B是ECP提高流程引擎性能的举措。
+##7785##
+
+##6685##
+流程事件扩展配置中，使用（）属性确定是前置/后置事件 正确答案：B
+A:after
+B:before
+C:before/after
+D:before-after
+【解析】：before为true，表示前置事件；before为false，表示后置事件。
+##7785##
+
+##6685##
+流程事件扩展的订阅器默认执行方法是（）。 正确答案：D
+A:execute
+B:subscriber
+C:listener
+D:action
+【解析】：流程事件可以通过OSGi扩展点机制实现，扩展点名称是com.ygsoft.ecp.core.workflow.WorkFlowEvent，扩展点属性subscriber必须实现IEventSubscriber接口，并实现其action方法。
+##7785##
+
+##6685##
+行为前置事件中，事件中可以获取的行为内容包括（） 正确答案：AB
+A:行为对象
+B:行为参数
+C:行为执行结果
+D:数据模型
+【解析】：事件监听器实现自IEventSubscriber接口，使用行为事件对象OperatorBeforeExecuteEvent和OperatorAfterExecuteEvent定义前置或后置事件；事件监听器的action方法处理监听事件业务逻辑，其参数为：(1)前置事件:行为对象,行为参数,数据模型;(2)后置事件:行为对象,行为执行结果,行为参数,数据模型
+##7785##
+
+##6685##
+行为定义可以通过（）方式进行 正确答案：AB
+A:开发期向导
+B:业务配置平台
+C:统一协作平台
+D:协作配置平台
+【解析】：有两种方式定义行为。(1) 通过ECP Studio创建的行为。存储在以opx为扩展名的json文件中，文件夹为META-INF\config\operator，通常放到业务领域的impl Bundle中
+(2)通过业务配置平台使用预置的行为。业务配置平台预置的行为存储在ECP_EF_OPERATOR表中。
+
+##7785##
+
+##6685##
+行为执行期提供了包括（）等处理内容 正确答案：ABCD
+A:行为加载
+B:行为解析
+C:行为运行
+D:行为事件处理
+【解析】：在行为执行期，行为引擎提供对行为对象定义、配置、加载、解析、运行及事件处理的完整支持。
+
+##7785##
+
+##6685##
+使用业务配置平台配置行为，可以配置行为的（） 正确答案：ACD
+A:格式
+B:事件
+C:动作
+D:规则
+【解析】：行为事件在开发期由开发人员定义，用于预定义某种固化的、不允许变更执行过程的业务逻辑；行为动作在开发期由开发人员定义，用于预定义某种特定的业务逻辑，由实施人员根据场景决定该业务逻辑是否需要执行；行为事件无法设置执行顺序，行为动作允许在实施期编排多个动作的执行顺序。在四个选项中，只有行为事件无法通过业务配置平台配置。
+##7785##
+
+##6685##
+在查找一个行为时，通常通过哪几个项目? 正确答案：ABD
+A:类型ID
+B:类别ID
+C:行为GID
+D:行为名称
+【解析】：行类型ID、类别ID、行为名称三者组合可以确定唯一行为。
+##7785##
+
+##6685##
+流程引擎可能交互的业务组件包括哪些? 正确答案：ABCD
+A:行为
+B:规则
+C:消息
+D:外部系统
+【解析】：绘制流程轨迹时需要选择功能单元（行为），参与者设置和流程连线设置会使用到规则。
+##7785##
+
+##6685##
+在新建一个流程时，哪些项目是必须填写的 正确答案：AB
+A:流程名称
+B:流程绑定实体
+C:版本号
+D:所属组织
+【解析】：流程名称和流程绑定实体时必填项。
+##7785##
+
+##6685##
+绘制流程时，流程节点哪些项目是必须填写或选择的 正确答案：ABD
+A:组织
+B:角色
+C:操作员
+D:功能单元
+【解析】：绘制流程时，操作员不是必填项。
+##7785##
+
+##6685##
+在一个流程图中，必须包含哪些节点。 正确答案：ABC
+A:开始
+B:结束
+C:人工活动
+D:自动活动
+【解析】：自动活动根据需求可选。
+##7785##
+
+##6685##
+下列哪个选项是流程扩展时可以定义的流程操作类型？ 正确答案：ABD
+A:APPLY
+B:AUDIT
+C:MODIFY
+D:REPORT
+【解析】：undefined
+##7785##
+
+##6685##
+在扩展流程事件监听器过程中，流程事件对象包含了流程传递所需要的定义及运行信息，下面哪个属于流程对象所包含的属性 正确答案：ABC
+A:流程实例VO
+B:流程定义VO
+C:行为参数
+D:业务行为事件监听器
+【解析】：undefined
+##7785##
+
+##6685##
+在ECP Studio的功能视图中，功能集代表行为。 正确答案：A
+A:正确
+B:错误
+【解析】：可以通过ECP Studio的功能集视图新建行为。
+##7785##
+
+##6685##
+行为参数的sort和规则参数的sort属性作用是相同的 正确答案：A
+A:正确
+B:错误
+【解析】：都是指序号，定义了参数顺序
+
+##7785##
+
+##6685##
+行为动作扩展中的sort属性确定了动作参数顺序。 正确答案：B
+A:正确
+B:错误
+【解析】：行为动作对象包含行为动作基本属性以及执行权重sort，行为引擎根据权重确定行为动作执行顺序
+##7785##
+
+##6685##
+规则和规则模版之间属于继承关系。 正确答案：B
+A:正确
+B:错误
+【解析】：规则模版是规则应用的基础，模版包含规则基本属性、参数信息、处理器等
+。
+##7785##
+
+##6685##
+在运行期，业务配置人员无法通过业务配置平台扩展规则模版。 正确答案：A
+A:正确
+B:错误
+【解析】：规则模版允许业务扩展，但只允许在系统开发期进行模版设置，运行期可以根据模版设置相关的规则
+。
+##7785##
+
+##6685##
+规则服务端处理器的方法名是不固定的，允许自由定义。 正确答案：A
+A:正确
+B:错误
+【解析】：服务端规则处理器必须实现com.ygsoft.ecp.core.rule.service.role.IRuleProcessor接口，但是允许使用不同的方法名作为处理器方法，规则模版处理器使用name属性决定使用不同处理器方法。
+##7785##
+
+##6685##
+规则的执行可以分为同步和异步。 正确答案：B
+A:正确
+B:错误
+【解析】：规则执行都是同步执行。
+##7785##
+
+##6685##
+非结构化服务主要提供的接口有 正确答案：ABCDE
+A:IUnStructureStorage
+B:IStorageService
+C:IStorage
+D:IDBStorage
+E:IFileStorage
+【解析】：本题考查非结构化服务主要提供的接口
+##7785##
+
+##6685##
+非结构化服务提供的存储介质有 正确答案：AB
+A:File
+B:DB
+C:Memory
+D:Cloud
+【解析】：ECP非结构化组件为非结构化数据提供DB和FILE多种存储方案，同时支持业务扩展存储实现，实现了非结构化数据统一管理与监控。
+
+##7785##
+
+##6685##
+下面哪些是非结构化数据支持的文件类型 正确答案：AB
+A:.doc
+B:.xls
+C:.exe
+D:.bat
+E:.sh
+【解析】：非结构化数据支持的文件类型有.doc和.xls
+##7785##
+
+##6685##
+非结构化数据服务访问入口类是 正确答案：A
+A:EcpService
+B:StorageService
+C:AttachmentService
+D:EntityAttachmentService
+【解析】：可以通过EcpService提供的工具类方法获取，通过工具类静态方法EcpService. getStorageService()获取一个IStorageService统一存储服务实现,然后调用该接口的getUnStructureStorage()方法返回一个IUnStructureStorage非结构化存储服务接口实现后就可以进行非结构化数据存取操作。
+
+##7785##
+
+##6685##
+非结构化数据定义的扩展点名称是 正确答案：C
+A:com.ygsoft.ecp.service.storage.point
+B:com.ygsoft.ecp.service.attachment.point
+C:com.ygsoft.ecp.service.unstructure.point
+D:com.ygsoft.ecp.service.file.point
+【解析】：非结构化平台运行业务扩展自定义实现非结构化存储，可以通过扩展点配置完成，扩展点名称为com.ygsoft.ecp.service.unstructure.point
+
+##7785##
+
+##6685##
+非结构化数据存储业务key可以是 正确答案：D
+A:单据主键
+B:管理对象主键
+C:凭证主键
+D:任意字符
+【解析】：非结构化数据存储业务key可以是不重复的唯一的任意字符。
+##7785##
+
+##6685##
+非结构化平台临时存储目录为 正确答案：D
+A:c:\
+B:\etc
+C:\opt
+D:可以通过配置来指定
+【解析】：非结构化平台临时存储目录可以通过配置来指定。
+##7785##
+
+##6685##
+非结构化数据存都存放于内存中 正确答案：B
+A:正确
+B:错误
+【解析】：ECP非结构化组件为非结构化数据提供DB和FILE多种存储方案，同时支持业务扩展存储实现，实现了非结构化数据统一管理与监控。
+##7785##
+
+##6685##
+非结构化数据都是以子节流方式存在 正确答案：B
+A:正确
+B:错误
+【解析】：ECP非结构化组件为非结构化数据提供DB和FILE多种存储方案，同时支持业务扩展存储实现，实现了非结构化数据统一管理与监控。
+##7785##
+
+##6685##
+非结构化数据实现可以自定义扩展 正确答案：A
+A:正确
+B:错误
+【解析】：非结构化数据实现可以通过扩展点的方式进行自定义扩展，非结构化数据定义的扩张点名称是com.ygsoft.ecp.service.unstructure.point
+##7785##
+
+##6685##
+必须在XTCS表里指定非结构化数据配置 正确答案：B
+A:正确
+B:错误
+【解析】：可以通过在xtcs表里面预置记录，对非结构化数据存储方式进行配置，xtcs表里CSMC字段的KEY值为UNSTRUCTURE_DEFAULT_STORAGE，参数值可以填DB或者FILE,可以支持文件和DB多种方式。非结构化数据存储方式也可以在扩展点中进行配置
+##7785##
+
+##6685##
+使用规则引擎恰恰提供了一个将业务处理和业务规则处理分离、共用和统一管理维护业务规则引擎的企业服务模型和基本开发步骤地方法 正确答案：A
+A:正确
+B:错误
+【解析】：在传统的企业服务应用程序开发模式下，业务逻辑被直接固化应用程序代码中，这使得应用程序维护复杂且代价昂贵，变化的商业规则和业务流程总是引起应用程序的频繁修改，甚至设计变化，解决这个问题就需要采用新的开发模式，将业务逻辑从代码层剥离，使用规则引擎恰恰提供了一个将业务处理和业务规则处理分离、共用和统一管理维护业务规则引擎的企业服务模型和基本开发步骤地方法
+
+##7785##
+
+##6685##
+规则引擎的基本组成有：
+ 正确答案：ABCD
+A:规则模版 
+B:规则引用组件
+
+C:规则
+
+D:规则执行引擎
+
+【解析】：规则引擎的基本组成有：1.规则模版。规则模版是规则应用的基础，模版包含规则基本属性、参数信息、处理器等；2.规则引用组件。根据定义的规则模版，设置相关参数，定义规则执行期内容；3.规则。根据规则模版定义的、适用于目标场景的、具备完整执行参数的可执行对象；4.规则执行引擎。提供规则模版的加载、规则访问、规则运行等完整技术支持
+
+##7785##
+
+##6685##
+ECP采用的对象关系映射框架（ORM）是（）。 正确答案：C
+A:iBatis
+B:MyBatis
+C:Hibernate
+D:EclipseLink
+【解析】：ECP平台持久层框架/ORM框架主要对开源组件Hibernate封装。
+
+##7785##
+
+##6685##
+平台使用Spring框架进行事务控制。 正确答案：A
+A:正确
+B:错误
+【解析】：平台使用Spring框架进行事务控制，默认IDE场景类都加上了@Transactional注解，进入场景方法时会自动加入事务，平台默认配置的事务模式是REQUIRED。
+##7785##
+
+##6685##
+平台使用Spring框架进行事务控制，默认IDE场景类都加上了@Transactional注解，进入场景方法时会自动加入事务 正确答案：A
+A:正确
+B:错误
+【解析】：平台使用Spring框架进行事务控制，默认IDE场景类都加上了@Transactional注解，进入场景方法时会自动加入事务，平台默认配置的事务模式是REQUIRED。
+##7785##
+
+##6685##
+缓存实体是指需要存放在缓存框架中的实体，ECP平台可以分为两类，第一类是Hibernate实体，第二类是自定义实体，对于Hibernat实体的缓存操作交由Hibernate控制，自定义实体由开发人员程序类控制。 正确答案：A
+A:正确
+B:错误
+【解析】：undefined
+##7785##
+
+##6685##
+通过ECP Studio的数据建模工具新建持久化实体，持久化实体的主键生成策略有()。 正确答案：ABC
+A:用户自定义
+B:数据库生成
+C:自动生成UUID
+【解析】：本体考查ECP持久化实体的主键生成策略。
+##7785##
+
+##6685##
+持久化实体的主键生成策略设置成了自动生成UUID，通过场景类GeneralContext的save或saveList方法保存该实体时，该实体不需要指定主键值。 正确答案：A
+A:正确
+B:错误
+【解析】：本体考查ECP持久化实体的主键生成策略。
+##7785##
+
+##6685##
+持久化实体的主键生成策略设置成了自动生成UUID，通过场景类GeneralContext的save或saveList方法保存该实体时，该实体需要指定主键值。 正确答案：B
+A:正确
+B:错误
+【解析】：本体考查ECP持久化实体的主键生成策略。
+##7785##
+
+##6685##
+持久化实体的主键生成策略设置成了用户自定义，通过场景类GeneralContext的save或saveList方法保存该实体时，该实体不需要指定主键值。 正确答案：B
+A:正确
+B:错误
+【解析】：本体考查ECP持久化实体的主键生成策略。
+##7785##
+
+##6685##
+持久化实体的主键生成策略设置成了用户自定义，通过场景类GeneralContext的save或saveList方法保存该实体时，该实体需要指定主键值。 正确答案：A
+A:正确
+B:错误
+【解析】：本体考查ECP持久化实体的主键生成策略。
+##7785##
+
+##6685##
+持久化实体的主键生成策略设置成了用户自定义，如果希望用户自定义的主键值是自动生成UUID策略的效果，可以通过前端UUID字符串生成工具生成唯一的UUID字符串。 正确答案：A
+A:正确
+B:错误
+【解析】：本体考查ECP持久化实体的主键生成策略。
+##7785##
+
+##6685##
+通过场景类GeneralContext的update或updateList方法保存持久化实体时，该实体不需要指定主键值。 正确答案：A
+A:正确
+B:错误
+【解析】：本体考查ECP持久化实体的主键生成策略。
+##7785##
+
+##6685##
+通过场景类GeneralContext的update或updateList方法保存持久化实体时，该实体不需要指定主键值。 正确答案：B
+A:正确
+B:错误
+【解析】：本体考查ECP持久化实体的主键生成策略。
+##7785##
+
+##6685##
+在下面的选项中，( )是自定义注解。 正确答案：B
+A:Service
+B:OSGiService
+C:Transactional
+D:Autowired
+【解析】：Service注解、Autowired注解和Transactional注解都是Spring框架提供的；
+##7785##
+
+##6685##
+在下面的选项中，( )是自定义注解。 正确答案：BC
+A:Service
+B:OSGiService
+C:Topic
+D:Autowired
+【解析】：Service注解、Autowired注解和Transactional注解都是Spring框架提供的；
+##7785##
+
+##6685##
+在下面的选项中，( )是自定义注解。 正确答案：ABC
+A:ContextProvider
+B:OSGiService
+C:Topic
+D:Autowired
+【解析】：选项D是spring框架提供的注解。Service注解、Autowired注解、Transactional注解和Repository注解都是Spring框架提供的；
+##7785##
+
+##6685##
+在下面的选项中，( )是自定义注解。 正确答案：ABCD
+A:ContextProvider
+B:OSGiService
+C:Topic
+D:ContextProviderDesc
+【解析】：四个选项都是自定义注解。
+##7785##
+
+##6685##
+在下面的选项中，( )不是自定义注解。 正确答案：D
+A:ContextProvider
+B:OSGiService
+C:Topic
+D:Service
+【解析】：选项中只要D项不是自定义注解；Service注解、Autowired注解、Transactional注解和Repository注解都是Spring框架提供的；
+##7785##
+
+##6685##
+在下面的选项中，( )不是自定义注解。 正确答案：C
+A:Dao
+B:DaoDesc
+C:Repository
+D:OSGiService
+【解析】：选项中只要C项不是自定义注解；Service注解、Autowired注解、Transactional注解和Repository注解都是Spring框架提供的；
+##7785##
+
+##6685##
+IDE修改数据源的方法？ 正确答案：D
+A:通过IDE的数据库视图设定默认连接
+B:通过修改jdbc.properties文件
+C:通过修改首选项内的环境配置
+D:以上三个都可以
+【解析】：虽然都可以，但是最方便还是通过IDE的数据库视图设置默认连接来更改数据源。
+##7785##
+
+##6685##
+IDE的所用的jdk版本是？ 正确答案：A
+A:1.5
+B:1.6
+C:1.7
+D:1.8
+【解析】：可以在IDE的目录中找到
+##7785##
+
+##6685##
+IDE中，以-auto结尾的各个运行配置可以永久保存用户的更改？ 正确答案：B
+A:正确
+B:错误
+【解析】：已-auto结尾的运行配置会自动还原默认值，应新建或复制一个配置来保存更改。
+##7785##
+
+##6685##
+IDE中，存在多个平台包时应如何切换？ 正确答案：ABC
+A:通过首选项内的目标平台修改
+B:通过com.ygsoft.gris.targetplatform项目内指定target文件
+C:通过修改targetplatform.properties文件配置
+D:通过修改项目属性
+【解析】：通过首选项内的目标平台可以很方便的查看当前使用的平台环境
+##7785##
+
+##6685##
+更改项目配置应该修改那个文件？ 正确答案：C
+A:build.properties
+B:ivy.xml
+C:MANIFEST.MF
+D:plugin.xml
+【解析】：更改项目配置应该修改MANIFEST.MF文件，可视化页签更直观
+##7785##
+
+##6685##
+IDE的功能视图可以查看业务领域的哪些集？ 正确答案：ABCDE
+A:数据集
+B:功能集
+C:规则集
+D:动作集
+E:取数集
+【解析】：在功能视图中可以方便地新建规则等等
+##7785##
+
+##6685##
+IDE中，那个视图可以以文件夹层次浏览所有文件？ 正确答案：C
+A:资源管理器
+B:大纲
+C:导航器
+D:团队工件
+【解析】：只有导航器能做到
+##7785##
+
+##6685##
+IDE中，可在编辑区域右键更改当前文件的编码。 正确答案：B
+A:正确
+B:错误
+【解析】：应在资源管理器中的对应文件点击右键->属性，更改编码
+##7785##
+
+##6685##
+在IDE的MANIFEST.MF文件中，已导出的包在哪个页签当中？ 正确答案：B
+A:依赖性
+B:运行时
+C:扩展
+D:扩展点
+【解析】：已导出的包再运行时之中
+##7785##
+
+##6685##
+IDE中，一个项目想引用另一项目中未导出的类，直接import即可。 正确答案：B
+A:正确
+B:错误
+【解析】：必须先在项目中导出目标类所在的package
+##7785##
+
+##6685##
+IDE中，在哪个视图可以查看自己提交的工作项？ 正确答案：D
+A:资源管理器
+B:同步
+C:历史记录
+D:团队工件
+【解析】：在团队工件中，可以查看工作项历史记录
+##7785##
+
+##6685##
+IDE中，支持自动生成get方法和set方法。 正确答案：A
+A:正确
+B:错误
+【解析】：在右键->源代码->生成getter和setter
+##7785##
+
+##6685##
+IDE中调试模式下，查看选中表达式值得快捷键默认是？ 正确答案：D
+A:Ctl+Alt+A
+B:Ctl+Shift+B
+C:Ctl+Alt+C
+D:Ctl+Shift+D
+【解析】：此快捷键在调试时比较有用
+##7785##
+
+##6685##
+IDE中，快速搜索打开资源的快捷键是？ 正确答案：B
+A:Ctl+Alt+F
+B:Ctl+Shift+R
+C:Ctl+Alt+Q
+D:Ctl+Shift+G
+【解析】：这是最常用的快捷键之一
+##7785##
+
+##6685##
+IDE中，全局搜索可以使用正则表达式。 正确答案：B
+A:正确
+B:错误
+【解析】：当前文件的搜索才能使用正则表达式
+##7785##
+
+##6685##
+IDE中，在data项目中可以将表反写至数据库。 正确答案：A
+A:正确
+B:错误
+【解析】：在对应的datasetx点击右键->创建数据库表
+##7785##
+
+##6685##
+IDE中，可以单独反写某一个表。 正确答案：B
+A:正确
+B:错误
+【解析】：错误，如需只反写某个表，需先把改表删除，在反写时钩上“不覆盖重名表”即可
+##7785##
+
+##6685##
+IDE中，在哪个项目将模型发布至配置平台。 正确答案：C
+A:data
+B:impl
+C:service
+D:web
+【解析】：在service项目中的数据模型，选择对应VO，双击，钩上“发布到配置平台”
+##7785##
+
+##6685##
+IDE中，保存datasetx中某一个表会影响其他所有表。 正确答案：A
+A:正确
+B:错误
+【解析】：保存时，会把datasetx内所有的表代码都生成一遍。
+##7785##
+
+##6685##
+管理对象选择器的实现类是（） 正确答案：A
+A:com.ygsoft.gris.basemanage.gldx.DxSelector
+B:com.ygsoft.ecp.basemanage.gldx.DxSelector
+C:com.ygsoft.gris.ecp.basemanage.gldxselect.DxSelect.js
+D:com.ygsoft.ecp.basemanage.gldxselect.DxSelect.js
+【解析】：管理对象选择器的实现类并非com.ygsoft.ecp.basemanage下面而是com.ygsoft.gris.basemanage,故排除了B，D；C项的包路径不存在
+##7785##
+
+##6685##
+管理对象选择器中对象类型id可以用逗号分割填多个 正确答案：A
+A:正确
+B:错误
+【解析】：管理对象类型id,可以填多个,(例如:1234,5678).
+##7785##
+
+##6685##
+管理对象选择器的实现类是com.ygsoft.gris.basemanage.gldx.DxSelector 正确答案：A
+A:正确
+B:错误
+【解析】：管理对象选择器的实现类是com.ygsoft.gris.basemanage.gldx.DxSelector
+##7785##
+
+##6685##
+管理对象选择器中已选择对象id,可以填写多个,用英文逗号隔开 正确答案：A
+A:正确
+B:错误
+【解析】：已选择对象id,可以填写多个,用英文逗号隔开
+##7785##
+
+##6685##
+管理对象选择器常用的参数有（） 正确答案：ABCDEFGH
+A:dxlxids
+B:isMutil
+C:userCode
+D:onlySelected
+E:dxtyBZ
+F:customFilter
+G:selDxids
+H:unitCode
+【解析】：H 是新管理对象选择器拥有的参数
+##7785##
+
+##6685##
+管理对象选择器已选择对象名称,可以填写多个,用英文分号隔开(例如:1234;5678). 正确答案：B
+A:正确
+B:错误
+【解析】：已选择对象名称,可以填写多个,用英文逗号隔开(例如:1234,5678).
+##7785##
+
+##6685##
+默认情况下，实现项目中场景向导同时会创建的类是（） 正确答案：D
+A:逻辑实现
+B:数据访问
+C:角色类
+D:场景的同名接口类
+【解析】：默认情况下，实现项目中场景向导同时会创建的类是场景的同名接口类。
+##7785##
+
+##6685##
+在web项目下可以通过IDE向导功能生成前端文件。 正确答案：A
+A:正确
+B:错误
+【解析】：在web项目下可以通过IDE向导功能生成前端文件、前端文件的页面控制器以及页面流文件，页面流文件不是必须的。
+##7785##
+
+##6685##
+创建“ECP页面”向导功能中，页面流文件不是必须的。 正确答案：A
+A:正确
+B:错误
+【解析】：在web项目下可以通过IDE向导功能生成前端文件、前端文件的页面控制器以及页面流文件，页面流文件不是必须的。
+##7785##
+
+##6685##
+transfer类向导功能将创建VO模型和PO/VO转换类。 正确答案：A
+A:正确
+B:错误
+【解析】：transfer类向导功能将创建VO模型和PO/VO转换类。
+##7785##
+
+##6685##
+通过IDE新增行为，需要在哪个视图下进行？ 正确答案：B
+A:参考模型视图
+B:功能视图
+【解析】：通过IDE新增行为，需要在功能视图下进行。
+##7785##
+
+##6685##
+通过IDE新增行为动作，需要功能视图下的哪个集合下进行？ 正确答案：C
+A:数据集
+B:功能集
+C:动作集
+D:规则集
+【解析】：通过IDE新增行为动作，需要功能视图下的动作集下进行。
+##7785##
+
+##6685##
+通过IDE新增取数函数，需要在功能视图下的哪个集合下进行？ 正确答案：C
+A:功能集
+B:动作集
+C:取数集
+D:规则集
+【解析】：通过IDE新增取数函数，需要在功能视图下的取数集下进行。
+##7785##
+
+##6685##
+ECP平台数据上下文包含哪两类上下文信息？ 正确答案：AB
+A:登陆上下文
+B:业务上下文
+C:组织上下文
+D:总线上下文
+【解析】：ECP平台数据上下文包含数据上下文和业务上下文。
+##7785##
+
+##6685##
+ECP平台实现对日期的操作处理的工具类为？ 正确答案：B
+A:DateUtil
+B:EcpDate
+C:EcpDateUtil
+D:以上答案都不是
+【解析】：ECP平台实现对日期的操作处理的工具类：EcpDate
+##7785##
+
+##6685##
+Bootstrap是一个简洁、直观、强悍、移动设备优先的前端开发框架，让web开发更迅速、简单。 正确答案：A
+A:正确
+B:错误
+【解析】：学习bootstrap，尽在：http://ecp.ygsoft.com:9080/grm/sample.res/res/bootstrap3_manual/v3bootcsscom/index.html
+##7785##
+
+##6685##
+qzz表格不支持服务端分页。 正确答案：B
+A:正确
+B:错误
+【解析】：qzz表格支持服务端分页。
+##7785##
+
+##6685##
+qzz表格支持四层及以上的多表头 正确答案：A
+A:正确
+B:错误
+【解析】：qzz表格支持四层及以上的多表头。
+##7785##
+
+##6685##
+新建的一单据中有停用的字段，能否导出为参考模型？ 正确答案：B
+A:能
+B:不能
+【解析】：新建的一单据中有停用的字段，如果导出为参考模型，该参考模型不可用。
+##7785##
+
+##6685##
+新建一实体导出为参考模型，导出的文件后缀名是： 正确答案：B
+A:.refx
+B:.mdmx
+C:.atx
+D:.txt
+【解析】：参考模型文件后缀为.mdmx。
+##7785##
+
+##6685##
+新建参考模型时，需要新建该参考模型对应的VO模型。如果该参考模型是业务单据，该VO需要继承YwdjMainVO；如果是管理对象，需要继承GldxMainVO。 正确答案：A
+A:是
+B:不是
+【解析】：新建参考模型时，需要新建该参考模型对应的VO模型。如果该参考模型是业务单据，该VO需要继承YwdjMainVO；如果是管理对象，需要继承GldxMainVO。
+##7785##
+
+##6685##
+行为事件中的typeid配置，不支持配置参考模型的typeid。 正确答案：B
+A:正确
+B:错误
+【解析】：行为事件中的typeid配置，支持配置参考模型的typeid
+##7785##
+
+##6685##
+在impl工程下的plugin.xml文件中添加行为事件扩展节点，subscriber属性代表行为事件订阅类，它必须实现IEventSubscriber接口的哪个方法？ 正确答案：A
+A:action方法
+B:execute方法
+【解析】：在impl工程下的plugin.xml文件中添加行为事件扩展节点，subscriber属性代表行为事件订阅类，它必须实现IEventSubscriber接口的action方法。
+##7785##
+
+##6685##
+在impl工程下的plugin.xml文件中添加行为事件扩展节点，operatorName属性代表行为名称，其值只能是ECP预置的行为，如save，approve等。 正确答案：B
+A:正确
+B:错误
+【解析】：在impl工程下的plugin.xml文件中添加行为事件扩展节点，operatorName属性代表行为名称，其值可以是ECP预置的行为，如save，approve等，也可以是自定义的行为。
+##7785##
+
+##6685##
+行为引擎是ECP的核心引擎之一。 正确答案：A
+A:正确
+B:错误
+【解析】：ECP三大引擎：行为引擎、流程引擎和规则引擎。
+##7785##
+
+##6685##
+行为动作的动作类型包括 正确答案：ABCD
+A:服务端动作
+B:客户端动作
+C:前置动作
+D:后置动作
+【解析】：四个选项均为行为动作的动作类型。
+##7785##
+
+##6685##
+行为执行结果的data属性即是行为执行结果 正确答案：B
+A:正确
+B:错误
+【解析】：行为执行结果OperatorResult对象继承自平台的Result对象，它有三个属性。分别是result:Object，处理器返回结果对象；data:Object，处理器附加结果对象；exception:Throwable，处理器执行异常信息；
+
+##7785##
+
+##6685##
+行为对象可能存储在文件中，也可能存储在数据库中。 正确答案：A
+A:正确
+B:错误
+【解析】：行为对象可能存储在文件中，也可能存储在数据库中。
+##7785##
+
+##6685##
+行为执行结果包括(   ) 三个部分。 正确答案：ABC
+A:处理器结果
+B:附加结果
+C:异常信息
+D:参数信息
+【解析】：行为执行结果包括处理器结果、附加结果和异常信息。
+##7785##
+
+##6685##
+行为后动作扩展须实现的接口是 正确答案：B
+A:IOperatorAfter
+B:IOperatorActionAfter
+C:IOperatorActionExecute
+D:IActionAfter
+【解析】：IOperatorActionAfter
+##7785##
+
+##6685##
+行为动作扩展须实现的方法是 正确答案：A
+A:execute
+B:action
+C:executeOperator
+D:actionOperator
+【解析】：行为动作实现自IOperatorActionBefore和IOperatorActionAfter接口（分别对应行为前置动作和后置动作），通过实现该接口的execute方法处理业务逻辑
+##7785##
+
+##6685##
+以下关于规则的说法正确的是？ 正确答案：B
+A:规则模版只能由实施人员维护
+B:规则模版是开发期实现的，由开发人员维护
+C:规则的引用只能由开发人员实现
+D:规则都是带参数的
+【解析】：业务人员在绘制流程或者设置取数函数时可以设置规则。
+##7785##
+
+##6685##
+规则模版以（ ）格式存储在文件系统中 正确答案：B
+A:XML
+B:JSON
+C:String
+D:plugin
+【解析】：ECP平台的元数据模型、规则模版、行为等都是以JSON格式存储在文件系统中。
+##7785##
+
+##6685##
+规则模版常用处理器类型目前有两种，分别是哪两种？ 正确答案：AB
+A:Java
+B:JavaScript
+C:String
+D:表达式
+【解析】：规则模版常用处理器类型有Java和Javascript两种。
+##7785##
+
+##6685##
+元数据模型中取数运算表达式是在（ ）上设置的。 正确答案：B
+A:实体类型
+B:实体项目
+C:实体行为
+D:实体格式
+【解析】：元数据模型中取数运算表达式是在实体项目上设置的。
+##7785##
+
+##6685##
+ECP平台流程支持（）规范。 正确答案：A
+A:BPMN 2.0
+B:SOA
+C:OOP
+D:TOGAF
+【解析】：ECP采用SOA体系架构，基于开放的JavaEE技术体系，支持BPMN2.0规范，以TOGAF企业架构方法论为指导。
+##7785##
+
+##6685##
+ECP流程目前暂不支持（）。 正确答案：D
+A:规则引擎
+B:实体转换
+C:多实体
+D:动态子流程
+【解析】：在四个选项中，只有动态子流程是ECP流程暂不支持的。
+##7785##
+
+##6685##
+流程引擎几乎不关联访问业务对象，如可能存在访问业务对象的情况主要为了获取（  ）方面的内容？ 正确答案：D
+A:组织权限角色
+B:业务实体
+C:总金额
+D:扩展属性
+【解析】：在新建流程时，有个流程扩展属性设置。
+##7785##
+
+##6685##
+流程建模期，规则引擎主要应用在？ 正确答案：BD
+A:额外角色设置
+B:参与者设置
+C:岗位显示序列
+D:流程连线设置
+E:时间限制
+【解析】：流程建模时，参与者设置和流程连线设置涉及到规则引擎。
+##7785##
+
+##6685##
+流程的状态要为（），在门户中才可应用。 正确答案：C
+A:已发布
+B:已启用
+C:已发布且已启用
+D:新建
+【解析】：在配置平台中流程状态必须设置为已发布且已启用时，在业务门户中才可应用。
+##7785##
+
+##6685##
+当流程已启用，后续对再对流程模型修改，则需要再次发布，在门户中才可应用最新版本的流程 正确答案：A
+A:正确
+B:错误
+【解析】：流程只有有过修改历史，必须重新发布才能可用。
+##7785##
+
+##6685##
+在ECP业务配置平台中，自定义URL生成模式是ECP预置的生成菜单模式。 正确答案：A
+A:正确
+B:错误
+【解析】：ECP预置的生成菜单模式是自定义URL生成模式。
+##7785##
+
+##6685##
+在ECP业务门户导航栏中增加一个模块的方式有： 正确答案：AB
+A:通过脚本的方式往菜单模块表中添加模块记录
+B:通过ECP“导航栏扩展”的方式
+【解析】：在ECP业务门户导航栏中增加一个模块的方式有：数据库脚本和“导航栏扩展”方式。
+##7785##
+
+##6685##
+ECP表格控件支持ID名称转换，需要在table标签的inputer属性中指定afterFormat属性值 正确答案：A
+A:正确
+B:错误
+【解析】：采用afterFormat是实现ID/Name转换的一种方式，也可通过服务端ID/Name转换类实现。
+##7785##
+
+##6685##
+ECP支持业务门户短地址扩展。 正确答案：A
+A:正确
+B:错误
+【解析】：ECP支持业务门户短地址扩展。在bundleContext.xml 配置文件中配置短地址，并通过该短地址访问长地址资源。
+##7785##
+
+##6685##
+预置查询方案由开发人员在开发期确定，实施人员在实施期直接使用预置的查询方案完成查询，而不需要实施人员动态配置，但预置查询方案不灵活 正确答案：A
+A:正确
+B:错误
+【解析】：本题考查综合查询知识点。
+##7785##
+
+##6685##
+ECP综合查询支持对查询方案的单元格穿透、行穿透扩展。 正确答案：A
+A:正确
+B:错误
+【解析】：本题考查综合查询知识点。
+##7785##
+
+##6685##
+综合查询的面板扩展，需要在查询主题扩展点的哪个子节点下设置？ 正确答案：B
+A:SchemeEditTabsheets
+B:SchemeQueryPanels
+C:ExtendOperations
+D:ApplicationExtensions
+【解析】：综合查询支持页签扩展、模版扩展、按钮扩展及脚本扩展。需要设置查询主题扩展点的子节点分别是：SchemeEditTabsheets、SchemeQueryPanels、ExtendOperations、ApplicationExtensions。
+##7785##
+
+##6685##
+综合查询的按钮扩展，需要在查询主题扩展点的哪个子节点下设置？ 正确答案：C
+A:SchemeEditTabsheets
+B:SchemeQueryPanels
+C:ExtendOperations
+D:ApplicationExtensions
+【解析】：综合查询支持页签扩展、模版扩展、按钮扩展及脚本扩展。需要设置查询主题扩展点的子节点分别是：SchemeEditTabsheets、SchemeQueryPanels、ExtendOperations、ApplicationExtensions。
+##7785##
+
+##6685##
+综合查询的脚本扩展，需要在查询主题扩展点的哪个子节点下设置？ 正确答案：D
+A:SchemeEditTabsheets
+B:SchemeQueryPanels
+C:ExtendOperations
+D:ApplicationExtensions
+【解析】：综合查询支持页签扩展、模版扩展、按钮扩展及脚本扩展。需要设置查询主题扩展点的子节点分别是：SchemeEditTabsheets、SchemeQueryPanels、ExtendOperations、ApplicationExtensions。
+##7785##
+
+##6685##
+查询主题服务端扩展是通过扩展____扩展点来实现的 正确答案：A
+A:com.ygsoft.ecp.component.query.service.ext.QueryTopic
+B:com.ygsoft.ecp.component.query.service.ext.Topic
+C:com.ygsoft.ecp.component.query.service.ext.Query
+D:com.ygsoft.ecp.component.query.service.ext.CustomQuery
+【解析】：本题考查综合查询知识点。
+##7785##
+
+##6685##
+查询主题服务端扩展配置动态实体的属性是（） 正确答案：A
+A:DynamicEntityTarget
+B:CustomEntityTarget
+C:QueryDynamicEntity
+D:QueryStaticEntity
+【解析】：本题考查综合查询知识点。
+##7785##
+
+##6685##
+扩展查询主题时查询执行器需要实现接口_____ 正确答案：A
+A:BaseQueryExecutor
+B:QueryExecutor
+C:QuerySqlExecutor
+D:IQueryExecutor
+【解析】：本题考查综合查询知识点。
+##7785##
+
+##6685##
+扩展查询主题时查询执行器需要实现的方法_____ 正确答案：C
+A:batch
+B:action
+C:execute
+D:executeQueryStatement
+【解析】：本题考查综合查询知识点。
+##7785##
+
+##6685##
+QueryTopic子节点ClassedExtensions下配置自定义的查询逻辑类 正确答案：A
+A:正确
+B:错误
+【解析】：本题考查综合查询知识点。
+##7785##
+
+##6685##
+ECP Studio是否支持在线更新？ 正确答案：A
+A:是
+B:否
+【解析】：ECP Studio支持在线更新。
+##7785##
+
+##6685##
+ECP Studio配置服务的数据源信息需要在哪个视图下进行？ 正确答案：B
+A:功能视图
+B:数据库视图
+C:参考模型视图
+【解析】：在ECP Studio的数据库视图下，可以通过导入导出或者新建数据连接的方式配置数据源信息。
+##7785##
+
+##6685##
+导入数据连接的方式比手工新建数据数据连接的方式方便 正确答案：A
+A:正确
+B:错误
+【解析】：建议在ECP Studio的数据库视图下通过导入导出方式配置数据源信息。
+##7785##
+
+##6685##
+在ECP data项目下，只能有一个数据主题。 正确答案：B
+A:正确
+B:错误
+【解析】：在ECP data项目下，可以有多个数据主题，通常将完成某个功能的相关的所有数据模型放到单独的数据主题，这样有利于维护。
+##7785##
+
+##6685##
+ECP控件渲染方式有几种？ 正确答案：C
+A:1
+B:2
+C:3
+D:4
+【解析】：ECP控件的渲染方式有三种，分别是直接new、通过元数据配置dataType，或者指定具体的inputer和通过dom元素的inputer的code属性直接创建。
+##7785##
+
+##6685##
+在页面控制器中，如何获得该页面的容器？ 正确答案：B
+A:this.container
+B:this.getContainer()
+C:this.getContext()
+D:this.getContext().getContainer()
+【解析】：在页面控制器中，通过this.getContainer()获得页面容器。
+##7785##
+
+##6685##
+根据数据模型，通过（）方法可以获得页面元素已修改的值。 正确答案：A
+A:getModifyData()
+B:getModifyDataModel()
+C:getAddData()
+D:getDeletedData()
+【解析】：undefined
+##7785##
+
+##6685##
+在页面控制器中，将服务端接口加入到前端上下文中，通过什么方法引入？ 正确答案：C
+A:cssImport
+B:jsImport
+C:rsImport
+D:import
+【解析】：rsImport可以引入服务端Java服务
+##7785##
+
+##6685##
+在html页面中，我们只需要引入哪个js即可将所有的ECP平台前端js加载到页面？ 正确答案：B
+A:com.ygsoft.ecp.startup.js
+B:com.ygsoft.ecp.initiator.js
+C:com.ygsoft.gap.initiator.js
+D:ecp.ui.layout.Frame.js
+【解析】：com.ygsoft.ecp.initiator.js是ECP前端的资源加载器，将js库加载到前端。
+##7785##
+
+##6685##
+下面哪个选项可以获取元数据模型的值？ 正确答案：A
+A:$.ecp.getMetaDataModel().get(fieldName).value()
+B:$.ecp.getMetaDataModel().get().value()
+C:$.ecp.getMetaDataModel().value()
+D:$.ecp.getMetaDataModel()
+【解析】：undefined
+##7785##
+
+##6685##
+在ie中怎么通过键盘快捷键启动HttpWatch 正确答案：C
+A:Alt+F1
+B:Shift+F1
+C:Shift+F2
+D:Alt+F2
+【解析】：undefined
+##7785##
+
+##6685##
+在哪个浏览器调试能进行js文件修改保存，然后进行调试 正确答案：A
+A:Chrome
+B:firefox
+C:ie
+D:不能
+【解析】：undefined
+##7785##
+
+##6685##
+在浏览器调试工具中调试js时 F8有什么作用 正确答案：A
+A:继续、下个断点
+B:单步进入
+C:单步跳过
+D:单步跳出
+【解析】：undefined
+##7785##
+
+##6685##
+判断一个变量是数组的方法, 最佳实践是 正确答案：B
+A:!!x.length
+B: x isntanceof Array
+C:!!x.splice
+D:!!x.push
+【解析】：undefined
+##7785##
+
+##6685##
+构造元模型时,所需classid,typeid的解析次序优先级由高到低 正确答案：A
+A:构造参数,url同名参数, body同名属性
+B:构造参数, body同名属性,url同名参数
+C:body同名属性, 构造参数, url同名参数
+D:url同名参数,构造参数, body同名属性
+【解析】：构造元模型时,所需classid,typeid的解析次序优先级由高到低是：构造参数,url同名参数, body同名属性。
+##7785##
+
+##6685##
+关于ecp.ui.layout.Frame与ecp.ui.layout.Window类说法正确的是 正确答案：B
+A: Frame继承Window
+B:Window继承Frame
+C:Frame通过html的iframe标签实现, Window通过div实现
+D:可以同时打开多个活跃ecp.ui.layout.Window
+【解析】：undefined
+##7785##
+
+##6685##
+关于元模型,数据模型,显示模型说法正确的是 正确答案：A
+A:元模型用于指导页面渲染,缓存于全局缓存中
+B:数据模型主要用于初始化控件的值, 缓存于页面缓存中
+C:显示模型主要用于ID名称转换,缓存于全局缓存中 
+D:可以local模式拿元模型,而从远程拿数据模型
+【解析】：页面第一次加载时，通过远程拿元数据模型，缓存到全局，指导页面的渲染；数据模型可以从远程或本地取，数据模型描述了某项具体功能使用到的具体数据，如总金额数值、摘要内容、子表各行记录等等。与元数据模型不同的是，数据模型不会被缓存到全局，而是缓存在页面；显示模型是对数据模型的补充, 主要用于做ID和名称之间的转换，显示模型在第一次生成后,缓存于页面缓存中。
+##7785##
+
+##6685##
+关于Ecp前端消息服务,说法错误的是 正确答案：B
+A:消息服务分两种,分别是平台级消息服务和页面间消息服务
+B:只能通过页面间消息服务向一个打开的窗口发送消息
+C:平台消息服务有同步和异步之分
+D:一个消息主题可以注册多个处理器
+【解析】：undefined
+##7785##
+
+##6685##
+关于Ecp前端缓存服务,说法错误的是 正确答案：C
+A:有四种缓存: 持久缓存、全局缓存、页面缓存、服务端缓存
+B:服务端缓存与用户相关，永不过期
+C:全局缓存在用户退出系统后，继续保留
+D: 页面的html代码在第一次下载后缓存于全局缓存中
+【解析】：undefined
+##7785##
+
+##6685##
+ECP平台的设计遵循哪些原则？ 正确答案：ABCDEF
+A:分层原则
+B:可扩展性原则
+C:面向对象原则
+D:职责分离原则
+E:视图与数据分离原则
+F:平台开放原则
+【解析】：undefined
+##7785##
+
+##6685##
+ECP平台的前端缓存有哪些？ 正确答案：ABCD
+A:持久级缓存
+B:全局级缓存
+C:页面级缓存
+D:cookies缓存
+E:iframe缓存
+【解析】：undefined
+##7785##
+
+##6685##
+有时候我们需要监听某个 DOM 被修改情况，而不关心是哪行代码做的修改（也可能有多处都会对其做修改）。那么我们可以直接在 DOM 上设置断点。在chrome下支持哪几种类型 正确答案：ABC
+A:子节点修改
+B:自身属性修改
+C:自身节点被删除
+D:子节点属性修改
+【解析】：undefined
+##7785##
+
+##6685##
+关于构造控件, 下列说法正确的是: 正确答案：AB
+A: inputer覆盖元模型同名属性
+B:元模型覆盖itemType的缺省属性
+C: itemType的缺省属性覆盖元模型的同名属性
+D:以上说法都不对
+【解析】：前端的UI控件设置，采用三层叠加的方式，优先级从低到高分别是：itemType中的控件配置、元模型的inputer配置、页面的inputer配置。
+
+##7785##
+
+##6685##
+关于页面控制器,下列说法正确的是 正确答案：BC
+A:一个页面必须定义至少一个继承了pagecontroller的控制器
+B:一个页面可以定义多个继承了pagecontroller的控制器
+C:页面控制器通过向thisWindow发送消息onLoad触发其构造方法
+D:D. 页面控制器在jsImport后,自我构造.
+【解析】：undefined
+##7785##
+
+##6685##
+对于mode=”local”模式,页面加载元模型正确的说法是 正确答案：AB
+A:必须在页面所在目录的model子目录下定义元模型文件
+B:元模型文件命名模式为: {classid}_{typeid}_MetaDataModel.json
+C:元模型文件命名模式为: MetaDataModel _{classid}_{typeid}.json
+D:元模型文件命名模式为: {classid}_{typeid}_MetaDataModel.js
+【解析】：元数据模型的提供方式可以是延迟模式（通过控制器提供模型）。元数据模型存放在service项目的config\metaModel目录中，body中属性mode=“lazy”指示通过控制器代码提供模型；元数据模型的提供方式也可以是本地模式（使用本地JSON作为模型）。元数据模型定义在一个json文件中，body中用mode=“json”指示，并且在html文件所在目录的model子目录下定义一个文件，文件名命名规则如下：classid_typeid_MetaDataModel.json
+##7785##
+
+##6685##
+关于$.ecp.rsImport方法,说法正确的是 正确答案：ABCD
+A:Ecp中一种类DWR技术
+B:可以一次引入多个java接口
+C: rsImport目前除引入接口的所有方法外,还引入了非接口方法
+D:在页面控制器中,可以通过this.rs.接口名.方法名(参数)调用java接口方法
+【解析】：undefined
+##7785##
+
+##6685##
+chrome的调试工具支持哪些断点类型 正确答案：ABCD
+A:js断点(Breakpoints)
+B:DOM Breakpoints
+C:XHR Breakpoints
+D:Event Listener Breakpoints
+【解析】：undefined
+##7785##
+
+##6685##
+创建一个窗口ecp.ui.layout.Window时可以在调用show()方法以后绑定事件 正确答案：A
+A:正确
+B:错误
+【解析】：undefined
+##7785##
+
+##6685##
+前端页面html在引用模型时，只需要在body标签中配置classId和typeId中的一个即可。 正确答案：B
+A:正确
+B:错误
+【解析】：前端页面html可以通过在body标签中的classId和typeId绑定模型，两者缺一不可。
+##7785##
+
+##6685##
+应用开发者可以通过以下哪个工具类获取当前上下文信息？ 正确答案：D
+A:DataModelUtil
+B:EcpContextUtil
+C:EcpDataContextUtil
+D:DataContextUtil
+E:GeneralContext
+【解析】：ECP平台中将不再保留原GAP平台数据总线（dataBus）的概念，取而代之的是ECP数据上下文管理机制。ECP数据上下文组件包括以下两类上下文信息。应用开发者可以通过DataContextUtil工具类获取当前上下文信息。
+##7785##
+
+##6685##
+取数函数模型中的（）属性用以识别时内部函数还是外部函数（控制是否可设置）。 正确答案：A
+A:accessType
+B:type
+C:optionType
+D:fixType
+【解析】：某取数函数扩展开发类定义时，遵从以下规则：1.取数函数实现接口IECPFunctionBaseLib，实现接口中的若干方法；2.函数名称定义规则为 ECPFun{具体函数名称}；3.取数函数模型中的属性“访问类型”(accessType),用以识别时内部函数还是外部函数，即是否可在取数运算设置中可设置此函数。
+##7785##
+
+##6685##
+扩展函数，需要实现的接口为（）。 正确答案：D
+A:IECPFuncBaseLib
+B:IFunctionBaseLib
+C:IECPFunctionLib
+D:IECPFunctionBaseLib
+【解析】：某取数函数扩展开发类定义时，遵从以下规则：1.取数函数实现接口IECPFunctionBaseLib，实现接口中的若干方法；2.函数名称定义规则为 ECPFun{具体函数名称}；3.取数函数模型中的属性“访问类型”(accessType),用以识别时内部函数还是外部函数，即是否可在取数运算设置中可设置此函数。
+##7785##
+
+##6685##
+ECP平台异常抛出时使用的日志记录级别（）？ 正确答案：A
+A:error
+B:trace
+C:debug
+D:warn
+【解析】：ECP平台异常抛出时使用的日志记录级别是error。
+##7785##
+
+##6685##
+ECP平台异常分层要求，数据访问层的异常定义需要继承的异常基类为。 正确答案：D
+A:EcpRuntimeException
+B:EcpInfoException
+C:EcpDebugException
+D:EcpDaoException
+【解析】：数据访问层的异常定义需要继承的异常基类为EcpDaoException
+##7785##
+
+##6685##
+ECP平台国际化的工具类是（）。 正确答案：A
+A:EcpI18nUtil 
+B:EcpInterUtil
+C:EcpI18nDataUtil
+D:EcpDataUtil
+【解析】：ECP平台国际化的工具类是 EcpI18nUtil，通过该工具类调用国际化资源服务，产生一个本地化字符串，完成国际化转换。
+
+##7785##
+
+##6685##
+ECP平台封装了可通过反射调用调用对象的方法(callMethod)对应工具类是（）？ 正确答案：B
+A:ClsUtil
+B:ClassUtil
+C:ClsProcessorUtil
+D:OSGIUtil
+【解析】：ECP平台封装了可通过反射调用调用对象的方法(callMethod)对应工具类是ClassUtil。
+##7785##
+
+##6685##
+ECP平台提供的工具类(FileUtil)中用于（）。 正确答案：C
+A:对xml的操作处理
+B:文件编码解码等操作处理
+C:文件操作的封装处理
+D:实现文件和流操作的封装处理
+【解析】：FileUtil提供文件操作相关功能
+##7785##
+
+##6685##
+ECP取数运算框架包含的基础组件包括有（）。 正确答案：ABCD
+A:表达式设计器
+B:取数运算组件
+C:勾稽运算组件
+D:表达式运算组件
+【解析】：取数运算框架包含如下4个基础组件：1.表达式设计器。表达式设计器是ECP平台提供的用于取数运算、勾稽运算及表达式运算的表达式设置通用组件，并实现对设置的表达式进行合法性校验，实现模型项目间的取数运算勾稽等约束性功能；2.取数运算。取数运算兼容GAP平台的取数函数，并可在新平台中扩展开发新的取数函数。可支持客户端、服务端根据设置的取数运算表达式动态生成运算模型，对数据模型进行运算；3.勾稽运算。数据在保存、传递过程中，可以设置勾稽表达式，对数据模型进行勾稽检查，以判断是否满足勾稽条件。目前勾稽运算多数用于客户端的勾稽运算，其中包含是否即时提醒、是否强制约束的限定；4.表达式运算。通用表达式运算，可以根据需要对合法的表达式进行运算，同时，也可以针对数据模型进行运算、数据过滤、表达式解析，而不用像取数运算、勾稽运算那样，表达式必须存在固定的元数据模型节点中。 目前表达式运算广泛应用于：实体转换、数据过滤、流程条件分支等。
+
+
+##7785##
+
+##6685##
+ECP平台的日志记录级别有（）。 正确答案：ABCDE
+A:info
+B:trace
+C:debug
+D:warn
+E:error
+【解析】：ECP平台的日志记录级别分为显示信息 （info）、跟踪(trace)、调试(debug)、警告(warn)、错误(error)、致命错误(fatal),来指定日志信息的重要程度。高级别的日志信息会屏蔽低级别的日志信息输出。 ??
+##7785##
+
+##6685##
+如下属于ECP提供的工具类包括（）。 正确答案：ABCDE
+A:字符串处理
+B:日期处理
+C:压缩解压处理
+D:流处理
+E:XML处理
+【解析】：本题考查ECP提供的通用工具类。
+##7785##
+
+##6685##
+异常错误代码中异常类型字符包括（）。 正确答案：ABCD
+A:提示I
+B:警告W
+C:验证V
+D:错误E
+【解析】：由于业务需要，需要抛出的异常进行级别定义，根据应用需求，结合定义异常错误代码中异常类型字符（提示I、警告W、验证V、错误E），抛出的对应级别的异常：
+##7785##
+
+##6685##
+ECP异常框架依赖的底层两大框架为（）。 正确答案：CD
+A:核心引擎框架
+B:取数框架
+C:日志框架
+D:国际化框架
+【解析】：ECP平台提供统一的、有不同的层次的、具有唯一异常代码的、支持多语言、支持不同级别的异常处理框架。ECP异常框架依赖的底层两大框架为日志框架和国际化框架。
+##7785##
+
+##6685##
+ECP上下文组件包括哪两类上下文（）。 正确答案：AC
+A:LoginContext
+B:DataContext
+C:BusinessContext
+D:GeneralContext
+【解析】：ECP数据上下文组件包括以下两类上下文信息。应用开发者可以通过DataContextUtil工具类获取当前上下文信息。1.登录上下文（loginContext）：存储当前登录用户信息及登录单位等；
+2.业务上下文（businessContext），存储业务相关日期、业务组织、及业务场景信息等。可实现二次登陆、跨单位业务及固定业务信息的存放。
+
+##7785##
+
+##6685##
+ECP平台的业务上下文和登录上下文均可设置当前会话的上下文属性值。 正确答案：B
+A:正确
+B:错误
+【解析】：登陆上下文记录用户登录相关信息，属线程级变量。同一登录用户的交互可访问，只有登录组件可以设置登陆上下文；业务上下文记录用户进行业务操作时的业务相关信息。包括有：业务日期、业务领域、业务场景及业务组织等，任何应用的时候可以对业务上下文属性进行修改和调整；
+##7785##
+
+##6685##
+ECP平台扩展的取数函数需实现接口IECPFunctionBaseLib。 正确答案：A
+A:正确
+B:错误
+【解析】：某取数函数扩展开发类定义时，遵从以下规则：1.取数函数实现接口IECPFunctionBaseLib，实现接口中的若干方法；2.函数名称定义规则为 ECPFun{具体函数名称}；3.取数函数模型中的属性“访问类型”(accessType),用以识别时内部函数还是外部函数，即是否可在取数运算设置中可设置此函数。
+
+##7785##
+
+##6685##
+目前IDE开发平台已支持取数函数的扩展配置。 正确答案：A
+A:正确
+B:错误
+【解析】：取数运算兼容GAP平台的取数函数，并可在新平台中扩展开发新的取数函数。可支持客户端、服务端根据设置的取数运算表达式动态生成运算模型，对数据模型进行运算。
+##7785##
+
+##6685##
+ECP平台定义日志输出级别时，低级别的日志信息（如DEBUG）会屏蔽高级别的日志信息（如INFO）输出。 正确答案：B
+A:正确
+B:错误
+【解析】：ECP平台的日志记录级别分为显示信息 （info）、跟踪(trace)、调试(debug)、警告(warn)、错误(error)、致命错误(fatal),来指定日志信息的重要程度。高级别的日志信息会屏蔽低级别的日志信息输出。
+##7785##
+
+##6685##
+程序代码中使用日志输出信息前，需要使用“isXXXEnabled()”方法判断当前日志级别能否输出日志信息。 正确答案：A
+A:正确
+B:错误
+【解析】：ECP平台的日志记录级别分为显示信息 （info）、跟踪(trace)、调试(debug)、警告(warn)、错误(error)、致命错误(fatal),来指定日志信息的重要程度。高级别的日志信息会屏蔽低级别的日志信息输出。程序代码中使用日志输出信息前，需要使用“.isXXXEnabled()”方法判断当前日志级别能 否输出日志信息。
+##7785##
+
+##6685##
+ECP平台每一个异常都要有唯一的异常代码与之对应。 正确答案：A
+A:正确
+B:错误
+【解析】：ECP平台提供统一的、有不同的层次的、具有唯一异常代码的、支持多语言、支持不同级别的异常处理框架。其框架具备特性包含：1.统一的异常处理模式： 系统有统一的异常模式并可扩展，统一的异常展现界面。2.异常分层： 异常有不同的层次，不同层次的异常可以有不同的处理方式。3.异常代码： 每个异常都有唯一的代码。
+
+##7785##
+
+##6685##
+ECP平台实现字符串常用操作的工具类是StringUtil。 正确答案：A
+A:正确
+B:错误
+【解析】：ECP平台提供了实现字符串常用操作的工具类StringUtil
+##7785##
+
+##6685##
+描述数据属性特征的模型是（）。 正确答案：A
+A:元数据模型
+B:数据模型
+C:转换模型
+D:显示模型
+【解析】：处理数据操作的模型是数据模型，元数据模型是描述数据模型的模型，显示模型用于ID/NAME的转换。
+##7785##
+
+##6685##
+处理数据操作的模型是（）。 正确答案：B
+A:元数据模型
+B:数据模型
+C:转换模型
+D:显示模型
+【解析】：处理数据操作的模型是数据模型，元数据模型是描述数据模型的模型，显示模型用于ID/NAME的转换。
+##7785##
+
+##6685##
+辅助实现数据模型ID值转换名称值的模型是（）。 正确答案：D
+A:元数据模型
+B:数据模型
+C:转换模型
+D:显示模型
+【解析】：处理数据操作的模型是数据模型，元数据模型是描述数据模型的模型，显示模型用于ID/NAME的转换。
+##7785##
+
+##6685##
+ECP平台通过扩展点的方式，提供实体的元数据实现类供元数据服务调用,需要继承的基类是（）？ 正确答案：C
+A:MetaDataProvider
+B:MetaModelProvider
+C:AbstractMetaModelProvider
+D:不清楚
+【解析】：平台通过扩展点的方式，提供实体的元数据实现类供元数据服务调用。在扩展点的配置文件中，className指向继承抽象类AbstractMetaModelProvider的元数据实现类，根据元数据的结构代码控制实现动态实体的元数据。
+
+##7785##
+
+##6685##
+元数据模型配置文件定义的文件后缀名是（）。 正确答案：A
+A:mdmx
+B:vcx
+C:mx
+D:refx
+【解析】：元数据模型配置文件定义的文件后缀名是mdmx，存储文件名格式为“{classId} _{typeId}.mdmx”
+##7785##
+
+##6685##
+数据模型状态modelState表示删除的状态是（）？ 正确答案：B
+A:1
+B:2
+C:4
+D:8
+【解析】：调用generalContext的add或save等方法时，需要指定模型的更新方式：DataModelState有6个状态，分别是1、2、4、8、16、64其中DataModelState.DELETE也就是2，代表删除。
+##7785##
+
+##6685##
+定义的数据类型转换器实现类，需实现类型转换器接口（）。 正确答案：A
+A:IItemTypeTranslateExecutor
+B:IItemTypeTransExecutor
+C:ICommonEntitySelector
+D:ITranslateExecutor
+【解析】：定义的数据类型转换器实现类，需实现类型转换器接口IItemTypeTranslateExecutor，实现接口的id2Name、name2Id等方法完成ID名称值转换处理。转换器实现类增加@OSGIService注解，注解属性properties为对应数据类型名称（name）。
+
+##7785##
+
+##6685##
+统一类型体系的扩展配置文件的文件后缀名是（）？ 正确答案：B
+A:vcx
+B:dtx
+C:mdmx
+D:opx
+【解析】：ECP平台支持按照统一类型体系的扩展标准通过配置文件扩展统一类型。配置文件名称统一格式“{业务领域名称} _itemType.dtx”，如“gris.mdm_itemType.dtx”，其中gris.mdm为应用的业务
+领域名称。并且配置文件统一存储在业务领域impl项目的META-INF/config/itemtype/ 目录下面即可。
+##7785##
+
+##6685##
+统一类型体系的扩展配置文件存放在impl项目的（）目录下面。 正确答案：A
+A:META-INF/config/itemtype
+B:META-INF/config/metaModel
+C:META-INF/config/operator
+D:META-INF/config/type
+【解析】：ECP平台支持按照统一类型体系的扩展标准通过配置文件扩展统一类型。配置文件名称统一格式“{业务领域名称} _itemType.dtx”，如“gris.mdm_itemType.dtx”，其中gris.mdm为应用的业务
+领域名称。并且配置文件统一存储在业务领域impl项目的META-INF/config/itemtype/ 目录下面即可。
+##7785##
+
+##6685##
+PO模型是在业务领域的哪个项目下创建的（）？ 正确答案：A
+A:data
+B:impl
+C:service
+D:web
+【解析】：通过IDE的数据建模并保存后，会自动在data项目下创建PO模型。
+##7785##
+
+##6685##
+ECP平台统一类型扩展配置文件名称定义使用（）作为统一格式定义。 正确答案：A
+A:业务领域名称
+B:业务类别类型名称
+C:业务实体名称
+D:业务目录
+【解析】：ECP平台支持按照统一类型体系的扩展标准通过配置文件扩展统一类型。配置文件名称统一格式“{业务领域名称} _itemType.dtx”，如“gris.mdm_itemType.dtx”，其中gris.mdm为应用的业务
+领域名称。并且配置文件统一存储在业务领域impl项目的META-INF/config/itemtype/ 目录下面即可。
+
+##7785##
+
+##6685##
+根据实体项目来源不同，元数据模型存储的两种方式（）？ 正确答案：AB
+A:配置文件存储
+B:数据库属性表存储
+C:动态存储
+D:暂不支持
+【解析】：根据实体属性来源不同，元数据具有以下两种存储方式：1.固定实体（实体属性开发期固定）元数据存储(元数据使用以mdmx为文件后缀的配置文件存储)；2.动态实体（实体属性开发期不确定）元数据存储（元数据存储在对应实体的数据库属性表）
+
+##7785##
+
+##6685##
+类型的扩展体系中定义了哪些处理器？ 正确答案：ABC
+A:输入器
+B:转换器
+C:设计器
+D:选择器
+【解析】：统一类型是对实体属性业务类型的归纳和描述，通过对实体属性数据类型的归类，定义出平台内置的业务数据类型并定义相应的类型输入器、转换器、设计器及处理器。实现平台中业务数据类型的统
+一定义管理，解决了平台应用中无法对应业务数据类型和基本数据类型的差异矛盾。ECP支持统一类型的扩展。
+
+##7785##
+
+##6685##
+选择“ECP领域代码生成向导”时，可创建的领域代码文件包括（）？ 正确答案：ABCDE
+A:实体VO模型
+B:实体查询角色类
+C:PO/VO转换类
+D:单元测试代码 
+E:客户端HTML页面及控制类
+【解析】：右键data项目-功能向导-ECP领域代码生成向导，可以生成选项中的列出的领域代码。
+##7785##
+
+##6685##
+声明的@Topic注解是加在业务层的（）。 正确答案：ABC
+A:PO
+B:VO
+C:场景层
+D:角色层
+E:数据访问层
+【解析】：在PO、VO和场景层中，通过声明@Topic注解，定义关联实体的classId和typeId。
+
+##7785##
+
+##6685##
+目前ECP平台统一类型的使用者包括哪些框架模型（）？ 正确答案：ABD
+A:规则引擎
+B:行为引擎
+C:流程引擎
+D:元数据模型
+【解析】：统一类型是对实体属性业务类型的归纳和描述，通过对实体属性数据类型的归类，定义出平台内置的业务数据类型并定义相应的类型输入器、转换器、设计器及处理器。实现平台中业务数据类型的统一定义管理，解决了平台应用中无法对应业务数据类型和基本数据类型的差异矛盾。统一类型涉及到平台各种模型中数据类型的使用者，包括规则模型、行为模型、元数据模型等。类型的扩展体系遵循类型扩展模型结构，包括类型基本信息描述及对应4种类型处理器，从而在平台运行期间类型处理引擎触发对应处理器的功能实现。
+
+
+##7785##
+
+##6685##
+元数据模型中勾稽列表存放于实体项目列表中。 正确答案：B
+A:正确
+B:错误
+【解析】：本题考查：元数据模型类型模型结构。元数据模型中勾稽列表存放于类型描述（typeDefine）中
+##7785##
+
+##6685##
+元数据模型中类型定义的高级属性时按行存储展示的。 正确答案：A
+A:正确
+B:错误
+【解析】：本题考查：元数据模型类型模型结构。
+##7785##
+
+##6685##
+场景层的接口方法中均具有数据上下文DataContext参数。 正确答案：A
+A:正确
+B:错误
+【解析】：场景层的接口方法中均具有数据上下文DataContext参数，可获取当前上下文中的登录信息，为数据和组织、身份校验提供基础。
+##7785##
+
+##6685##
+ECP平台固定实体通过扩展点的方式，提供实体的元数据实现类供元数据服务调用。 正确答案：B
+A:正确
+B:错误
+【解析】：ECP平台固定实体的元数据使用以mdmx为文件后缀的配置文件存储。
+##7785##
+
+##6685##
+ECP平台动态实体通过元数据模型配置文件实现元数据服务调用。 正确答案：B
+A:正确
+B:错误
+【解析】：ECP平台动态实体的元数据存储在对应实体的数据库属性表。
+##7785##
+
+##6685##
+数据模型VO基类DynamicValueObject增加了类别（classId）和类型（typeId）属性。 正确答案：B
+A:正确
+B:错误
+【解析】：本题考查数据模型VO基类继承关系。DynamicEntityValueObject继承数据模型基类AbstractValueObject，并增加了classId和typeId属性
+##7785##
+
+##6685##
+数据模型VO基类DynamicIdentifyData增加了主键（gid）属性。 正确答案：A
+A:正确
+B:错误
+【解析】：本题考查数据模型VO基类继承关系。DynamicIdentifyData继承数据模型基类AbstractValueObject，增加了主键（gid）属性
+##7785##
+
+##6685##
+动态实体与固定实体业务层继承的通用服务组件场景基类是相同的。 正确答案：B
+A:正确
+B:错误
+【解析】：固定实体继承com.ygsoft.ecp.core.framework.model.AbstractValueObject，动态实体继承com.ygsoft.ecp.core.framework.model.DynamicEntityValueObject
+##7785##
+
+##6685##
+IDE开发平台VO模型的高级属性中可设置统一类型及其输入器。 正确答案：A
+A:正确
+B:错误
+【解析】：IDE开发平台VO模型的高级属性中可设置统一类型、输入器、显示方式、固定标志等。
+##7785##
+
+##6685##
+ECP的中文含义是什么？ 正确答案：B
+A:企业应用平台
+B:企业云计算平台
+C:企业智能管理平台
+D:企业一体化平台
+【解析】：企业云计算平台
+##7785##
+
+##6685##
+ECP的英文是什么？ 正确答案：A
+A:Enterprise Cloud Platform
+B:Easy Can Play
+C:Easy Cloud Platform
+D:Enterprise Cloud Play
+【解析】：企业云平台，Enterprise Cloud Platform
+##7785##
+
+##6685##
+ECP的前身是什么？ 正确答案：C
+A:BCP
+B:EAP
+C:GAP
+D:UAP
+【解析】：ECP在GAP的基础上发展而来，继承了GAP的很多优点。
+##7785##
+
+##6685##
+下面那些不是ECP的特性？ 正确答案：D
+A:开放性
+B:先进性
+C:稳定性
+D:实效性
+【解析】：ECP的特性有开放性、先进性和稳定性。
+##7785##
+
+##6685##
+ECP采用了什么体系架构？ 正确答案：A
+A:SOA
+B:OOP
+C:TOGAF
+D:CMMI
+【解析】：ECP采用SOA体系架构，基于开放的JavaEE技术体系，支持BPMN2.0规范，以TOGAF企业架构方法论为指导。
+##7785##
+
+##6685##
+需求人员可以使用ECP平台做什么？ 正确答案：A
+A:界面原型
+B:需求挖掘
+C:需求调研
+D:需求分析
+【解析】：需求人员或实施人员可以利用格式设计工具设计原型。
+##7785##
+
+##6685##
+下面不属于可视化开发环境的是? 正确答案：B
+A:流程设计
+B:用户管理
+C:规则设计
+D:UI设计
+【解析】：流程设计有绘制界面，规则设计可以在功能视图的规则集下进行，UI设计可以使用ECP前端页面的图形化设计工具。
+##7785##
+
+##6685##
+ECP平台流程支持什么规范？ 正确答案：A
+A:BPMN 2.0
+B:SOA
+C:OOP
+D:TOGAF
+【解析】：ECP采用SOA体系架构，基于开放的JavaEE技术体系，支持BPMN2.0规范，以TOGAF企业架构方法论为指导。
+##7785##
+
+##6685##
+统一权限管理不包括下面？ 正确答案：D
+A:控制建模
+B:统一授权
+C:权限检查
+D:数据建模
+【解析】：数据建模属于ECP的可视化开发功能。
+##7785##
+
+##6685##
+ECP流程平台不能满足的是（）。 正确答案：C
+A:业务流
+B:流程建模
+C:功能建模
+D:运行需求
+【解析】：undefined
+##7785##
+
+##6685##
+ECP平台支持那些终端展示？ 正确答案：ABCDE
+A:IE
+B:PC
+C:IOS
+D:WP
+E:Safari
+【解析】：ECP平台的适配所有的操作系统或浏览器。
+##7785##
+
+##6685##
+组件一般分为（）。 正确答案：ABC
+A:技术组件
+B:业务领域组件
+C:业务组件
+D:框架组件
+【解析】：undefined
+##7785##
+
+##6685##
+ECP的核心理念包括（）。 正确答案：ABCD
+A:业务和技术分离
+B:按需组合
+C:开发、标准与跨平台
+D:支持国际化与本地化
+E:统一应用平台
+【解析】：undefined
+##7785##
+
+##6685##
+ECP平台是集（）于一体的平台。 正确答案：ABCD
+A:开发
+B:集成
+C:运行
+D:管理
+【解析】：所谓一体化协作，是指覆盖SOA应用全生命周期，包括从设计、开发、调试和部署，到运行、维护、管控和治理的整个过程。
+##7785##
+
+##6685##
+行为动作必须实现IOperatorActionAfter接口的（）方法。 正确答案：C
+A:action
+B:doAction
+C:execute
+D:doExecute
+【解析】：行为动作实现自IOperatorActionBefore和IOperatorActionAfter接口，分别对应行为前置动作和后置动作。行为动作必须实现IOperatorActionAfter接口的execute方法，行为动作execute方法处理业务逻辑
+##7785##
+
+##6685##
+查询主题扩展点中的QueryExecutor元素的（）属性指向了查询执行器 正确答案：D
+A:executor
+B:path
+C:interface
+D:class
+【解析】：undefined
+##7785##
+
+##6685##
+行为事件扩展中（）属性是必填项。 正确答案：ABCD
+A:classId
+B:typeId
+C:operatorName
+D:subscriber
+【解析】：undefined
+##7785##
+
+##6685##
+行为事件中的operatorName属性，可以不指向任何行为。 正确答案：B
+A:正确
+B:错误
+【解析】：行为事件必须依附于行为而存在，行为事件中的operatorName属性指定行为的名称。
+##7785##
+
+##6685##
+行为动作在行为事件之前执行。 正确答案：B
+A:正确
+B:错误
+【解析】：undefined
+##7785##
+
+##6685##
+自定义查询主题必须实现com.ygsoft.ecp.component.query.service.ext.QueryTopic扩展点 正确答案：A
+A:正确
+B:错误
+【解析】：undefined
+##7785##
+
+##6685##
+ECP门户框架中支持门户导航栏的扩展。 正确答案：A
+A:正确
+B:错误
+【解析】：ECP门户框架中支持门户导航栏的扩展及自定义菜单。
+##7785##
+
+##6685##
+下列哪个不是ECP核心引擎之一 正确答案：B
+A:流程引擎
+B:取数运算引擎
+C:行为引擎
+D:规则引擎
+【解析】：ECP三大引擎：行为引擎、流程引擎和规则引擎。
+##7785##
+
+##6685##
+从业务视角出发，ECP有五大模型：组织模型、流程模型、功能模型、访问控制模型和数据模型。规则引擎对应ECP五大模型的（）模型。 正确答案：D
+A:功能
+B:权限
+C:组织
+D:均不正确
+【解析】：规则引擎对应ECP五大模型的访问控制模型。
+##7785##
+
+##6685##
+行为在开发期存放的配置文件扩展名是（） 正确答案：B
+A:OIS
+B:OPX
+C:IPX
+D:OPS
+【解析】：行为定义文件以classId、typeId、行为名称作为文件名，以opx为扩展名，存储格式为json，存储位置为业务领域的impl Bundle，文件路径为META-INF\config\operator。
+
+##7785##
+
+##6685##
+行为加载时，行为引擎会查找实体的元数据模型中（）节点下的所有行为，包括通用行为。
+ 正确答案：B
+A:service
+B:services
+C:operator
+D:operators
+【解析】：实体的元数据模型中services节点包含了实体所有行为，包括通用行为。
+
+##7785##
+
+##6685##
+classId、typeId和（）可以唯一标识一个行为。 正确答案：A
+A:name
+B:type
+C:id
+D:gid
+【解析】：行类型ID、类别ID、行为名称三者组合可以确定唯一行为。
+
+##7785##
+
+##6685##
+行为对象的mainModel属性标识了（） 正确答案：C
+A:主数据模型的路径
+B:数据模型的Main状态
+C:标识该参数是否是主模型
+
+D:数据模型的主要属性状态
+【解析】：行为对象业务实体提供的业务动作或操作，描述了业务实体的动作或操作定义，用于定义行为和状态位信息。行为引擎提供对行为对象定义、配置、加载、解析、运行及事件处理的完整支持。行为对象的mainModel属性标识了该参数是否是主模型
+##7785##
+
+##6685##
+区别客户端行为和服务端行为的状态位是（）。 正确答案：D
+A:code
+B:codeContext
+C:processType
+D:procotol 
+【解析】：procotol指定了行为处理处理器协议，标明处理器的处理方式
+
+##7785##
+
+##6685##
+使用业务配置平台配置行为，无法配置行为的（） 正确答案：C
+A:viewId
+B:规则
+C:事件
+D:动作
+【解析】：使用业务配置平台只能配置行为及行为动作，无法配置行为事件。行为事件是有开发人员在开发期配置。
+##7785##
+
+##6685##
+对于使用ECP Studio继承的方式创建行为，不会变化的是行为的（）。 正确答案：A
+A:name
+B:classId
+C:typeId
+D:opx
+【解析】：undefined
+##7785##
+
+##6685##
+规则引擎通过（）组件负责处理当前模版所产生的所有规则的执行，并返回执行结果 正确答案：C
+A:规则模版
+B:规则控制器
+C:规则处理器
+D:规则引擎
+【解析】：规则引擎通过规则处理器组件负责处理当前模版所产生的所有规则的执行，并返回执行结果
+##7785##
+
+##6685##
+规则模版扩展名为（）。 正确答案：B
+A:OPX
+B:RTX
+C:RULES
+D:RULE
+【解析】：规则模版是规则应用的基础，模版包含规则基本属性、参数信息、处理器等；规则模版以以Json格式存储在文件系统中， 存储在目标Bundle的META-INF\config\rules文件夹下，以.rtx为扩展名，规则引擎通过扫描文件的方式加载规则模版；平台提供基本的规则模版供业务设置使用，如非空判断、只读控制、项目比较等；规则模版允许业务扩展，但只允许在系统开发期进行模版设置，运行期可以根据模版设置相关的规则
+
+##7785##
+
+##6685##
+对于规则模版的扩展，下列说法正确的是（） 正确答案：A
+A:仅在开发期
+B:实施期
+C:开发期实施期均可
+D:视用户需要
+【解析】：规则模版是规则应用的基础，模版包含规则基本属性、参数信息、处理器等；规则模版以以Json格式存储在文件系统中， 存储在目标Bundle的META-INF\config\rules文件夹下，以.rtx为扩展名，规则引擎通过扫描文件的方式加载规则模版；平台提供基本的规则模版供业务设置使用，如非空判断、只读控制、项目比较等；规则模版允许业务扩展，但只允许在系统开发期进行模版设置，运行期可以根据模版设置相关的规则
+
+##7785##
+
+##6685##
+在规则模版中，处理器的（）属性决定了处理器的执行方法。 正确答案：D
+A:code
+B:method
+C:control
+D:name
+【解析】：参考规则模版的定义。
+##7785##
+
+##6685##
+在规则模版中，模版参数的（）属性决定了参数的顺序 正确答案：D
+A:number
+B:order
+C:orderby
+D:sort
+【解析】：参考规则模版的定义。
+##7785##
+
+##6685##
+在规则模版描述中，（）属性中会引用参数的输入器进行参数设置，生成规则 正确答案：C
+A:flId
+B:description
+C:name
+D:fileName
+【解析】：参考规则模版的定义。
+##7785##
+
+##6685##
+规则控制器中，注册（）用于监听页面属性变化 正确答案：C
+A:watch
+B:watchModel
+C:watchData
+D:watchField
+【解析】：规则控制器用于规则的客户端控制逻辑注册，使规则可以根据注册的控制类型对逻辑进行控制，可以注册的属性有：watchData、checkBetween、checkLess、checkLessEquals及checkIn。其中注册watchData用于监听页面属性变化册
+
+##7785##
+
+##6685##
+新建流程时，通过（）来使流程能够被BPM引擎识别并正常使用。 正确答案：C
+A:绘制
+B:绘制流程
+C:发布
+D:启用
+【解析】：流程绘制后，需通过发布来使流程能够被BPM引擎识别并正常使用。
+##7785##
+
+##6685##
+在进行功能单元绑定之前，我们会使用（）功能将行为私有化 正确答案：C
+A:行为向导
+B:业务门户
+C:实体功能
+D:行为处理向导
+【解析】：通过业务配置平台设置实体的功能属性私有化行为。
+##7785##
+
+##6685##
+实施人员通过（）组件来定义规则。 正确答案：A
+A:规则引用组件
+B:规则模版
+C:规则返回结果
+D:规则执行引擎
+【解析】：规则模版是规则应用的基础，模版包含规则基本属性、参数信息、处理器等；规则模版以以Json格式存储在文件系统中， 存储在目标Bundle的META-INF\config\rules文件夹下，以.rtx为扩展名，规则引擎通过扫描文件的方式加载规则模版；平台提供基本的规则模版供业务设置使用，如非空判断、只读控制、项目比较等；规则模版允许业务扩展，但只允许在系统开发期进行模版设置，运行期可以根据模版设置相关的规则
+##7785##
+
+##6685##
+规则引擎所包含的技术组件中，（）是必须在开发期完成的 正确答案：B
+A:规则生成
+B:规则模版配置
+C:规则执行引擎配置
+D:规则关系配置
+【解析】：规则模版是规则应用的基础，模版包含规则基本属性、参数信息、处理器等；规则模版以以Json格式存储在文件系统中， 存储在目标Bundle的META-INF\config\rules文件夹下，以.rtx为扩展名，规则引擎通过扫描文件的方式加载规则模版；平台提供基本的规则模版供业务设置使用，如非空判断、只读控制、项目比较等；规则模版允许业务扩展，但只允许在系统开发期进行模版设置，运行期可以根据模版设置相关的规则
+
+##7785##
+
+##6685##
+流程引擎通过（）来使用规则引擎，用以控制页面元素规则。 正确答案：A
+A:行为引擎
+B:流程建模器
+C:页面勾稽
+D:取数运算
+【解析】：流程引擎通过行为引擎来使用规则引擎，用以控制页面元素规则。
+##7785##
+
+##6685##
+在使用一个功能行为进行流程人工活动节点配置之前，哪些是该行为必须具备的项目 正确答案：A
+A:格式
+B:行为
+C:规则
+D:勾稽关系
+【解析】：undefined
+##7785##
+
+##6685##
+下面哪个不是流程对业务开发暴露出的扩展表 正确答案：D
+A:ECP_WF_TASK_PROCESSINSTOPTION
+B:ECP_WF_TASK_ENTITYRELATION
+C:ECP_WF_TASK_PARTICIPANT
+D:ECP_WF_TASK_EXTENDSDETAILS
+【解析】：流程对业务开发暴露出的扩展表有三个，分别是：ECP_WF_TASK_PROCESSINSTOPTION、ECP_WF_TASK_ENTITYRELATION用于已完成/未完成单据查询；
+ECP_WF_TASK_PARTICIPANT用与用户参与的单据流程查询
+##7785##
+
+##6685##
+下列流程事件类型哪个是拥有前置/后置事件的 正确答案：A
+A:流程发起
+B:流程结束
+C:流程作废
+D:流程挂起
+【解析】：四个选项中，只有流程发起具有前置和后置事件。
+##7785##
+
+##6685##
+流程引擎通过（）来提高性能，避免与BPM引擎进行多次交互 正确答案：B
+A:流程服务
+B:流程数据冗余
+C:BPM服务
+D:列存储
+【解析】：选项B是ECP提高流程引擎性能的举措。
+##7785##
+
+##6685##
+流程事件扩展配置中，使用（）属性确定是前置/后置事件 正确答案：B
+A:after
+B:before
+C:before/after
+D:before-after
+【解析】：before为true，表示前置事件；before为false，表示后置事件。
+##7785##
+
+##6685##
+行为前置事件中，事件中可以获取的行为内容包括（） 正确答案：AB
+A:行为对象
+B:行为参数
+C:行为执行结果
+D:数据模型
+【解析】：事件监听器实现自IEventSubscriber接口，使用行为事件对象OperatorBeforeExecuteEvent和OperatorAfterExecuteEvent定义前置或后置事件；事件监听器的action方法处理监听事件业务逻辑，其参数为：(1)前置事件:行为对象,行为参数,数据模型;(2)后置事件:行为对象,行为执行结果,行为参数,数据模型
+##7785##
+
+##6685##
+行为定义可以通过（）方式进行 正确答案：AB
+A:开发期向导
+B:业务配置平台
+C:统一协作平台
+D:协作配置平台
+【解析】：有两种方式定义行为。(1) 通过ECP Studio创建的行为。存储在以opx为扩展名的json文件中，文件夹为META-INF\config\operator，通常放到业务领域的impl Bundle中
+(2)通过业务配置平台使用预置的行为。业务配置平台预置的行为存储在ECP_EF_OPERATOR表中。
+
+##7785##
+
+##6685##
+行为执行期提供了包括（）等处理内容 正确答案：ABCD
+A:行为加载
+B:行为解析
+C:行为运行
+D:行为事件处理
+【解析】：在行为执行期，行为引擎提供对行为对象定义、配置、加载、解析、运行及事件处理的完整支持。
+
+##7785##
+
+##6685##
+使用业务配置平台配置行为，可以配置行为的（） 正确答案：ACD
+A:格式
+B:事件
+C:动作
+D:规则
+【解析】：行为事件在开发期由开发人员定义，用于预定义某种固化的、不允许变更执行过程的业务逻辑；行为动作在开发期由开发人员定义，用于预定义某种特定的业务逻辑，由实施人员根据场景决定该业务逻辑是否需要执行；行为事件无法设置执行顺序，行为动作允许在实施期编排多个动作的执行顺序。在四个选项中，只有行为事件无法通过业务配置平台配置。
+##7785##
+
+##6685##
+在查找一个行为时，通常通过哪几个项目? 正确答案：ABD
+A:类型ID
+B:类别ID
+C:行为GID
+D:行为名称
+【解析】：行类型ID、类别ID、行为名称三者组合可以确定唯一行为。
+##7785##
+
+##6685##
+流程引擎可能交互的业务组件包括哪些? 正确答案：ABCD
+A:行为
+B:规则
+C:消息
+D:外部系统
+【解析】：绘制流程轨迹时需要选择功能单元（行为），参与者设置和流程连线设置会使用到规则。
+##7785##
+
+##6685##
+在新建一个流程时，哪些项目是必须填写的 正确答案：AB
+A:流程名称
+B:流程绑定实体
+C:版本号
+D:所属组织
+【解析】：流程名称和流程绑定实体时必填项。
+##7785##
+
+##6685##
+绘制流程时，流程节点哪些项目是必须填写或选择的 正确答案：ABD
+A:组织
+B:角色
+C:操作员
+D:功能单元
+【解析】：绘制流程时，操作员不是必填项。
+##7785##
+
+##6685##
+在一个流程图中，必须包含哪些节点。 正确答案：ABC
+A:开始
+B:结束
+C:人工活动
+D:自动活动
+【解析】：自动活动根据需求可选。
+##7785##
+
+##6685##
+在扩展流程事件监听器过程中，流程事件对象包含了流程传递所需要的定义及运行信息，下面哪个属于流程对象所包含的属性 正确答案：ABC
+A:流程实例VO
+B:流程定义VO
+C:行为参数
+D:业务行为事件监听器
+【解析】：undefined
+##7785##
+
+##6685##
+在ECP Studio的功能视图中，功能集代表行为。 正确答案：A
+A:正确
+B:错误
+【解析】：可以通过ECP Studio的功能集视图新建行为。
+##7785##
+
+##6685##
+行为参数的sort和规则参数的sort属性作用是相同的 正确答案：A
+A:正确
+B:错误
+【解析】：都是指序号，定义了参数顺序
+
+##7785##
+
+##6685##
+行为动作扩展中的sort属性确定了动作参数顺序。 正确答案：B
+A:正确
+B:错误
+【解析】：行为动作对象包含行为动作基本属性以及执行权重sort，行为引擎根据权重确定行为动作执行顺序
+##7785##
+
+##6685##
+规则和规则模版之间属于继承关系。 正确答案：B
+A:正确
+B:错误
+【解析】：规则模版是规则应用的基础，模版包含规则基本属性、参数信息、处理器等
+。
+##7785##
+
+##6685##
+在运行期，业务配置人员无法通过业务配置平台扩展规则模版。 正确答案：A
+A:正确
+B:错误
+【解析】：规则模版允许业务扩展，但只允许在系统开发期进行模版设置，运行期可以根据模版设置相关的规则
+。
+##7785##
+
+##6685##
+规则服务端处理器的方法名是不固定的，允许自由定义。 正确答案：A
+A:正确
+B:错误
+【解析】：服务端规则处理器必须实现com.ygsoft.ecp.core.rule.service.role.IRuleProcessor接口，但是允许使用不同的方法名作为处理器方法，规则模版处理器使用name属性决定使用不同处理器方法。
+##7785##
+
+##6685##
+规则的执行可以分为同步和异步。 正确答案：B
+A:正确
+B:错误
+【解析】：规则执行都是同步执行。
+##7785##
+
+##6685##
+非结构化服务主要提供的接口有 正确答案：ABCDE
+A:IUnStructureStorage
+B:IStorageService
+C:IStorage
+D:IDBStorage
+E:IFileStorage
+【解析】：本题考查非结构化服务主要提供的接口
+##7785##
+
+##6685##
+非结构化服务提供的存储介质有 正确答案：AB
+A:File
+B:DB
+C:Memory
+D:Cloud
+【解析】：ECP非结构化组件为非结构化数据提供DB和FILE多种存储方案，同时支持业务扩展存储实现，实现了非结构化数据统一管理与监控。
+
+##7785##
+
+##6685##
+下面哪些是非结构化数据支持的文件类型 正确答案：AB
+A:.doc
+B:.xls
+C:.exe
+D:.bat
+E:.sh
+【解析】：非结构化数据支持的文件类型有.doc和.xls
+##7785##
+
+##6685##
+非结构化数据服务访问入口类是 正确答案：A
+A:EcpService
+B:StorageService
+C:AttachmentService
+D:EntityAttachmentService
+【解析】：可以通过EcpService提供的工具类方法获取，通过工具类静态方法EcpService. getStorageService()获取一个IStorageService统一存储服务实现,然后调用该接口的getUnStructureStorage()方法返回一个IUnStructureStorage非结构化存储服务接口实现后就可以进行非结构化数据存取操作。
+
+##7785##
+
+##6685##
+非结构化数据定义的扩展点名称是 正确答案：C
+A:com.ygsoft.ecp.service.storage.point
+B:com.ygsoft.ecp.service.attachment.point
+C:com.ygsoft.ecp.service.unstructure.point
+D:com.ygsoft.ecp.service.file.point
+【解析】：非结构化平台运行业务扩展自定义实现非结构化存储，可以通过扩展点配置完成，扩展点名称为com.ygsoft.ecp.service.unstructure.point
+
+##7785##
+
+##6685##
+非结构化数据存储业务key可以是 正确答案：D
+A:单据主键
+B:管理对象主键
+C:凭证主键
+D:任意字符
+【解析】：非结构化数据存储业务key可以是不重复的唯一的任意字符。
+##7785##
+
+##6685##
+非结构化平台临时存储目录为 正确答案：D
+A:c:\
+B:\etc
+C:\opt
+D:可以通过配置来指定
+【解析】：非结构化平台临时存储目录可以通过配置来指定。
+##7785##
+
+##6685##
+非结构化数据存都存放于内存中 正确答案：B
+A:正确
+B:错误
+【解析】：ECP非结构化组件为非结构化数据提供DB和FILE多种存储方案，同时支持业务扩展存储实现，实现了非结构化数据统一管理与监控。
+##7785##
+
+##6685##
+非结构化数据都是以子节流方式存在 正确答案：B
+A:正确
+B:错误
+【解析】：ECP非结构化组件为非结构化数据提供DB和FILE多种存储方案，同时支持业务扩展存储实现，实现了非结构化数据统一管理与监控。
+##7785##
+
+##6685##
+非结构化数据实现可以自定义扩展 正确答案：A
+A:正确
+B:错误
+【解析】：非结构化数据实现可以通过扩展点的方式进行自定义扩展，非结构化数据定义的扩张点名称是com.ygsoft.ecp.service.unstructure.point
+##7785##
+
+##6685##
+必须在XTCS表里指定非结构化数据配置 正确答案：B
+A:正确
+B:错误
+【解析】：可以通过在xtcs表里面预置记录，对非结构化数据存储方式进行配置，xtcs表里CSMC字段的KEY值为UNSTRUCTURE_DEFAULT_STORAGE，参数值可以填DB或者FILE,可以支持文件和DB多种方式。非结构化数据存储方式也可以在扩展点中进行配置
+##7785##
+
+##6685##
+使用规则引擎恰恰提供了一个将业务处理和业务规则处理分离、共用和统一管理维护业务规则引擎的企业服务模型和基本开发步骤地方法 正确答案：A
+A:正确
+B:错误
+【解析】：在传统的企业服务应用程序开发模式下，业务逻辑被直接固化应用程序代码中，这使得应用程序维护复杂且代价昂贵，变化的商业规则和业务流程总是引起应用程序的频繁修改，甚至设计变化，解决这个问题就需要采用新的开发模式，将业务逻辑从代码层剥离，使用规则引擎恰恰提供了一个将业务处理和业务规则处理分离、共用和统一管理维护业务规则引擎的企业服务模型和基本开发步骤地方法
+
+##7785##
+
+##6685##
+规则引擎的基本组成有：
+ 正确答案：ABCD
+A:规则模版 
+B:规则引用组件
+
+C:规则
+
+D:规则执行引擎
+
+【解析】：规则引擎的基本组成有：1.规则模版。规则模版是规则应用的基础，模版包含规则基本属性、参数信息、处理器等；2.规则引用组件。根据定义的规则模版，设置相关参数，定义规则执行期内容；3.规则。根据规则模版定义的、适用于目标场景的、具备完整执行参数的可执行对象；4.规则执行引擎。提供规则模版的加载、规则访问、规则运行等完整技术支持
+
+##7785##
+
+##6685##
+ECP采用的对象关系映射框架（ORM）是（）。 正确答案：C
+A:iBatis
+B:MyBatis
+C:Hibernate
+D:EclipseLink
+【解析】：ECP平台持久层框架/ORM框架主要对开源组件Hibernate封装。
+
+##7785##
+
+##6685##
+平台使用Spring框架进行事务控制。 正确答案：A
+A:正确
+B:错误
+【解析】：平台使用Spring框架进行事务控制，默认IDE场景类都加上了@Transactional注解，进入场景方法时会自动加入事务，平台默认配置的事务模式是REQUIRED。
+##7785##
+
+##6685##
+平台使用Spring框架进行事务控制，默认IDE场景类都加上了@Transactional注解，进入场景方法时会自动加入事务 正确答案：A
+A:正确
+B:错误
+【解析】：平台使用Spring框架进行事务控制，默认IDE场景类都加上了@Transactional注解，进入场景方法时会自动加入事务，平台默认配置的事务模式是REQUIRED。
+##7785##
+
+##6685##
+缓存实体是指需要存放在缓存框架中的实体，ECP平台可以分为两类，第一类是Hibernate实体，第二类是自定义实体，对于Hibernat实体的缓存操作交由Hibernate控制，自定义实体由开发人员程序类控制。 正确答案：A
+A:正确
+B:错误
+【解析】：undefined
+##7785##
+
+##6685##
+通过ECP Studio的数据建模工具新建持久化实体，持久化实体的主键生成策略有()。 正确答案：ABC
+A:用户自定义
+B:数据库生成
+C:自动生成UUID
+【解析】：本体考查ECP持久化实体的主键生成策略。
+##7785##
+
+##6685##
+持久化实体的主键生成策略设置成了自动生成UUID，通过场景类GeneralContext的save或saveList方法保存该实体时，该实体不需要指定主键值。 正确答案：A
+A:正确
+B:错误
+【解析】：本体考查ECP持久化实体的主键生成策略。
+##7785##
+
+##6685##
+持久化实体的主键生成策略设置成了自动生成UUID，通过场景类GeneralContext的save或saveList方法保存该实体时，该实体需要指定主键值。 正确答案：B
+A:正确
+B:错误
+【解析】：本体考查ECP持久化实体的主键生成策略。
+##7785##
+
+##6685##
+持久化实体的主键生成策略设置成了用户自定义，通过场景类GeneralContext的save或saveList方法保存该实体时，该实体不需要指定主键值。 正确答案：B
+A:正确
+B:错误
+【解析】：本体考查ECP持久化实体的主键生成策略。
+##7785##
+
+##6685##
+持久化实体的主键生成策略设置成了用户自定义，通过场景类GeneralContext的save或saveList方法保存该实体时，该实体需要指定主键值。 正确答案：A
+A:正确
+B:错误
+【解析】：本体考查ECP持久化实体的主键生成策略。
+##7785##
+
+##6685##
+持久化实体的主键生成策略设置成了用户自定义，如果希望用户自定义的主键值是自动生成UUID策略的效果，可以通过前端UUID字符串生成工具生成唯一的UUID字符串。 正确答案：A
+A:正确
+B:错误
+【解析】：本体考查ECP持久化实体的主键生成策略。
+##7785##
+
+##6685##
+通过场景类GeneralContext的update或updateList方法保存持久化实体时，该实体不需要指定主键值。 正确答案：A
+A:正确
+B:错误
+【解析】：本体考查ECP持久化实体的主键生成策略。
+##7785##
+
+##6685##
+通过场景类GeneralContext的update或updateList方法保存持久化实体时，该实体不需要指定主键值。 正确答案：B
+A:正确
+B:错误
+【解析】：本体考查ECP持久化实体的主键生成策略。
+##7785##
+
+##6685##
+在下面的选项中，( )是自定义注解。 正确答案：B
+A:Service
+B:OSGiService
+C:Transactional
+D:Autowired
+【解析】：Service注解、Autowired注解和Transactional注解都是Spring框架提供的；
+##7785##
+
+##6685##
+在下面的选项中，( )是自定义注解。 正确答案：C
+A:Service
+B:Transactional
+C:Topic
+D:Autowired
+【解析】：Service注解、Autowired注解都是Spring框架提供的；
+##7785##
+
+##6685##
+在下面的选项中，( )是自定义注解。 正确答案：BC
+A:Service
+B:OSGiService
+C:Topic
+D:Autowired
+【解析】：Service注解、Autowired注解和Transactional注解都是Spring框架提供的；
+##7785##
+
+##6685##
+在下面的选项中，( )是自定义注解。 正确答案：ABC
+A:ContextProvider
+B:OSGiService
+C:Topic
+D:Autowired
+【解析】：选项D是spring框架提供的注解。Service注解、Autowired注解、Transactional注解和Repository注解都是Spring框架提供的；
+##7785##
+
+##6685##
+在下面的选项中，( )是自定义注解。 正确答案：ABCD
+A:ContextProvider
+B:OSGiService
+C:Topic
+D:ContextProviderDesc
+【解析】：四个选项都是自定义注解。
+##7785##
+
+##6685##
+在下面的选项中，( )不是自定义注解。 正确答案：D
+A:ContextProvider
+B:OSGiService
+C:Topic
+D:Service
+【解析】：选项中只要D项不是自定义注解；Service注解、Autowired注解、Transactional注解和Repository注解都是Spring框架提供的；
+##7785##
+
+##6685##
+在下面的选项中，( )不是自定义注解。 正确答案：C
+A:Dao
+B:DaoDesc
+C:Repository
+D:OSGiService
+【解析】：选项中只要C项不是自定义注解；Service注解、Autowired注解、Transactional注解和Repository注解都是Spring框架提供的；
+##7785##
+
+##6685##
+IDE修改数据源的方法？ 正确答案：D
+A:通过IDE的数据库视图设定默认连接
+B:通过修改jdbc.properties文件
+C:通过修改首选项内的环境配置
+D:以上三个都可以
+【解析】：虽然都可以，但是最方便还是通过IDE的数据库视图设置默认连接来更改数据源。
+##7785##
+
+##6685##
+IDE的所用的jdk版本是？ 正确答案：A
+A:1.5
+B:1.6
+C:1.7
+D:1.8
+【解析】：可以在IDE的目录中找到
+##7785##
+
+##6685##
+IDE中，以-auto结尾的各个运行配置可以永久保存用户的更改？ 正确答案：B
+A:正确
+B:错误
+【解析】：已-auto结尾的运行配置会自动还原默认值，应新建或复制一个配置来保存更改。
+##7785##
+
+##6685##
+IDE中，存在多个平台包时应如何切换？ 正确答案：ABC
+A:通过首选项内的目标平台修改
+B:通过com.ygsoft.gris.targetplatform项目内指定target文件
+C:通过修改targetplatform.properties文件配置
+D:通过修改项目属性
+【解析】：通过首选项内的目标平台可以很方便的查看当前使用的平台环境
+##7785##
+
+##6685##
+VO模型是在哪个项目下创建的？ 正确答案：C
+A:data
+B:impl
+C:service
+D:web
+【解析】：PO模型是在业务领域的data项目(bundle)下创建的,VO模型是在业务领域的service项目(bundle)下创建的。
+##7785##
+
+##6685##
+更改项目配置应该修改那个文件？ 正确答案：C
+A:build.properties
+B:ivy.xml
+C:MANIFEST.MF
+D:plugin.xml
+【解析】：更改项目配置应该修改MANIFEST.MF文件，可视化页签更直观
+##7785##
+
+##6685##
+IDE的功能视图可以查看业务领域的哪些集？ 正确答案：ABCDE
+A:数据集
+B:功能集
+C:规则集
+D:动作集
+E:取数集
+【解析】：在功能视图中可以方便地新建规则等等
+##7785##
+
+##6685##
+IDE中，那个视图可以以文件夹层次浏览所有文件？ 正确答案：C
+A:资源管理器
+B:大纲
+C:导航器
+D:团队工件
+【解析】：只有导航器能做到
+##7785##
+
+##6685##
+IDE中，可在编辑区域右键更改当前文件的编码。 正确答案：B
+A:正确
+B:错误
+【解析】：应在资源管理器中的对应文件点击右键->属性，更改编码
+##7785##
+
+##6685##
+在IDE的MANIFEST.MF文件中，已导出的包在哪个页签当中？ 正确答案：B
+A:依赖性
+B:运行时
+C:扩展
+D:扩展点
+【解析】：已导出的包再运行时之中
+##7785##
+
+##6685##
+IDE中，一个项目想引用另一项目中未导出的类，直接import即可。 正确答案：B
+A:正确
+B:错误
+【解析】：必须先在项目中导出目标类所在的package
+##7785##
+
+##6685##
+IDE中，在哪个视图可以查看自己提交的工作项？ 正确答案：D
+A:资源管理器
+B:同步
+C:历史记录
+D:团队工件
+【解析】：在团队工件中，可以查看工作项历史记录
+##7785##
+
+##6685##
+IDE中，支持自动生成get方法和set方法。 正确答案：A
+A:正确
+B:错误
+【解析】：在右键->源代码->生成getter和setter
+##7785##
+
+##6685##
+IDE中调试模式下，查看选中表达式值得快捷键默认是？ 正确答案：D
+A:Ctl+Alt+A
+B:Ctl+Shift+B
+C:Ctl+Alt+C
+D:Ctl+Shift+D
+【解析】：此快捷键在调试时比较有用
+##7785##
+
+##6685##
+IDE中，快速搜索打开资源的快捷键是？ 正确答案：B
+A:Ctl+Alt+F
+B:Ctl+Shift+R
+C:Ctl+Alt+Q
+D:Ctl+Shift+G
+【解析】：这是最常用的快捷键之一
+##7785##
+
+##6685##
+IDE中，全局搜索可以使用正则表达式。 正确答案：B
+A:正确
+B:错误
+【解析】：当前文件的搜索才能使用正则表达式
+##7785##
+
+##6685##
+IDE中，在data项目中可以将表反写至数据库。 正确答案：A
+A:正确
+B:错误
+【解析】：在对应的datasetx点击右键->创建数据库表
+##7785##
+
+##6685##
+IDE中，可以单独反写某一个表。 正确答案：B
+A:正确
+B:错误
+【解析】：错误，如需只反写某个表，需先把改表删除，在反写时钩上“不覆盖重名表”即可
+##7785##
+
+##6685##
+IDE中，在哪个项目将模型发布至配置平台。 正确答案：C
+A:data
+B:impl
+C:service
+D:web
+【解析】：在service项目中的数据模型，选择对应VO，双击，钩上“发布到配置平台”
+##7785##
+
+##6685##
+IDE中，保存datasetx中某一个表会影响其他所有表。 正确答案：A
+A:正确
+B:错误
+【解析】：保存时，会把datasetx内所有的表代码都生成一遍。
+##7785##
+
+##6685##
+管理对象选择器的实现类是（） 正确答案：A
+A:com.ygsoft.gris.basemanage.gldx.DxSelector
+B:com.ygsoft.ecp.basemanage.gldx.DxSelector
+C:com.ygsoft.gris.ecp.basemanage.gldxselect.DxSelect.js
+D:com.ygsoft.ecp.basemanage.gldxselect.DxSelect.js
+【解析】：管理对象选择器的实现类并非com.ygsoft.ecp.basemanage下面而是com.ygsoft.gris.basemanage,故排除了B，D；C项的包路径不存在
+##7785##
+
+##6685##
+管理对象选择器中对象类型id可以用逗号分割填多个 正确答案：A
+A:正确
+B:错误
+【解析】：管理对象类型id,可以填多个,(例如:1234,5678).
+##7785##
+
+##6685##
+管理对象选择器的实现类是com.ygsoft.gris.basemanage.gldx.DxSelector 正确答案：A
+A:正确
+B:错误
+【解析】：管理对象选择器的实现类是com.ygsoft.gris.basemanage.gldx.DxSelector
+##7785##
+
+##6685##
+管理对象选择器中已选择对象id,可以填写多个,用英文逗号隔开 正确答案：A
+A:正确
+B:错误
+【解析】：已选择对象id,可以填写多个,用英文逗号隔开
+##7785##
+
+##6685##
+管理对象选择器常用的参数有（） 正确答案：ABCDEFGH
+A:dxlxids
+B:isMutil
+C:userCode
+D:onlySelected
+E:dxtyBZ
+F:customFilter
+G:selDxids
+H:unitCode
+【解析】：H 是新管理对象选择器拥有的参数
+##7785##
+
+##6685##
+管理对象选择器已选择对象名称,可以填写多个,用英文分号隔开(例如:1234;5678). 正确答案：B
+A:正确
+B:错误
+【解析】：已选择对象名称,可以填写多个,用英文逗号隔开(例如:1234,5678).
+##7785##
+
+##6685##
+传针对管理对象主表的sql过滤条件，下列说法正确的是（） 正确答案：BC
+A:主表字段要加上别名zb
+B:单引号要用转义字符才能让系统识别
+C:主表字段要加上别名dx
+D:以上都不正确
+【解析】：过滤条件,单引号要用转义字符才能让系统识别。故选C，传针对管理对象主表的sql过滤条件，主表字段要加上别名dx。故选B
+##7785##
+
+##6685##
+下列哪个参数决定是否对管理对象进行用户权限检查（） 正确答案：C
+A:selDxids
+B:isMutil
+C:isUserAuth
+D:effectBZ
+【解析】：selDxids：已选对象ID。isMutil：是否多选。effectBZ：核标志
+##7785##
+
+##6685##
+下列哪些参数是管理对象选择器必填参数（） 正确答案：C
+A:unitCode
+B:dxlxids
+C:curDxlxid
+D:以上都是
+【解析】：curDxlxid：当前展示的对象类型，此参数为必传参数。其余都是可选参数
+##7785##
+
+##6685##
+下列关于管理对象选择器的描述正确的是（） 正确答案：ABCD
+A:管理对象选择器默认不检查完成标志（completeBZ）
+B:管理对象选择器默认不检查审核标志（effectBZ）
+C:管理对象选择器默认不检查审核标志（dxtyBZ）
+D:管理对象选择器默认允许清空所选值（allowClear）
+【解析】：undefined
+##7785##
+
+##6685##
+操作员选择控件实现类是（） 正确答案：A
+A:com.ygsoft.gris.basemanage.operatorSelect.js
+B:com.ygsoft.ecp.basemanage.operatorSelect.js
+C:com.ygsoft.gris.ecp.basemanage.operatorSelect.js
+D:以上都不是
+【解析】：com.ygsoft.gris.basemanage.operatorSelect.js
+##7785##
+
+##6685##
+操作员选择实现类是com.ygsoft.gris.basemanage.operatorSelect.js 正确答案：A
+A:正确
+B:错误
+【解析】：com.ygsoft.gris.basemanage.operatorSelect.js
+##7785##
+
+##6685##
+下列哪个参数不是操作员选择控件所有的（） 正确答案：D
+A:isMutil
+B:treeBZ
+C:rootOrg
+D:userCode
+【解析】：操作员选择器没有userCode这个参数
+##7785##
+
+##6685##
+操作员控件treeBZ参数为（）时，表示组织ID传的组织顶点。 正确答案：A
+A:1
+B:2
+C:3
+D:以上都不是
+【解析】：treeBZ=1时，表示组织ID传的组织顶点;treeBZ=2时，表示组织ID传的组织列表，以英文逗号隔开; treeBZ=3时，表示传的本组织，组织ID输入框不用填写. 
+##7785##
+
+##6685##
+操作员控件treeBZ参数为（）时，表示组织ID传的组织列表，以英文逗号隔开 正确答案：B
+A:1
+B:2
+C:3
+D:以上都不对
+【解析】：treeBZ=1时，表示组织ID传的组织顶点;treeBZ=2时，表示组织ID传的组织列表，以英文逗号隔开; treeBZ=3时，表示传的本组织，组织ID输入框不用填写. 
+##7785##
+
+##6685##
+操作员控件treeBZ参数为（）时，表示传的本组织，组织ID输入框不用填写 正确答案：C
+A:1
+B:2
+C:3
+D:以上都不对
+【解析】：treeBZ=1时，表示组织ID传的组织顶点;treeBZ=2时，表示组织ID传的组织列表，以英文逗号隔开; treeBZ=3时，表示传的本组织，组织ID输入框不用填写.
+##7785##
+
+##6685##
+关于操作员控件中stoped参数的说法正确的是（） 正确答案：ABCE
+A:stoped是操作员控件中的一个查询条件
+B:0取未停用用户
+C:1取停用用户
+D:空即无值默认返回空对象
+E:空即无值取所有用户
+【解析】：停用标识，是否停用，0取未停用用户，1取停用用户，空即无值取所有用户 
+##7785##
+
+##6685##
+关于操作员控件中userSSLB参数的说法正确的是（） 正确答案：H
+A:用户所属类别,当是否取管理单位值为1时有效
+B:0取普通用户
+C:1系统审计
+D:2系统管理
+E:3业务配置
+F:空为不过滤
+G:多个用逗号分隔 
+H:以上都是
+【解析】：用户所属类别,当是否取管理单位值为1时有效，空为不过滤，0取普通用户、1系统审计、2系统管理、3业务配置；多个用逗号分隔 
+##7785##
+
+##6685##
+关于操作员控件中那些参数是必填的（） 正确答案：AB
+A:isMutil
+B:treeBZ
+C:rootOrg
+D:roleID
+E:stoped
+F:createDw
+G:userSSLB
+【解析】：只有isMutil和treeBZ参数为必填。  isMutil=true时，表示多选; isMutil=false时，表示单选. 
+##7785##
+
+##6685##
+财务组织选择控件实现类是（） 正确答案：C
+A:com.ygsoft.ecp.OrgSelect.js
+B:com.ygsoft.gris.ecp.OrgSelect.js
+C:com.ygsoft.gris.OrgSelect.js
+D:以上都不对
+【解析】：com.ygsoft.gris.OrgSelect.js
+##7785##
+
+##6685##
+财务组织选择控件实现类是com.ygsoft.gris.OrgSelect.js 正确答案：A
+A:正确
+B:错误
+【解析】：com.ygsoft.gris.OrgSelect.js
+##7785##
+
+##6685##
+财务组织选择控件参数showWay的描述正确的是（） 正确答案：ABCD
+A:showWay控制数据展示方式
+B:0表示树型展示
+C:1表示列表型式展示
+D:默认值是0
+【解析】：0表示树型展示，1表示列表型式展示,默认0
+##7785##
+
+##6685##
+财务组织选择控件参数level的描述正确的是（） 正确答案：AB
+A:level展开层级
+B:默认展开一级
+C:默认展开
+D:默认闭合
+【解析】：展开层级，默认展开一级
+##7785##
+
+##6685##
+财务组织选择控件参数isShowOrgType的描述正确的是（） 正确答案：ACE
+A:isShowOrgType是否显示组织范围
+B:是否显示机构类型
+C:isShowOrgType是否可选多口径组织
+D:默认不显示机构类型
+E:默认显示机构类型
+【解析】：是否显示组织范围,即是否可选多口径组织
+##7785##
+
+##6685##
+财务组织选择控件参数isShowYear的描述正确的是（） 正确答案：CD
+A:显示年份
+B:不显示年份
+C:默认年份参数可选
+D:isShowYear年份参数是否可选
+【解析】：年份参数是否可选
+##7785##
+
+##6685##
+财务组织选择控件参数selectCope的值描述（选择范围控制）正确的是（） 正确答案：ABCDEFGH
+A:0允许选所有节点
+B:1只能选择最顶层
+C:2只能选择中间层
+D:3只能选择最底层
+E:4只能选非底层
+F:5只能选择平级组织
+G:6只能选非中间层
+H:7选择所有但不显示最底层
+【解析】：选择范围控制：0允许选所有节点，1只能选择最顶层，2只能选择中间层，3只能选择最底层，4只能选非底层，5只能选择平级组织，6只能选非中间层，7选择所有但不显示最底层 
+##7785##
+
+##6685##
+下列哪个选项不是财务组织选择控件参数（） 正确答案：D
+A:isShowBDW
+B:mutex
+C:maxSelected
+D:selectId
+【解析】：没有selectId参数
+##7785##
+
+##6685##
+财务组织选择控件参数multiselect的描述正确的是（） 正确答案：BC
+A:multiselect参数含义树控件显示时是否单选
+B:multiselect参数含义是列表显示时是否单选
+C:multiselect=true单选
+D:multiselect=true多选
+【解析】：列表显示时是否单选：multiselect=true单选，multiselect=false多选
+##7785##
+
+##6685##
+财务组织选择控件参数isSingle的描述正确的是（） 正确答案：C
+A:是否开启单例模式
+B:isSingle的含义是列表显示时是否单选
+C:isSingle的含义是树控件是否单选
+D:以上都不对
+【解析】：树控件是否单选：isSingle=true单选，isSingle=false多选
+##7785##
+
+##6685##
+财务组织选择控件参数isUseCustomData的描述正确的是（） 正确答案：BD
+A:数据通过xml方法传入
+B:isUseCustomData含义是是否使用自定义数据
+C:isUseCustomData含义是是否显示用户当前的信息
+D:数据通过loadData方法传入
+【解析】：是否使用自定义数据，数据通过loadData方法传入,默认false
+##7785##
+
+##6685##
+下列财务组织选择控件参数解析正确的是（） 正确答案：ABCDEFG
+A:scopeDC：数据中心范围：current_dc表示当前数据中心，all_dc表示所有数据中心。
+B:rootOrg：根节点组织
+C:operator：是否按操作员权限过滤.
+D:isShowXJGLFW：是否显示下级管理范围,默认显示
+E:dateOrg：组织日期，默认系统当前日期，需填入日期的年份
+F:isShowBDW：是否显示本单位
+G:hint:  提示信息
+【解析】：全选
+##7785##
+
+##6685##
+财务组织选择控件参数showName的描述正确的是（） 正确答案：B
+A:showName:显示名称
+B:showName：名称显示格式
+C:默认显示全称
+D:以上都不对
+【解析】：0默认显示全称，1外部编号，2组织的简称，3外部编号+空格+全称，4外部编号+空格+简称，5简称+空格+全称
+##7785##
+
+##6685##
+财务组织选择控件参数showName的参数含义是（） 正确答案：G
+A:0：默认显示全称
+B:1：外部编号
+C:2：组织的简称
+D:3：外部编号+空格+全称
+E:4:外部编号+空格+简称
+F:5:简称+空格+全称
+G:以上全是
+【解析】：0默认显示全称，1外部编号，2组织的简称，3外部编号+空格+全称，4外部编号+空格+简称，5简称+空格+全称
+##7785##
+
+##6685##
+财务组织选择控件参数showName的值0默认显示全称，1外部编号，2组织的简称，3外部编号+空格+全称，4外部编号+空格+简称，5简称+空格+全称 正确答案：A
+A:正确
+B:错误
+【解析】：0默认显示全称，1外部编号，2组织的简称，3外部编号+空格+全称，4外部编号+空格+简称，5简称+空格+全称
+##7785##
+
+##6685##
+财务组织选择控件参数accbookId的描述正确的是（） 正确答案：BCD
+A:值不为空时页面默认选中财务组织
+B:值为空时页面默认选中财务组织
+C:非空时页面默认选中多口径组织
+D:同时账薄下拉框默认选中该id
+【解析】：值为空时页面默认选中财物组织，非空时页面默认选中多口径组织，同时账薄下拉框默认选中该id
+##7785##
+
+##6685##
+财务组织选择控件参数scopeDC的描述正确的是（） 正确答案：BC
+A:current_dc表示所有数据中心
+B:current_dc表示当前数据中心
+C:all_dc表示所有数据中心
+D:all_dc表示当前数据中心
+【解析】：数据中心范围：current_dc表示当前数据中心，all_dc表示所有数据中心。
+##7785##
+
+##6685##
+财务组织选择控件loadData方法的描述正确的是（） 正确答案：A
+A:当isUseCustomData参数值为true时，通过loadData方法可加载自定义数据。
+B:当isUseCustomData参数值为false时，通过loadData方法可加载自定义数据。
+C:当isUseCustomData参数值为true时，通过ajax方法可加载自定义数据。
+D:当isUseCustomData参数值为true时，通过JSON方法可加载自定义数据。
+【解析】：当isUseCustomData参数值为true时，通过loadData方法可加载自定义数据。
+##7785##
+
+##6685##
+财务组织选择控件paramState方法的描述正确的是（） 正确答案：B
+A:paramState：动态修改组织控件的参数状态
+B:paramState:动态修改组织控件的参数
+C:paramState：静态修改组织控件的参数状态
+D:paramState:静态修改组织控件的参数
+【解析】：动态修改组织控件的参数
+##7785##
+
+##6685##
+财务组织选择控件afterLoadData事件的描述正确的是（） 正确答案：C
+A:选择界面的组织数据加载前事件,默认值false无事件，fn回调函数名
+B:选择界面的组织数据加载后事件,默认值ture无事件，fn回调函数名
+C:选择界面的组织数据加载后事件,默认值false无事件，fn回调函数名
+D:选择界面的组织数据加载前事件,默认值ture无事件，fn回调函数名
+【解析】：选择界面的组织数据加载后事件,默认值false无事件，fn回调函数名
+##7785##
+
+##6685##
+财务组织选择控件afterDelete事件的描述正确的是（） 正确答案：A
+A:按del键后事件，fn回调函数名
+B:按del键前事件，fn回调函数名
+C:按add键后事件，fn回调函数名
+D:以上都不对
+【解析】：按del键后事件，fn回调函数名
+##7785##
+
+##6685##
+财务组织选择控件参数dateOrg的描述正确的是（） 正确答案：ACD
+A:dateOrg:组织日期
+B:机构成立事件
+C:默认系统当前日期
+D:需填入日期的年份
+【解析】：组织日期，默认系统当前日期，需填入日期的年份
+##7785##
+
+##6685##
+枚举值选择控件的实现类是那个（） 正确答案：B
+A:com.ygsoft.ecp.basemanage.jcEnumbank.entitySelector.js
+B:com.ygsoft.gris.basemanage.jcEnumbank.entitySelector.js
+C:com.ygsoft.gris.ecp.basemanage.jcEnumbank.entitySelector.js
+D:以上都不对
+【解析】：com.ygsoft.gris.basemanage.jcEnumbank.entitySelector.js
+##7785##
+
+##6685##
+枚举值选择控件的实现类是com.ygsoft.gris.ecp.basemanage.jcEnumbank.entitySelector.js 正确答案：B
+A:正确
+B:错误
+【解析】：枚举值选择控件的实现类是com.ygsoft.gris.basemanage.jcEnumbank.entitySelector.js
+##7785##
+
+##6685##
+下列参数属于枚举值选择控件的有（） 正确答案：E
+A:compid
+B:isMutil
+C:comboType
+D:enumlxid
+E:以上都是
+【解析】：全都是
+##7785##
+
+##6685##
+枚举值选择控件参数comboType的值的描述正确的是（） 正确答案：AC
+A:comboType=0时，表示弹出控件
+B:comboType=0时，表示下拉控件
+C:comboType=1时，表示下拉控件.
+D:comboType=1时，表示弹出控控件.
+【解析】：comboType=0时，表示弹出控件; comboType=1时，表示下拉控件. 
+##7785##
+
+##6685##
+枚举值选择控件的实现类是com.ygsoft.gris.basemanage.jcEnumlx.entitySelector.js 正确答案：B
+A:正确
+B:错误
+【解析】：com.ygsoft.gris.basemanage.jcEnumlx.entitySelector.js是枚举值选择控件的实现类
+##7785##
+
+##6685##
+枚举类型选择控件的实现类是（） 正确答案：C
+A:com.ygsoft.ecp.basemanage.jcEnumlx.entitySelector.js
+B:com.ygsoft.gris.basemanage.jcEnumbank.entitySelector.js
+C:com.ygsoft.gris.basemanage.jcEnumlx.entitySelector.js
+D:以上都不是
+【解析】：com.ygsoft.gris.basemanage.jcEnumlx.entitySelector.js
+##7785##
+
+##6685##
+科目、对象分类、业务分类 控件的实现类是（） 正确答案：A
+A:ecp.ui.datafield.FltxSelector.js
+B:ecp.ui.datafield.Fltx.js
+C:gris.ui.datafield.FltxSelector.js
+D:以上都不是
+【解析】：实现类：ecp.ui.datafield.FltxSelector.js
+##7785##
+
+##6685##
+科目、对象分类、业务分类 控件的实现类是实现类：ecp.ui.datafield.FltxSelector.js 正确答案：A
+A:正确
+B:错误
+【解析】：科目、对象分类、业务分类 控件的实现类是实现类：ecp.ui.datafield.FltxSelector.js
+##7785##
+
+##6685##
+下列参数不是科目、对象分类、业务分类 控件的是（） 正确答案：ABCDEFG
+A:renderType
+B:showClassify
+C:title
+D:justLeaf
+E:isAutoCompleteHintMsg
+F:filter
+G:filterFns
+H:usercode
+【解析】：usercode 没有这个参数
+##7785##
+
+##6685##
+科目,对象分类,业务分类控件的type参数描述不正确的是（） 正确答案：D
+A:用来标识类型,XTDX是对象分类
+B:用来标识类型,XTYW是业务分类
+C:用来标识类型,ZWYW是科目
+D:用来标识类型,ZWKM是科目
+【解析】：用来标识类型,XTDX是对象分类，XTYW是业务分类，ZWYW是科目
+##7785##
+
+##6685##
+科目,对象分类,业务分类控件的renderType参数描述正确的是（） 正确答案：D
+A:渲染类型，可渲染成PopSelector样式和Button样式
+B:默认渲染为PopSelector样式
+C:可选值：PopSelector、ButtonSelector
+D:以上都是
+【解析】：渲染类型，可渲染成PopSelector样式和Button样式，默认渲染为PopSelector样式，可选值：PopSelector、ButtonSelector
+##7785##
+
+##6685##
+科目,对象分类,业务分类控件的displayType参数描述正确的是（） 正确答案：AC
+A:displayType：分类体系选择区域显示类型
+B:displayType：分类体系显示类型
+C:displayType参数值，tree显示为普通树，treeList显示为横向列表树
+D:displayType参数值，tree显示为树表，treeList显示为普通树
+【解析】：分类体系选择区域显示类型，可选值：tree、treeList。tree显示为普通树，使用ecp.ui.datafield.FltxBox渲染选择页面，treeList显示为横向列表树，使用ecp.ui.datafield.TreeList渲染选择页面。
+##7785##
+
+##6685##
+下列关于科目,对象分类,业务分类控件参数解释正确的是（） 正确答案：D
+A:justLeaf：是否只能选叶子节点
+B:title：用于指定弹出窗体的标题
+C:isAutoCompleteHintMsg：自动完成过滤数据时无匹配的项目时是否弹出提示信息
+D:以上都是
+【解析】：undefined
+##7785##
+
+##6685##
+科目,对象分类,业务分类控件的del参数描述正确的是（） 正确答案：AB
+A:del:当鼠标焦点停留在输入框的时候，按下delete键是否清空输入框的显示值和控件的数据模型
+B:del参数默认值为true,按下delete键清空输入框的显示值和控件的数据模型
+C:del参数默认值为false,按下delete键清空输入框的显示值和控件的数据模型
+D:del:当鼠标焦点停留在输入框的时候是否清空输入框的显示值和控件的数据模型
+【解析】：当鼠标焦点停留在输入框的时候，按下delete键是否清空输入框的显示值和控件的数据模型，默认为true(清空),若不想按下delete键有任何动作请设为false
+##7785##
+
+##6685##
+科目,对象分类,业务分类控件的treeOption参数描述正确的是（） 正确答案：ABE
+A:选择树相关参数，包含isSingle、onlyLeafCheck、onlyParentCheck、showDataItem等属性。
+B:isSingle:true,//是否单选，默认为true
+C:isSingle:false,//是否单选，默认为false
+D:onlyLeafCheck:false,//是否只选择叶子节点，默认为true
+E:onlyParentCheck:false,//是否只选择父节点，默认为false
+【解析】：选择树相关参数，包含isSingle、onlyLeafCheck、onlyParentCheck、showDataItem等属性。
+isSingle:true,//是否单选，默认为true
+onlyLeafCheck:false,//是否只选择叶子节点，默认为false
+onlyParentCheck:false,//是否只选择父节点，默认为false
+##7785##
+
+##6685##
+下列有关科目,对象分类,业务分类控件参数描述正确的是（） 正确答案：CD
+A:isShowAlreadySelectList：是否显示已选择列表，只对多选有效，科目默认值为false，其他为true
+B:isShowMessageStatus:是否显示信息提示状态栏，只对多选有效，科目默认值为false，其他为true
+C:isShowSelectAllBut:是否显示全选按钮，只对多选有效，默认值为true
+D:autoCompleteSize:自动完成显示的下拉列表条目数
+【解析】：isShowMessageStatus:是否显示信息提示状态栏，只对多选有效，科目默认值为true，其他为false。isShowAlreadySelectList：是否显示已选择列表，只对多选有效，科目默认值为true，其他为false
+##7785##
+
+##6685##
+下列有关科目,对象分类,业务分类控件参数描述正确的是（） 正确答案：D
+A:isShowAlreadySelectList：是否显示信息提示状态栏，只对多选有效，科目默认值为true，其他为false
+B:isShowMessageStatus:是否显示信息提示状态栏，只对多选有效，科目默认值为false，其他为true
+C:isShowSelectAllBut:是否显示全选按钮，只对多选有效，默认值为false
+D:以上都不正确
+【解析】：isShowMessageStatus:是否显示信息提示状态栏，只对多选有效，科目默认值为true，其他为false。isShowAlreadySelectList：是否显示已选择列表，只对多选有效，科目默认值为true，其他为false。isShowSelectAllBut:是否显示全选按钮，只对多选有效，默认值为true
+##7785##
+
+##6685##
+下列有关科目,对象分类,业务分类控件方法描述正确的是（） 正确答案：ACD
+A:getNodeByParam（key,value）：根据指定key获取值为value的VO数据，key是VO的属性，value是对应的值
+B:getNodeByParam（key,value）：根据指定key获取值为value的PO数据，key是PO的属性，value是对应的值
+C:isDisable：判断当前按钮的状态是否disable
+D:disable：设置控件为disable
+【解析】：getNodeByParam（key,value）：根据指定key获取值为value的VO数据，key是VO的属性，value是对应的值
+##7785##
+
+##6685##
+下列有关科目,对象分类,业务分类控件方法描述不正确的是（） 正确答案：D
+A:getDataSource：取得控件的DataSource,在DataSource中可以取到控件对应的元数据模型和数据模型
+B:getInputer：取得控件的inputer
+C:resizeWidth：重新设置控件宽度
+D:以上都正确
+【解析】：undefined
+##7785##
+
+##6685##
+下列有关科目,对象分类,业务分类控件方法描述正确的是（） 正确答案：AC
+A:initValue：给控件赋值，不会更新数据模型
+B:initValue：给控件赋值，会更新数据模型
+C:unbind（event，handle）：给控件取消绑定事件，event是事件名称，handle是事件
+D:value：无参数时，返回null，传入参数时给控件赋值
+【解析】：value:无参数时，取控件的值，传入参数时给控件赋值
+##7785##
+
+##6685##
+下列有关科目,对象分类,业务分类控件方法描述正确的是（） 正确答案：A
+A:getText(id):根据管理对象id取它对应的名称
+B:beforeClick:设置点击三点按钮的处理后置事件
+C:afterClick:设置点击三点按钮的处理前置事件
+D:afterClick:设置点击三点按钮的处理后置事件
+【解析】：beforeClick:设置点击三点按钮的处理前置事件。afterClick为不存在函数
+##7785##
+
+##6685##
+下列有关管理业务类型控件参数描述正确的是（） 正确答案：C
+A:管理业务类型控件的实现类是com.ygsoft.gris.ecp.GlywlxComboboxSelector
+B:管理业务类型控件的实现类是com.ygsoft.ecp.GlywlxComboboxSelector
+C:管理业务类型控件的实现类是com.ygsoft.gris.GlywlxComboboxSelector
+D:以上都不对
+【解析】：管理业务类型控件的实现类是com.ygsoft.gris.GlywlxComboboxSelector
+##7785##
+
+##6685##
+下列有关管理业务类型控件参数描述正确的是（） 正确答案：AD
+A:管理业务类型控件的auth=true时做权限控制auth=false时，不做权限控制. 
+B:管理业务类型控件的auth=false时做权限控制auth=true时，不做权限控制. 
+C:管理业务类型控件的auth参数默认为false
+D:管理业务类型控件的auth参数默认为true
+【解析】：auth=true时，做权限控制 auth=false时，不做权限控制. 
+##7785##
+
+##6685##
+下列有关管理业务类型控件参数描述正确的是（） 正确答案：BC
+A:管理业务类型控件的tybz=1时仅显示未停用的. tybz=0时，仅显示已停用的.
+B:管理业务类型控件的tybz=0时仅显示未停用的. tybz=1时，仅显示已停用的.
+C:管理业务类型控件的tybz参数默认为0
+D:管理业务类型控件的tybz参数默认为1
+【解析】：tybz=0时，仅显示未停用的. tybz=1时，仅显示已停用的. 默认0
+##7785##
+
+##6685##
+管理业务类型控件的实现类是com.ygsoft.gris.ecp.GlywlxComboboxSelector 正确答案：B
+A:正确
+B:错误
+【解析】：管理业务类型控件的实现类是com.ygsoft.gris.GlywlxComboboxSelector
+##7785##
+
+##6685##
+管理业务类型控件的实现类是com.ygsoft.gris.GlywlxComboboxSelector 正确答案：A
+A:正确
+B:错误
+【解析】：管理业务类型控件的实现类是com.ygsoft.gris.GlywlxComboboxSelector
+##7785##
+
+##6685##
+下列不是管理业务类型控件参数的是（） 正确答案：C
+A:auth
+B:tybz
+C:dxlxid
+D:ywlxid
+【解析】：不存在dxlxid参数
+##7785##
+
+##6685##
+下列有关数据项目控件描述正确的是（） 正确答案：B
+A:数据项目的实现类是com.ygsoft.ecp.SjxmPopSelector
+B:数据项目的实现类是com.ygsoft.gris.SjxmPopSelector
+C:数据项目的实现类是com.ygsoft.gris.ecp.SjxmPopSelector
+D:数据项目的实现类是com.ygsoft.SjxmPopSelector
+【解析】：实现类：com.ygsoft.gris.SjxmPopSelector
+##7785##
+
+##6685##
+下列有关数据项目控件参数描述正确的是（） 正确答案：AC
+A:数据项目控件的auth=true时做权限控制auth=false时，不做权限控制.
+B:数据项目控件的auth=false时做权限控制auth=true时，不做权限控制.
+C:数据项目控件的isSingle=true时，表示单选; isSingle=false时，表示多选. 
+D:数据项目控件的isSingle=false时，表示单选; isSingle=true时，表示多选. 
+【解析】：数据项目控件的auth=true时做权限控制auth=false时，不做权限控制.数据项目控件的isSingle=true时，表示单选; isSingle=false时，表示多选. 
+##7785##
+
+##6685##
+下列不是数据项目控件参数的是（） 正确答案：AD
+A:glywlxid
+B:gldxywlxid
+C:glywzdbh
+D:isSingle
+【解析】：undefined
+##7785##
+
+##6685##
+数据项目控件的实现类是com.ygsoft.gris.SjxmPopSelector 正确答案：A
+A:正确
+B:错误
+【解析】：实现类：com.ygsoft.gris.SjxmPopSelector
+##7785##
+
+##6685##
+数据项目控件的实现类是com.ygsoft.gris.ecp.SjxmPopSelector 正确答案：B
+A:正确
+B:错误
+【解析】：实现类：com.ygsoft.gris.SjxmPopSelector
+##7785##
+
+##6685##
+单据类型选择控件的实现类是com.ygsoft.gris.basemanage.jcDjlx.entitySelector.js 正确答案：A
+A:正确
+B:错误
+【解析】：com.ygsoft.gris.basemanage.jcDjlx.entitySelector.js
+##7785##
+
+##6685##
+单据类型选择控件的实现类是com.ygsoft.gris.ecp.basemanage.jcDjlx.entitySelector.js 正确答案：B
+A:正确
+B:错误
+【解析】：com.ygsoft.gris.basemanage.jcDjlx.entitySelector.js
+##7785##
+
+##6685##
+下列有关单据类型选择控件描述正确的是（） 正确答案：C
+A:单据类型选择控件的实现类是com.ygsoft.ecp.basemanage.jcDjlx.entitySelector.js
+B:单据类型选择控件的实现类是com.ygsoft.gris.basettils.jcDjlx.entitySelector.js
+C:单据类型选择控件的实现类是com.ygsoft.gris.basemanage.jcDjlx.entitySelector.js
+D:单据类型选择控件的实现类是com.ygsoft.gris.ecp.basemanage.jcDjlx.entitySelector.js
+【解析】：单据类型选择控件的实现类是com.ygsoft.gris.basemanage.jcDjlx.entitySelector.js
+##7785##
+
+##6685##
+下列有关单据类型选择控件参数的描述正确的是（） 正确答案：A
+A:  isMutil=true时，表示多选; isMutil=false时，表示单选. 
+B:  isMutil=false时，表示多选; isMutil=true时，表示单选. 
+C:  tybz=0时，未停用; tybz=1时，已停用. tybz=null时，未停用+已停用. 
+D:  tybz=1时，未停用; tybz=0时，已停用. tybz=null时，未停用+已停用. 
+【解析】：tybz=0时，未停用; tybz=1时，已停用. tybz=null时，未停用+已停用.   isMutil=true时，表示多选; isMutil=false时，表示单选. 
+##7785##
+
+##6685##
+下列有关单据类型选择控件参数tybz的值描述正确的是（） 正确答案：D
+A:tybz=0时，未停用;
+B:tybz=1时，已停用
+C:tybz=null时，未停用+已停用
+D:以上都正确
+【解析】：tybz=0时，未停用; tybz=1时，已停用. tybz=null时，未停用+已停用. 
+##7785##
+
+##6685##
+下列不是单据类型选择控件参数的是（） 正确答案：C
+A:djlxid
+B:compid
+C:type
+D:mkid
+【解析】：没有type属性，comboType
+##7785##
+
+##6685##
+下列有关单据类型选择控件参数描述不正确的是（） 正确答案：A
+A:isMutil：isMutil=false时，表示多选; isMutil=true时，表示单选. 
+B:comboType：comboType=0时，表示弹出控件; comboType=1时，表示下拉控件.
+C:djlxid：单据类型id，多个以逗号间隔.
+D:mkid：模块id，多个以逗号间隔.
+【解析】：isMutil=true时，表示多选; isMutil=false时，表示单选. 
+##7785##
+
+##6685##
+下列有关实体类型控件参数stoped的值描述正确的是（） 正确答案：D
+A:停用标识,是否停用;0取未停用
+B:停用标识,是否停用;1取停用
+C:停用标识,是否停用;空即无值取所有.
+D:以上都正确
+【解析】：停用标识,是否停用;0取未停用,1取停用,空即无值取所有. 
+##7785##
+
+##6685##
+下列有关实体类型控件参数描述正确的是（） 正确答案：ABCD
+A:isMutil：isMutil=true时,表示多选; isMutil=false时,表示单选. 
+B:stoped:停用标识,是否停用;0取未停用,1取停用,空即无值取所有. 
+C:classId:实体类型classId;多个用逗号分隔. 
+D:createUnit:创建单位compid 
+【解析】：isMutil：isMutil=true时,表示多选; isMutil=false时,表示单选. stoped:停用标识,是否停用;0取未停用,1取停用,空即无值取所有.classId:实体类型classId;多个用逗号分隔. createUnit:创建单位compid 
+##7785##
+
+##6685##
+下列有关实体类型控件参数描述不正确的是（） 正确答案：A
+A:isMutil：isMutil=false时,表示多选; isMutil=true时,表示单选. 
+B:createUnit:创建单位compid 
+C:stoped:停用标识,是否停用;0取未停用,1取停用,空即无值取所有. 
+D:classId:实体类型classId;多个用逗号分隔. 
+【解析】：isMutil：isMutil=true时,表示多选; isMutil=false时,表示单选.
+##7785##
+
+##6685##
+下列不是实体类型控件参数的是（） 正确答案：D
+A:isMutil
+B:stoped
+C:createUnit
+D:isSingle
+【解析】：没有isSingle
+##7785##
+
+##6685##
+下列有关实体类型控件参数描述正确的是（） 正确答案：A
+A:实体类型控件的实现类是com.ygsoft.gris.basemanage.entityManager.js
+B:实体类型控件的实现类是com.ygsoft.ecp.basemanage.entityManager.js
+C:实体类型控件的实现类是com.ygsoft.ecp.gris.basemanage.entityManager.js
+D:实体类型控件的实现类是com.ygsoft.gris.ecp.basemanage.entityManager.js
+【解析】：实体类型控件的实现类是com.ygsoft.gris.basemanage.entityManager.js
+##7785##
+
+##6685##
+实体类型控件的实现类是com.ygsoft.gris.basemanage.entityManager.js（） 正确答案：A
+A:正确
+B:错误
+【解析】：com.ygsoft.gris.basemanage.entityManager.js
+##7785##
+
+##6685##
+实体类型控件的实现类是com.ygsoft.gris.ecp.basemanage.entityManager.js（） 正确答案：B
+A:正确
+B:错误
+【解析】：com.ygsoft.gris.basemanage.entityManager.js
+##7785##
+
+##6685##
+目前ECP开发平台是行业内集（）于一体的技术平台 正确答案：ABC
+A:开放性
+B:先进性
+C:稳定性
+D:免费性
+【解析】：目前ECP开发平台已是行业内：开放性、先进性、稳定性于一体的技术平台
+##7785##
+
+##6685##
+以下哪些属于业务配置平台配置管理作用（） 正确答案：ABCD
+A:配置信息发布和版本管理
+B:开发配置环境和生产环境分离
+C:减少扩展升级导致的停机次数
+D:历史存档，配置发布支持回滚，提高容错能力
+【解析】：暂无
+##7785##
+
+##6685##
+以下哪些属于二次开发框架优点（） 正确答案：ABCDEFG
+A:丰富的平台服务
+B:统一的API管理
+C:统一的接口模型
+D:多语言支持
+E:完整的工具支持
+F:统一的安全访问控制
+G:多种开发模式支持
+【解析】：暂无
+##7785##
+
+##6685##
+数据分类存储可以减少领域间数据关联，简化数据访问逻辑的复杂度，增强系统稳定性，提高系统的并发能力 正确答案：A
+A:正确
+B:错误
+【解析】：数据分类存储可以减少领域间数据关联，简化数据访问逻辑的复杂度，增强系统稳定性，提高系统的并发能力
+##7785##
+
+##6685##
+从库主要提供查询、报表等功能、会影响主库性能 正确答案：B
+A:正确
+B:错误
+【解析】：从库主要提供查询、报表等功能、不会影响主库性能
+##7785##
+
+##6685##
+主库只做存储和事物处理，解决一致性问题 正确答案：A
+A:正确
+B:错误
+【解析】：主库只做存储和事物处理，解决一致性问题
+##7785##
+
+##6685##
+内存计算只是提升复杂计算性能，但不能整体改善应用体验 正确答案：B
+A:正确
+B:错误
+【解析】：内存计算只是提升复杂计算性能，整体改善应用体验
+##7785##
+
+##6685##
+各种缓存都可以组件的形式提供，但不可配置 正确答案：B
+A:正确
+B:错误
+【解析】：各种缓存都可以组件的形式提供，可配置
+##7785##
+
+##6685##
+内容渲染是按需渲染，由于有客户端数据模型的支持，始终只渲染看到的内容 正确答案：A
+A:正确
+B:错误
+【解析】：内容渲染是按需渲染，由于有客户端数据模型的支持，始终只渲染看到的内容，极大提高页面性能。
+##7785##
+
+##6685##
+哪些是ECP Studio使用技巧 正确答案：ABCDE
+A:反编译设置
+B:关闭拼写检查
+C:关闭自动构建
+D:关闭自动更新
+E:json格式化
+【解析】：ECP Studio使用技巧：运行/调试控制台设置、反编译设置、关闭自动更新、关闭拼写检查、关闭自动构建、关闭VJET构建器、去掉不必要的web资源校验、复制URL、json格式化、数据库视图过滤
+##7785##
+
+##6685##
+在模型转换中必须遵从（）原则 正确答案：AD
+A:VO不能进入数据访问层（DAO层）
+B:VO不能进入业务场景层（Context层）
+C:PO不能进入数据访问层（DAO层）
+D:PO不能进入业务场景层（Context层）
+【解析】：VO不能进入数据访问层（DAO层）,PO不能进入业务场景层（Context层）
+##7785##
+
+##6685##
+数据类型的基本属性包括（） 正确答案：ABCEF
+A:名称
+B:标题
+C:模型类别
+D:是否为字符类型
+E:SQL类型
+F:长度
+【解析】：数据类型的基本属性包括：名称、标题、模型类别、模型类型、是否为引用类型、SQL类型、长度、小数位等。
+##7785##
+
+##6685##
+ECP平台遵从DCI设计理念，将业务层划分为（） 正确答案：ABC
+A:场景层
+B:业务逻辑层
+C:角色层
+D:数据访问层
+【解析】：ECP平台遵从DCI设计理念，将业务层划分为场景层、角色层、业务逻辑层
+##7785##
+
+##6685##
+数据模型PO/VO转换在角色层处理，场景层只处理VO模型，Dao只处理PO模型 正确答案：A
+A:正确
+B:错误
+【解析】：数据模型PO/VO转换在角色层处理，场景层只处理VO模型，Dao只处理PO模型
+##7785##
+
+##6685##
+取数运算框架包含哪些基础组件（） 正确答案：ABCD
+A:表达式设计器
+B:取数运算
+C:勾稽运算
+D:表达式运算
+【解析】：取数运算框架包含 表达式设计器、取数运算、勾稽运算、表达式运算 基础组件
+##7785##
+
+##6685##
+以下运算模式属于取数运算（） 正确答案：AD
+A:全量运算
+B:勾稽运算
+C:表达式运算
+D:触发运算
+【解析】：取数运算的两种运算模式：全量运算、触发运算
+##7785##
+
+##6685##
+基于参考模型的对象实例拥有参考模型所有行为 正确答案：A
+A:正确
+B:错误
+【解析】：基于参考模型的对象实例拥有参考模型所有行为
+##7785##
+
+##6685##
+基于参考模型的对象实例不允许拥有个性化的行为 正确答案：B
+A:正确
+B:错误
+【解析】：基于参考模型的对象实例允许拥有个性化的行为
+##7785##
+
+##6685##
+ECP平台使用了哪些第三方的开源框架 正确答案：ABCDE
+A:Equinox
+B:Spring
+C:Hibernate
+D:Redis
+E:Nodejs
+【解析】：其中nodejs是在ECP4.1中新增，解决websocket通讯。
+##7785##
+
+##6685##
+ECP技术标准中，表现层支持哪些类型的客户端接入？ 正确答案：ABCD
+A:Desktop Client 
+B:Web Client 
+C:Mobile
+
+D:Office
+【解析】：《ECP平台介绍》课程中的技术标准中提到。
+##7785##
+
+##6685##
+ECP主要的开发语言有哪些？ 正确答案：BCE
+A:C#
+B:Java
+C:JavaScript
+D:Python
+E:Html
+【解析】：ECP平台主要的开发语言有Java、JavaScript、Html、json/XML等
+##7785##
+
+##6685##
+ECP平台支持哪些通讯协议？ 正确答案：ABCDE
+A:ws
+B:http(s)
+C:rmi
+D:ftp
+E:soap
+【解析】：其中websocket是在ECP4.1中新增的。
+##7785##
+
+##6685##
+ECP平台支持哪些数据库产品 正确答案：ABCDE
+A:oracle
+B:MySQL
+C:DB2
+D:MongDB
+E:达梦DB
+【解析】：其中达梦DB于2015年开始探索支持。
+##7785##
+
+##6685##
+ECP能够部署在哪些中间件中？ 正确答案：ABCDE
+A:tomcat
+B:JBoss
+C:中创中间件
+D:Weblogic
+E:Websphere 
+【解析】：其中中创中间件于2015年开始支持。
+##7785##
+
+##6685##
+ECP平台采用哪些数据架构满足高稳定和高性能要求？ 正确答案：ABD
+A:主从数据库
+B:读写分离
+C:多级数据缓存
+D:数据分类存储
+【解析】：《ECP平台》课程中的性能章节中有介绍。
+##7785##
+
+##6685##
+ECP平台采用哪些技术架构满足高性能要求？ 正确答案：ABCD
+A:轻量级会话
+B:内存计算
+C:多级负载均衡
+D:多级缓存体系
+【解析】：《ECP平台》课程中的性能章节中有介绍。
+##7785##
+
+##6685##
+ECP平台的数据持久层采用了哪个ORM框架？ 正确答案：C
+A:iBATIS
+B:Spring Data
+C:Hibernate
+D:JDO
+【解析】：ECP平台采用hibernate3.2作为ORM框架。
+##7785##
+
+##6685##
+hibernate支持的关联关系主要有哪些？ 正确答案：ABCD
+A:one to one
+B:one to many
+C:many to one
+D:many to many
+【解析】：具体的关联关系还有单向、双向和连接表等不同形式。
+##7785##
+
+##6685##
+hibernate中的HQL支持哪些连接类型？ 正确答案：ABCD
+A:inner join
+B:left outer join
+C:right outer join
+D:full join
+【解析】：其中full join比较少用到。
+##7785##
+
+##6685##
+ECP采用哪种框架实现程序的模块化? 正确答案：C
+A:flex
+B:java8
+C:equinox
+D:nodejs
+【解析】：采用的是equinox框架。
+##7785##
+
+##6685##
+ECP部署在weblogic、tomcat等中间件中可以开启调试模式，其默认的调试端口是什么？ 正确答案：D
+A:9080
+B:8080
+C:8161
+D:8453
+【解析】：默认是8453
+##7785##
+
+##6685##
+OSGi中常用的命令有哪些？ 正确答案：ABCDE
+A:help
+B:update
+C:start
+D:services
+E:ss
+F:clear
+【解析】：可以使用help进行命令查看。
+##7785##
+
+##6685##
+OSGi定义的类加载机制是双亲委派模式 正确答案：B
+A:正确
+B:错误
+【解析】：不是简单的双亲委派，而是较复杂的一套算法。
+##7785##
+
+##6685##
+hibernate中的HQL语句，除了Java类与属性外，查询语句对大小写并不敏感。 正确答案：A
+A:正确
+B:错误
+【解析】：HQL中的java类及其属性是大小写敏感的。
+##7785##
+
+##6685##
+hibernate中的HQL语句，可以使用as给“结果列名”指定别名。 正确答案：A
+A:正确
+B:错误
+【解析】：例如：select max(car.weight) as maxweight from Car car;
+##7785##
+
+##6685##
+hibernate中的HQL语句支持group by字句。 正确答案：A
+A:正确
+B:错误
+【解析】：例如：select cat.color,cat.weight,count(cat) 例如：from Cat cat group by cat.color;
+##7785##
+
+##6685##
+hibernate中的HQL语句不支持order by字句。 正确答案：B
+A:正确
+B:错误
+【解析】：from Cat cat oder by cat.name asc,cat weight desc, cat.birthdate desc;
+##7785##
+
+##6685##
+hibernate的二级缓存是指session在事务级别进行持久化数据的缓存操作。 正确答案：A
+A:正确
+B:错误
+【解析】：是指session在事务级别进行持久化数据的缓存操作。
+##7785##
+
+##6685##
+ECP平台采用了Spring提供的事务抽象管理功能。 正确答案：A
+A:正确
+B:错误
+【解析】：Spring提供了一致的事务管理抽象。
+##7785##
+
+##6685##
+Spring中的bean默认是prototype模式。 正确答案：B
+A:正确
+B:错误
+【解析】：默认是singleton，即单例模式。
+##7785##
+
+##6685##
+ECP采用Spring-DM解决在OSGi环境下spring应用的部署问题。 正确答案：A
+A:正确
+B:错误
+【解析】：Spring的动态模块加载组件解决OSGi环境下spring应用问题。
+##7785##
+
+##6685##
+ECP不支持在netwear中间件中部署。 正确答案：B
+A:正确
+B:错误
+【解析】：支持
+##7785##
+
+##6685##
+ECP的会话采用的是轻量级的会话，性能更高。 正确答案：A
+A:正确
+B:错误
+【解析】：ECP采用轻量级的会话，使用token方式支持。
+##7785##
+
+##6685##
+ECP目前暂不支持发布RESTfull风格的API服务。 正确答案：A
+A:正确
+B:错误
+【解析】：目前支持rpc，servlet,webservice。
+##7785##
+
+##6685##
+ECP的搜索技术使用的是第三方开源组件lucene。 正确答案：A
+A:正确
+B:错误
+【解析】：使用lucene搜索引擎。
+##7785##
+
+##6685##
+在ECP Studio启动环境中，可以通过配置-Djetty.http.port参数改变ECP服务的端口。 正确答案：A
+A:正确
+B:错误
+【解析】：例如：-Djetty.http.port=9080
+##7785##
+
+##6685##
+在ECP Studio启动环境中的VM自变量配置了-Dorg.mortbay.http.HttpRequest.maxFormContentSize=2000000是为了解决post数据量太大的问题。 正确答案：A
+A:正确
+B:错误
+【解析】：解决数据提交过大的问题。
+##7785##
+
+##6685##
+ECP主要采用equinox框架提供的扩展机制来实现扩展功能。 正确答案：A
+A:正确
+B:错误
+【解析】：比如流程事件、缓存等扩展。
+##7785##
+
+##6685##
+ECP平台用户可以随意查询流程引擎的任何表。 正确答案：B
+A:正确
+B:错误
+【解析】：undefined
+##7785##
+
+##6685##
+Thin Framework(瘦框架）开发模式中，以下哪个不是它的特点. 正确答案：C
+A:只使用基础的技术框架开发
+B:只需掌握JavaScript+Java
+C:基于统于模型开发
+D:技术框架作为组件或服务提供功能
+【解析】：瘦框架只有3个特点，只使用基础的技术框架开发，技术框架作为组件或者服务提供功能，使用者只需要会JavaScript+Java就可以进行开发了
+##7785##
+
+##6685##
+新IDE使用就工作区的时候，需要在启动参数增加-clean，清除插件缓存 正确答案：A
+A:正确
+B:错误
+【解析】：新下载的IDE需要使用旧工作区时，还经常会出现原有工作区的一些BUG，或者功能模版未更新。由于对应IDE插件已经解压到工作区内，所以要清除缓存。如果有更新的模版，还要删除.metadata目录下面的com.primeton.studio.workbench.wizard目录，之后重启IDE。
+##7785##
+
+##6685##
+BPM引擎有几种启动方式： 正确答案：AB
+A:内嵌模式启动
+B:独立模式启动
+C:联合模式启动
+D:流转模式启动
+【解析】：内嵌模式启动通过com.primeton.bpm.client.ecp.listener在ecp事务发布成OSGI服务时启动的。独立模式启动，是以war形式部署的，在servletcontextlistener里完成初始化和启动
+##7785##
+
+##6685##
+BPM引擎中的API,com.primeton.parser.IParser主要负责的功能是将xml定义内容解析成BPM流程模型节点对象。 正确答案：A
+A:正确
+B:错误
+【解析】：com.primeton.parser.IParser负责BPM引擎节点定义的解析，将xml定义内容解析成BPM流程模型节点对象。
+##7785##
+
+##6685##
+BPM引擎中的API，com.primeton.bpm.kernel.spi.behavior.INodeBehavio
+是BPM流程模型节点对象(或流程定义)的校验器
+ 正确答案：B
+A:正确
+B:错误
+【解析】：com.primeton.bpm.kernel.spi.behavior.INodeBehavio主要负责BPM流程模型节点对象上的执行逻辑.
+
+##7785##
+
+##6685##
+在使用“ECP领域代码生成向导”功能的时候，应该打开领域的bundle工程，防止向导生成功能出错，假如生成出错，应该使用自带的回滚功能恢复。 正确答案：B
+A:正确
+B:错误
+【解析】：“领域代码生成”的过程是不可逆的，无法回滚，需要删除原来的错误代码后重新生成。
+##7785##
+
+##6685##
+在基础组织树中，添加定位功能，首先需要设置树控件的search属性为true，然后定义一个input控件，设置其searchList的属性为该树组织的ID。 正确答案：B
+A:正确
+B:错误
+【解析】：组织树的定位中，应设置input控件里面的searchTarget指向树的ID。
+##7785##
+
+##6685##
+在html中，（）标签用于以预定义的格式显示文本，即文本在浏览器中显示时遵循在HTML源文档定义的格式。 正确答案：C
+A:<HR>
+B:<IMG>
+C:<PRE>
+D:<BR>
+【解析】：PRE元素可定义预格式化的文本
+##7785##
+
+##6685##
+在HTML文本对齐中，源代码设置不正确的一项：（ ） 正确答案：B
+A:居右对齐：<div align = “right”>``````</div>
+B:居中对齐：<div align = “middle”>``````</div>
+C:居左对齐：<div align = “left”>``````</div>
+D:两端对齐：<div align = “justify”>``````</div>
+【解析】：居中对齐的属性应该设置<div align = “center”>``````</div>
+##7785##
+
+##6685##
+在HTML中，标记<font>的Size属性最大取值可以是（） 正确答案：B
+A:6
+B:7
+C:8
+D:9
+【解析】：HTML中font最大能显示的Size的数值是7
+##7785##
+
+##6685##
+在下面InputStream类中那个方法可以用于关闭流？ 正确答案：D
+A:skip()
+B:mark()
+C:reset()
+D:close()
+【解析】：skip()可以跳过流程若干字节流，mark()可以在流中标志一个位置，reset()可以返回标志过的位置
+##7785##
+
+##6685##
+在Java中，如果要在字符串类型对象s =’ecp’中，得到字母‘c’出现的位置应该选择下面（）语句 正确答案：C
+A:s.matches(‘c’)
+B:s.charAt(‘c’)
+C:s.indexOf(‘c’)
+D:s.substring(‘c’)
+【解析】：indexOf()方法可返回某个指定的字符串值在字符串中首次出现的位置.
+##7785##
+
+##6685##
+下面那几个属于jQuery的事件处理。（） 正确答案：AD
+A:bind(type)
+B:click()
+C:change()
+D:one(type)
+【解析】：click()和change()都属于触发相应的事件
+##7785##
+
+##6685##
+在jquery中，以下有哪几个是它的选择器？ 正确答案：ABC
+A:基本选择器
+B:层级选择器
+C:表单选择器
+D:事件选择器
+【解析】：jquery具有以下的选择器，基本、层级、内容、可见性、属性、元素、表单等选择器
+##7785##
+
+##6685##
+oracle中VARCHAR2类型的最大长度是： 正确答案：B
+A:3000
+B:4000
+C:1000
+D:2000
+【解析】：在Oracle定义中varchar2的类型最大是4000
+##7785##
+
+##6685##
+以下哪些不是JavaScript的全局函数 正确答案：C
+A:eval
+B:escape
+C:setTimeout
+D:parseFloat
+【解析】：JavaScript中包含以下7个全局函数：escape()、eval（）、isFinite()、isNaN()、parseFloat()、parselnt()、unescape()
+##7785##
+
+##6685##
+在Oracle中，下面那个符号可以用来标示注释。 正确答案：B
+A:！
+B:/*/
+C:&
+D://
+【解析】：单行注释--，多行注释/*/
+##7785##
+
+##6685##
+项目中的技术风险是通常是通过（）方法来缓解的。 正确答案：C
+A:技术文档
+B:架构原型验证
+C:代码复审
+D:单元测试
+【解析】：在缓解技术风险中，代码复审可以找出代码的错误，发现可能改进的地方，开发人员互相熟悉各部分代码，减少失误。
+##7785##
+
+##6685##
+在html设计中要使表格的边框不显示，应设置border的值是（） 正确答案：A
+A:0
+B:1
+C:2
+D:3
+【解析】：如果设置border的值是0，则不显示边框
+##7785##
+
+##6685##
+ECP平台不能使用redis缓存 正确答案：B
+A:正确
+B:错误
+【解析】：<marquee>在HTML中可以用来制作滚动效果
+##7785##
+
+##6685##
+数据模型1.0和2.0结构相同 正确答案：B
+A:正确
+B:错误
+【解析】：模型结构是有区别，1.0模型结构以list为主。
+##7785##
+
+##6685##
+导出功能是否支持自定义背景色 正确答案：A
+A:正确
+B:错误
+【解析】：导出支持自定义背景色和字体颜色
+##7785##
+
+##6685##
+导出支持表格隐藏列导出 正确答案：A
+A:正确
+B:错误
+【解析】：undefined
+##7785##
+
+##6685##
+服务端导出接口支持取数接口返回的数据类型resultType包括 正确答案：ABC
+A:ResultSet
+B:SQL
+C:List<Object>
+D:JSONObject
+【解析】：服务端导出，支持返回的数据类型resultType包括SQL，ResultSet,List<Object>。
+##7785##
+
+##6685##
+导出接口支持导出的文件类型 正确答案：ABCD
+A:txt
+B:json
+C:xls
+D:et
+【解析】：导出的文件类型可以任意基本类型文件
+##7785##
+
+##6685##
+数据模型状态不可能为 正确答案：C
+A:1
+B:17
+C:3
+D:32
+【解析】：数据模型没有3的状态
+##7785##
+
+##6685##
+日期控件显示时分秒需配置 正确答案：D
+A:showTime为true
+B:showSeconds为true
+C:默认显示时分秒
+D:showTime,showSeconds同时为true
+【解析】：showTime显示时，showSeconds显示秒（前提是showTime为true生效）
+##7785##
+
+##6685##
+日期控件只显示月份，showType配置为 正确答案：A
+A:M
+B:S
+C:Y
+D:X
+【解析】：M显示月，S显示周，Y显示年，X显示旬
+##7785##
+
+##6685##
+树根据数据默认选中，需在数据中添加什么属性 正确答案：D
+A:select:true
+B:check:true
+C:selected:true
+D:checked:true
+【解析】：checked:true 来控制节点的默认选择
+##7785##
+
+##6685##
+弹出选择控件要想支持delete键，需要设置 正确答案：C
+A:delete:true
+B:remove:true
+C:del:true
+D:deleted:true
+【解析】：del:true则支持delete删除数据
+##7785##
+
+##6685##
+ECP平台提供加载js的方法 正确答案：A
+A:$.ecp.jsImport(path)
+B:$.jsImport(path)
+C:$.ecp.jsImports(path)
+D:$.jsImports(path)
+【解析】：$.ecp.jsImport(path)用来加载指定的js文件，path是js路径的集合
+##7785##
+
+##6685##
+表格通过那个属性实现滚动分页 正确答案：A
+A:scroll:true
+B:pageScroll:true
+C:scrollPage:true
+D:page:true
+【解析】：表格滚动分页需配置scroll:true
+##7785##
+
+##6685##
+以下的选项，哪些是jquery的原生方法？ 正确答案：ABCD
+A:css
+B:after
+C:wrapInner
+D:filter
+【解析】：undefined
+##7785##
+
+##6685##
+ECP表格jqgrid需要配置哪个参数才会变成虚拟树表？ 正确答案：B
+A:treeGrid
+B:virtual
+C:virtualTree
+D:treeVirtual
+【解析】：undefined
+##7785##
+
+##6685##
+ECP表格jqgrid提供了哪个方法可以选中行？ 正确答案：C
+A:select
+B:selectRow
+C:setSelection
+D:selectEcpRow
+【解析】：undefined
+##7785##
+
+##6685##
+ECP表格列通过元数据模型的哪个属性控制渲染的控件？ 正确答案：D
+A:items
+B:refTypeValues
+C:dataType
+D:inputer
+【解析】：undefined
+##7785##
+
+##6685##
+在ECP2.0开发页面时，需要继承哪个js类才能实例化控制器？ 正确答案：AB
+A:com.ygsoft.ecp.services.pagecontroller.js
+B:com.ygsoft.ecp.services.BaseController.js
+C:com.ygsoft.ecp.initiator.js
+D:com.ygsoft.ecp.startup.js
+【解析】：undefined
+##7785##
+
+##6685##
+ECP2.0页面中，可以通过以下哪几种方式引入css文件？ 正确答案：ABC
+A:在控制器中调用$.ecp.cssImport方法
+B:在html中增加标签<link>
+C:在html中写<style>代码块
+D:在控制器中调用$.ecp.jsImport方法
+【解析】：undefined
+##7785##
+
+##6685##
+ECP平台前端工具类方法gc表示什么意思？ 正确答案：B
+A:获得控制器实例
+B:dom元素垃圾回收
+C:服务端垃圾回收
+D:获得dom元素属性值
+【解析】：undefined
+##7785##
+
+##6685##
+ECP前端提供了哪些与服务端交互方法？ 正确答案：ABC
+A:$.ecp.rs.ajax4Bean
+B:$.ecp.rs.asynGetService
+C:$.ecp.rs.asynPostService
+D:$.ecp.rs.ajax
+【解析】：undefined
+##7785##
+
+##6685##
+ECP中，通过什么属性给树控件绑定定位框？ 正确答案：B
+A:option
+B:search
+C:fixedData
+D:autoEcpWidth
+【解析】：undefined
+##7785##
+
+##6685##
+ECP2.0基础控件都继承哪个基类？ 正确答案：C
+A:ecp.ui.datafield.MultItemBase.js
+B:ecp.ui.datafield.Base.js
+C:ecp.ui.BaseComponent.js
+D:ecp.ui.datafield.SingleItemBase.js
+【解析】：undefined
+##7785##
+
+##6685##
+ECP2.0数字输入框有哪些？ 正确答案：AD
+A:NumberBox
+B:ValidateBox
+C:NumberSpiner
+D:EcpNumberBox
+【解析】：undefined
+##7785##
+
+##6685##
+ECP控制器通过什么方法设置业务上下文？ 正确答案：AB
+A:setCurrentDataContext
+B:setCurrentBusinessContext
+C:setBusinessContext
+D:setNewCurrentBusinessContext
+【解析】：undefined
+##7785##
+
+##6685##
+ECP控制器中如何获取窗口垃圾回收策略？ 正确答案：A
+A:getLazyGC
+B:getGC
+C:gc
+D:lazyGC
+【解析】：undefined
+##7785##
+
+##6685##
+ECP平台的设计遵循哪些原则？ 正确答案：ABCD
+A:分层原则
+B:可扩展性原则
+C:面向对象原则
+D:职责分离原则
+【解析】：undefined
+##7785##
+
+##6685##
+创建控制器时可以继承如下的哪些类？ 正确答案：BC
+A:com.ygsoft.ecp.services.pageconfig.js
+B:com.ygsoft.ecp.services.pagecontroller.js
+C:com.ygsoft.ecp.services.BaseController.js
+D:com.ygsoft.ecp.services.pagemessage.js
+【解析】：undefined
+##7785##
+
+##6685##
+在页面运行时，元模型主要缓存在如下的哪些地方？ 正确答案：ABCD
+A:浏览器缓存
+B:页面级缓存
+C:全局缓存
+D:服务端缓存
+【解析】：undefined
+##7785##
+
+##6685##
+元模型的哪个方法可以清除浏览器缓存获取最新的元模型？ 正确答案：B
+A:clear
+B:refresh
+C:getModel
+D:get
+【解析】：undefined
+##7785##
+
+##6685##
+通过什么方法可以获取元模型对象？ 正确答案：ABCD
+A:$.ecp.getMetaDataModel(cid,tid)
+B:$.ecp.getUI("#ABC").getDataSource().getMetaDataModel()
+C:$.ecp.getMDM(cid,tid)
+D:new MetaDataModel(cid, tid);
+【解析】：undefined
+##7785##
+
+##6685##
+ECP表格（jqGrid）要实现服务端分页，应该调用的赋值方法是？ 正确答案：D
+A:value
+B:loadData
+C:initValue 
+D:addJSONData
+【解析】：undefined
+##7785##
+
+##6685##
+双向绑定是实现控件与模型之前数据同步的机制，通过什么方法可以从模型同步到控件？ 正确答案：C
+A:value
+B:initValue 
+C:synData
+D:loadData
+【解析】：undefined
+##7785##
+
+##6685##
+服务启动加载bundle时即加载js，需要在bundle的什么目录下增加script扩展名的文件 正确答案：D
+A:../META-INF/config/itemtype
+B:../META-INF/config/pageconfig
+C:../META-INF/spring
+D:../META-INF/config/script
+【解析】：undefined
+##7785##
+
+##6685##
+ECP树控件是基于哪个第三方控件的封装？ 正确答案：D
+A:bTree
+B:dxTree
+C:dTree
+D:zTree
+【解析】：undefined
+##7785##
+
+##6685##
+ECP提供了很多工具类方法，以下哪个方法是获取HTML标签的属性？ 正确答案：C
+A:attr
+B:getAttribute
+C:getHTMLAttribute
+D:getEcpHtmlAttribute
+【解析】：undefined
+##7785##
+
+##6685##
+下面哪个不是ecp的窗口对象？ 正确答案：B
+A:window
+B:ecp.ui.layout.Frame
+C:ecp.ui.layout.Window
+D:ecp.ui.layout.IFrameWindow
+【解析】：undefined
+##7785##
+
+##6685##
+ECP提供了很多工具类方法，以下哪个方法不能关闭模态窗口？ 正确答案：C
+A:fireClosestWindowClose
+B:forceClosestWindowClose
+C:close
+D:forceClose
+【解析】：undefined
+##7785##
+
+##6685##
+ECP提供了很多工具类方法，以下哪个方法构造出easyui-tree能够识别的数据? 正确答案：A
+A:getDxTreeJson
+B:getZTreeJson
+C:getzTreeJson
+D:getZTreeJsonWithRefData
+【解析】：undefined
+##7785##
+
+##6685##
+ecp.ui.datafield.PopSelector控件防止删除数据，应该使用哪个属性？ 正确答案：A
+A:del
+B:delete
+C:disabled
+D:editable
+【解析】：undefined
+##7785##
+
+##6685##
+ecp.ui.datafield.TextArea控件使用哪个属性可以防止拖拽宽高？ 正确答案：B
+A:drag
+B:resize
+C:width
+D:height
+【解析】：undefined
+##7785##
+
+##6685##
+输入框控件ecp.ui.datafield.ValidateBox增加提示信息，需要配置哪些属性才能使用setHintMessage方法进行切换提示信息？ 正确答案：C
+A:hint
+B:hintMsg
+C:hint和hintMsg
+D:hintMessage
+【解析】：undefined
+##7785##
+
+##6685##
+开放期定义一个参考模型包括创建mdmx和refx两个配置文件即可。 正确答案：B
+A:正确
+B:错误
+【解析】：考核开发期参考模型定义组成，参考模型组成包括定义配置文件mdmx，发布配置文件refx及参考模型VO模型
+##7785##
+
+##6685##
+参考模型发布文件命名后缀是什么？ 正确答案：A
+A:refx
+B:mdmx
+C:dtx
+D:opx
+【解析】：考核开发期定义参考模型发布文件名称，参考模型发布文件命名后缀为refx
+##7785##
+
+##6685##
+参考模型发布文件refx是在业务领域的哪个项目下创建的？ 正确答案：B
+A:data
+B:impl
+C:service
+D:web
+【解析】：考核开发期定义参考模型发布文件存放bundle，参考模型发布文件存放在impl实现bundle下面
+##7785##
+
+##6685##
+参考模型发布文件refx是在业务领域的config的哪个目录下创建的？ 正确答案：B
+A:refer
+B:refconfig
+C:ref
+D:refx
+【解析】：考核开发期定义参考模型发布文件存放的配置目录，参考模型发布文件存放的配置目录固定为refconfig
+##7785##
+
+##6685##
+参考模型定义文件命名后缀是什么？ 正确答案：B
+A:refx
+B:mdmx
+C:dtx
+D:opx
+【解析】：考核开发期定义参考模型定义文件名称，参考模型定义文件名称mdmx
+##7785##
+
+##6685##
+参考模型的定义文件mdmx是在业务领域的哪个项目下创建的？ 正确答案：C
+A:data
+B:impl
+C:service
+D:web
+【解析】：考核开发期定义参考模型定义文件存放bundle，参考模型定义文件存放在service服务bundle下面
+##7785##
+
+##6685##
+参考模型的定义文件mdmx是在业务领域的config的哪个目录下创建的？ 正确答案：A
+A:metaModel
+B:persistModel
+C:refModel
+D:mdmxconfig
+【解析】：考核开发期定义参考模型定义文件存放的配置目录，参考模型定义文件存放的配置目录固定为metaModel
+##7785##
+
+##6685##
+规则模板定义文件命名后缀是什么？ 正确答案：A
+A:rtx
+B:rulex
+C:dtx
+D:opx
+【解析】：考核开发期定义规则模板定义文件名称，规则模板定义文件名称后缀为rtx
+##7785##
+
+##6685##
+规则模板的定义文件rtx是在业务领域的哪个项目下创建的？ 正确答案：B
+A:data
+B:impl
+C:service
+D:web
+【解析】：考核开发期定义规则模板定义文件存放bundle，规则模板定义文件存放在impl实现bundle下面
+##7785##
+
+##6685##
+规则模板的定义文件rtx是在业务领域的config的哪个目录下创建的？ 正确答案：C
+A:rule
+B:ruleconfig
+C:rules
+D:rtx
+【解析】：考核开发期定义规则模板文件存放的配置目录，规则模板文件存放的配置目录固定为rules
+##7785##
+
+##6685##
+统一类型扩展的定义文件命名后缀是什么？ 正确答案：C
+A:dataTypex
+B:actx
+C:dtx
+D:opx
+【解析】：考核开发期扩展数据类型定义文件名称，数据类型定义文件后缀为dtx
+##7785##
+
+##6685##
+统一类型扩展的定义文件dtx是在业务领域的哪个项目下创建的？ 正确答案：B
+A:data
+B:impl
+C:service
+D:web
+【解析】：考核开发期扩展数据类型定义文件存放bundle，数据类型定义文件存放在impl实现bundle下面
+##7785##
+
+##6685##
+统一类型扩展的定义文件dtx是在业务领域的config的哪个目录下创建的？ 正确答案：C
+A:datatype
+B:dtconfig
+C:itemType
+D:itconfig
+【解析】：考核开发期定扩展数据类型文件存放的配置目录，数据类型文件存放的配置目录固定为itemType
+##7785##
+
+##6685##
+新增函数的定义文件命名后缀是什么？ 正确答案：D
+A:funx
+B:functionx
+C:dsx
+D:funcx
+【解析】：考核开发期扩展取数函数定义文件名称，扩展取数函数定义文件后缀为funcx
+##7785##
+
+##6685##
+新增函数的定义文件funcx是在业务领域的哪个项目下创建的？ 正确答案：B
+A:data
+B:impl
+C:service
+D:web
+【解析】：考核开发期扩展取数函数定义文件存放bundle，扩展取数函数定义文件存放在impl实现bundle下面
+##7785##
+
+##6685##
+新增函数的定义文件funcx是在业务领域的config的哪个目录下创建的？ 正确答案：D
+A:dsconfig
+B:funcconfig
+C:funconfig
+D:funcs
+【解析】：考核开发期定扩展取数函数文件存放的配置目录，扩展取数函数文件存放的配置目录固定为funcs
+##7785##
+
+##6685##
+行为的定义文件命名后缀是什么？ 正确答案：C
+A:dtx
+B:opx
+C:optx
+D:actx
+【解析】：考核开发期行为定义文件名称，行为定义文件命名后缀为optx
+##7785##
+
+##6685##
+行为的定义文件opx是在业务领域的哪个项目下创建的？ 正确答案：B
+A:data
+B:impl
+C:service
+D:web
+【解析】：考核开发期行为定义文件存放bundle，行为定义文件存放在impl实现bundle下面
+##7785##
+
+##6685##
+行为的定义文件opx是在业务领域的config的哪个目录下创建的？ 正确答案：B
+A:operators
+B:operator
+C:opxconfig
+D:operconfig
+【解析】：考核开发期定行为文件存放的配置目录，行为文件存放的配置目录固定为operator
+##7785##
+
+##6685##
+行为动作的定义文件命名后缀是什么？ 正确答案：D
+A:dtx
+B:opx
+C:optx
+D:actx
+【解析】：考核开发期行为动作定义文件名称，行为动作定义文件后缀为actx
+##7785##
+
+##6685##
+行为动作的定义文件actx是在业务领域的哪个项目下创建的？ 正确答案：B
+A:data
+B:impl
+C:service
+D:web
+【解析】：考核开发期行为动作定义文件存放bundle，行为动作定义文件存放在impl实现bundle下面
+##7785##
+
+##6685##
+行为动作的定义文件actx是在业务领域的config的哪个目录下创建的？ 正确答案：B
+A:actxconfig
+B:actions
+C:actionconfig
+D:action
+【解析】：考核开发期定行为动作文件存放的配置目录，行为动作存放的配置目录固定为actions
+##7785##
+
+##6685##
+开发规则模板分类可以支持通过数据库预置和配置文件扩展配置两种方式实现。 正确答案：A
+A:正确
+B:错误
+【解析】：考核规则模板分类的扩展方式，规则模板分类的扩展方式支持数据库配置和配置文件扩展两种
+##7785##
+
+##6685##
+实体建模时可配置所属场景的属性包括： 正确答案：BCDE
+A:项目
+B:勾稽表达式
+C:功能
+D:实体类型规则
+E:实体项目规则
+【解析】：考核实体建模可配置场景的实体属性，实体建模的项目不支持配置所属场景。但项目规则，取数运算、勾稽关系、功能等支持
+##7785##
+
+##6685##
+平台预置的规则模板不包括哪些？ 正确答案：AD
+A:根据表达式控制项目值不能为空
+B:子表记录不能为空
+C:项目只能在某区间选择
+D:多个项目必须为空
+【解析】：考核目前平台预置的规则模板有哪些，平台提供了多个预置规则模板，但是不包括“根据表达式控制项目值不能为空”及“多个项目必须为空”
+##7785##
+
+##6685##
+行为动作配置的服务端处理器实现类必须与动作配置文件在同一个bundle下。 正确答案：B
+A:正确
+B:错误
+【解析】：考核行为动作配置的运行期条件,行为动作配置的服务端处理器实现类必须与动作配置文件无需在同一bundle下面，只需要在配置文件中指定bundleName即可。
+##7785##
+
+##6685##
+开发期定义的bizLog日志在运行期通过快捷方式截取的日志文件中不会输出。 正确答案：B
+A:正确
+B:错误
+【解析】：考核bizlog日志输出的规则，bizLog日志只能通过快捷方式截取的日志文件中可输出，服务端日志文件中不会输出bizLog日志信息
+##7785##
+
+##6685##
+开发期定义的bizLog日志在运行期服务端日志文件中不会输出。 正确答案：A
+A:正确
+B:错误
+【解析】：考核bizlog日志输出的规则，bizLog日志只能通过快捷方式截取的日志文件中可输出，服务端日志文件中不会输出bizLog日志信息
+##7785##
+
+##6685##
+平台规范要求，VO模型通过IDE向导不会生成的数据类型包括： 正确答案：ACD
+A:Integer
+B:String
+C:Boolean
+D:short
+【解析】：考核平台VO模型的类型禁则，通过IDE向导VO不会产生数据类型为Ingeter、Boolean及short的属性
+##7785##
+
+##6685##
+通过IDE功能向导，ECP领域代码生成向导生成的场景类接口基类是什么？ 正确答案：B
+A:IGeneralContext
+B:IGeneralBizContext
+C:ICommonContext
+D:IGeneralEntityContext
+【解析】：考核平台IDE向导生成的基类原则，IDE的ECP领域代码生成向导产生的场景实现类实现了通用业务组件场景基类IGeneralBizContext
+##7785##
+
+##6685##
+IDE创建业务领域时，选择创建的项目不包括： 正确答案：CE
+A:data
+B:impl
+C:designer
+D:test
+E:extend
+【解析】：考核平台IDE业务领域向导自动创建的项目，IDE业务领域向导自动创建的项目有数据访问项目（data）、接口项目（service）、实现项目（impl）、界面项目（web）、测试项目（test），不包括设计项目（designer）及扩展项目（extend）
+##7785##
+
+##6685##
+IDE创建VO模型，必须设置的属性包括： 正确答案：ABCD
+A:classId
+B:typeId
+C:实体类别
+D:实体名称
+E:实体属性
+【解析】：考核平台IDE实体VO创建属性必填项，IDE实体VO创建时必填属性有类别（classId），类型（typeId），实体名称（VO类名），实体类别（固定实体还是动态实体），而实体属性不是必填项
+##7785##
+
+##6685##
+行为事件订阅者实现类必须实现的接口是？ 正确答案：B
+A:IEvent
+B:IEventSubscriber
+C:IOperatorEventSubscriber
+D:IOperatorEvent
+【解析】：考核行为事件订阅者实现类必须实现的接口，行为事件订阅者实现类必须实现事件订阅者接口IEventSubscriber
+##7785##
+
+##6685##
+行为后动作处理器实现类必须实现的接口是？ 正确答案：D
+A:IActionSubscriber
+B:IEventSubscriber
+C:IOperatorActionSubscriber
+D:IOperatorActionAfter
+【解析】：考核行为后动作实现类必须实现的接口，行为后动作实现类必须实现接口IOperatorActionAfter
+##7785##
+
+##6685##
+在行为事件订阅者实现类中可以通过事件对象的context属性获取行为执行上下文 正确答案：B
+A:正确
+B:错误
+【解析】：考核行为事件中获取行为执行上下文的方式，在行为事件订阅者实现类中可以通过事件对象的dataContext属性获取行为执行上下文，而不是context属性
+##7785##
+
+##6685##
+行为及扩展的执行顺序正确的是？ 正确答案：C
+A:前事件-前动作-前规则-行为-后规则-后动作-后事件
+B:前事件-前规则-前动作-行为-后动作-后规则-后事件
+C:前规则-前事件-前动作-行为-后动作-后事件-后规则
+D:前动作-前事件-前规则-行为-后动作事件-后规则
+【解析】：考核运行期行为及扩展的执行顺序，正确的执行顺序是前规则-前事件-前动作-行为-后动作-后事件-后规则
+##7785##
+
+##6685##
+开发过程中，如果需要对某动态实体提供查询服务功能，需要继承哪个场景基类来实现？ 正确答案：C
+A:IGeneralContext
+B:IGeneralDynamicContextIGeneralContext
+C:IGeneralDynamicQueryContext
+D:IGeneralQueryContext
+【解析】：考核动态实体查询场景接口需要继承的接口，动态实体查询场景接口必须继承的接口是IGeneralDynamicQueryContext
+##7785##
+
+##6685##
+ECP平台IDE中，开发时业务领域bundle设置的文本文件编码为() 正确答案：B
+A:GBK
+B:UTF-8
+C:GB2312
+D:UTF-16
+【解析】：考核IDE平台开发环境的编码，平台IDE平台开发环境的编码为UTF-8
+##7785##
+
+##6685##
+VO模型高级属性中，可以标识项目键值的是哪个属性（） 正确答案：A
+A:固定标志(fixFlag)
+B:项目状态(state)
+C:数据源类型(dataSource)
+D:显示类型(displayType)
+【解析】：考核元模型项目标识唯一键值的属性,元模型项目标识唯一键值的属性是固定标志(fixFlag)
+##7785##
+
+##6685##
+数据访问DAO的接口类存放在service项目中 正确答案：B
+A:正确
+B:错误
+【解析】：考核IDE中数据访问层DAO接口类存放的bundle项目，数据访问DAO的接口类存放在data项目中
+##7785##
+
+##6685##
+行为在加载到元数据模型时，节点名称是什么？ 正确答案：B
+A:service
+B:services
+C:operator
+D:operators
+【解析】：考核行为对象在元模型中存放的节点信息，行为在加载到元数据模型时，节点名称为services
+##7785##
+
+##6685##
+行为执行期提供了哪些处理内容？ 正确答案：ABCD
+A:行为加载
+B:行为运行
+C:行为事件处理
+D:行为动作处理
+【解析】：考核运行期行为执行的处理，行为执行期处理了行为的加载、运行、事件处理及动作处理等
+##7785##
+
+##6685##
+需要跟踪调试程序，查看调试过程中的输出信息需要记录的日志级别为？ 正确答案：BC
+A:INFO日志
+B:DEBUG日志
+C:TRACE日志
+D:ERROR日志
+【解析】：考核调试环境记录日志级别，调试环境记录日志级别为DEBUG及TRACE日志
+##7785##
+
+##6685##
+ECP 异常基类包括： 正确答案：CD
+A:Exception
+B:RuntimeException
+C:EcpException
+D:EcpRuntimeException
+【解析】：考核ECP异常基类，ECP异常基类包括EcpException和EcpRuntimeException
+##7785##
+
+##6685##
+ECP异常规范要求，中断类型的异常可直接抛出EcpRuntimeException 正确答案：B
+A:正确
+B:错误
+【解析】：考核ECP抛出异常的规范，ECP异常规范要求中断类型的异常不可以直接抛出EcpRuntimeException
+##7785##
+
+##6685##
+ECP异常抛出时，需要使用工具类EcpI18nUtil进行异常信息国际化处理。 正确答案：A
+A:正确
+B:错误
+【解析】：考核ECP异常抛出信息的国际化处理，ECP异常抛出时需要使用工具类EcpI18nUtil进行异常信息国际化处理。
+##7785##
+
+##6685##
+ECP规范要求，枚举类必须以Enum作为类名称后缀定义。 正确答案：B
+A:正确
+B:错误
+【解析】：考核ECP规范中枚举类的定义规范，ECP规范要求枚举类必须以Type作为类名称后缀定义。
+##7785##
+
+##6685##
+ECP规范要求，在枚举类定义中实现CAPTION标题定义，能够实现页面绑定枚举类项目时，自动完成ID名称转换 正确答案：B
+A:正确
+B:错误
+【解析】：考核ECP规范中枚举类的定义规范，ECP规范要求在枚举类定义中实现CAPTIONS标题定义实现页面绑定枚举类项目时自动完成ID名称转换,而不是CAPTION
+##7785##
+
+##6685##
+ECP平台缓存框架实现有如下类型: 正确答案：ABCD
+A:HashMap类型
+B:LRUHashMap类型
+C:Ehcache类型
+D:Redis类型
+【解析】：考核ECP平台缓存框架的实现种类,包括HashMap类型、LRUHashMap类型、Ehcache类型、Redis类型四种类型
+##7785##
+
+##6685##
+参考模型定义文件中version属性值定义了参考模型当前版本 正确答案：B
+A:正确
+B:错误
+【解析】：考核参考模型中定义版本的属性信息，参考模型定义文件中modelVersion属性值定义了参考模型当前版本，version则用来定义元模型的版本
+##7785##
+
+##6685##
+在IDE的“参考模型编辑器”中既可以编辑参考模型属性定义信息，也支持定义发布属性信息 正确答案：A
+A:正确
+B:错误
+【解析】：考核参考模型编辑器的功能实现，在IDE的“参考模型编辑器”中既可以编辑参考模型属性定义信息，也支持定义发布属性信息
+##7785##
+
+##6685##
+行为控制器定义的基类是什么？ 正确答案：A
+A:com.ygsoft.ecp.model.operator.control
+B:com.ygsoft.ecp.services.pagecontroller
+C:com.ygsoft.ecp.model.operator.base
+D:com.ygsoft.ecp.model.operator
+【解析】：考核行为控制器定义的基类，行为控制器定义的基类为com.ygsoft.ecp.model.operator.control
+##7785##
+
+##6685##
+客户端行为处理器定义的基类是什么？ 正确答案：C
+A:com.ygsoft.ecp.model.operator.control
+B:com.ygsoft.ecp.services.pagecontroller
+C:com.ygsoft.ecp.model.operator.base
+D:com.ygsoft.ecp.model.operator
+【解析】：考核客户端行为处理器定义的基类，客户端行为处理器定义的基类为com.ygsoft.ecp.model.operator.base
+##7785##
+
+##6685##
+客户端行为事件定义的基类是什么？ 正确答案：B
+A:com.ygsoft.ecp.model.operator.control.event
+B:com.ygsoft.ecp.model.operator.event
+C:com.ygsoft.ecp.model.operator.base
+D:com.ygsoft.ecp.model.operator
+【解析】：考核客户端行为事件定义的基类，客户端行为事件定义的基类为com.ygsoft.ecp.model.operator.event
+##7785##
+
+##6685##
+客户端行为动作定义的基类是什么？ 正确答案：D
+A:com.ygsoft.ecp.model.operator.action.control
+B:com.ygsoft.ecp.model.operator
+C:com.ygsoft.ecp.model.operator.base
+D:com.ygsoft.ecp.model.operator.action
+【解析】：考核客户端行为动作定义的基类，客户端行为动作定义的基类为com.ygsoft.ecp.model.operator.action
+##7785##
+
+##6685##
+在参考模型发布文件中，如果需要引用其他参考模型，需要在哪个属性下定义引用的参考模型属性？ 正确答案：C
+A:refModel
+B:refer
+C:refTypes
+D:referModel
+【解析】：考核参考模型发布中引用的其他参考模型定义方式,参考模型发布中引用的其他参考模型定义的属性是refTypes
+##7785##
+
+##6685##
+数据类型不支持扩展，但数据类型的输入器支持业务扩展 正确答案：B
+A:正确
+B:错误
+【解析】：数据类型及其输入器均支持扩展，数据类型及数据类型的输入器均支持业务扩展
+##7785##
+
+##6685##
+以下哪些不是平台提供的基本数据类型？ 正确答案：CD
+A:km（科目）
+B:operator（操作员）
+C:jjdw（计量单位）
+D:time（时间）
+【解析】：考核平台提供的基本数据类型有哪些；其中time不存在；jjdw是业务扩展的数据类型
+##7785##
+
+##6685##
+自定义的固定实体（即通用表实体）可通过通用表实体转换器实现ID名称转换处理 正确答案：A
+A:正确
+B:错误
+【解析】：考核通用表实体转换器的作用，自定义的固定实体（即通用表实体）可通过通用表实体转换器实现ID名称转换处理
+##7785##
+
+##6685##
+数据类型扩展配置文件中若定义的数据类型名称或者输入器名称与平台提供的相同，则优先采用扩展配置。 正确答案：B
+A:正确
+B:错误
+【解析】：考核数据类型及输入器的加载方式，数据类型扩展配置文件中若定义的数据类型名称或者输入器名称与平台提供的相同，则优先采用平台配置。
+##7785##
+
+##6685##
+行为前后动作实现类需要实现的接口包括： 正确答案：AC
+A:IOperatorActionAfter
+B:IOperatorAfterAction
+C:IOperatorActionBefore
+D:IOperatorBeforeAction
+【解析】：考核行为动作实现类需要实现的接口，包括行为前动作接口IOperatorActionBefore及行为后动作接口IOperatorActionAfter
+##7785##
+
+##6685##
+继承于com.ygsoft.ecp.model.operator.control的行为控制器默认方法名有？ 正确答案：AD
+A:before
+B:action
+C:execute
+D:after
+【解析】：考核行为控制器定义的基本方法,行为控制器定义的基本方法为before和after，其中before在行为执行前执行，after在行为执行后执行
+##7785##
+
+##6685##
+规则模版处理器目前实行方式有？ 正确答案：AB
+A:js代码
+B:java代码
+C:delphi代码
+D:C#
+【解析】：考核规则处理器的实现方式，规则处理器的实现方式包括js代码和java代码
+##7785##
+
+##6685##
+规则模板主要由哪几部分组成？ 正确答案：ABCD
+A:基本属性
+B:参数
+C:处理器
+D:结果
+【解析】：考核规则模板的组成部分，规则模板的组成部分包括基本属性，参数，处理器及结果
+##7785##
+
+##6685##
+动态实体的元模型实现类定义需要实现的接口是？ 正确答案：B
+A:IMetaModelJsonProvider
+B:IMetaModelProvider
+C:IMetaModelContext
+D:IMetaModel
+【解析】：考核动态实体元模型的实现接口，动态实体元模型的实现接口为IMetaModelProvider
+##7785##
+
+##6685##
+元模型缓存的key包含如下维度？ 正确答案：ABD
+A:类别
+B:类型
+C:登录组织
+D:场景id
+【解析】：考核元模型缓存的key组成，包括类别、类型、管理范围及场景id
+##7785##
+
+##6685##
+数据模型中modelState属性状态是可以叠加的，请问选择删除状态对应的状态值是什么？ 正确答案：B
+A:10
+B:18
+C:24
+D:34
+【解析】：考核数据模型状态的叠加处理，其中默认为1、删除为2、新增为4、修改为8、选中为16、选择删除状态对应的状态值是16+2，所以正确为18
+##7785##
+
+##6685##
+获取数据模型状态的工具类是什么？ 正确答案：A
+A:DataModelState
+B:DataModelUtil
+C:DataModelAccessUtil
+D:DataModelStateUtil
+【解析】：考核获取数据模型状态的工具类，获取数据模型状态的工具类为DataModelState
+##7785##
+
+##6685##
+General服务组件提供的查询注解@Filter可实现强大的查询过滤支持，可支持or、like 以及分组等高级查询。 正确答案：A
+A:正确
+B:错误
+【解析】：考核查询注解@Filter的作用,General服务组件提供的查询注解@Filter可实现强大的查询过滤支持，可支持or、like 以及分组等高级查询。
+##7785##
+
+##6685##
+ECP平台推荐使用DataContextUtil工具类中的getCurrentDataContext方法获取当前上下文 正确答案：B
+A:正确
+B:错误
+【解析】：考核服务端获取上下文的方式，目前平台已不推荐使用DatamodelUtil方法获取当前上下文，而应该通过客户端传入上下文到场景服务使用上下文
+##7785##
+
+##6685##
+行为的应用场景包括？ 正确答案：ABCD
+A:菜单调用
+B:流程调用
+C:按钮调用
+D:程序调用
+【解析】：考核行为框架目前的应用场景，包括菜单调用、按钮调用、流程调用、程序调用、事件触发等
+##7785##
+
+##6685##
+行为作用范围中最后加载的行为定义是？ 正确答案：D
+A:通用行为
+B:某类别的通用行为
+C:某参考模型的通用行为
+D:具体实体行为
+【解析】：考核行为的作用范围，具体实体行为最后加载，优先级高于其他实体范围定义行为
+##7785##
+
+##6685##
+可唯一标识实体的元模型属性是？ 正确答案：AB
+A:classId
+B:typeId
+C:name
+D:version
+【解析】：考核元模型中标识唯一实体的属性，类别（classId）和类型（typeId）能够唯一标识一具体实体
+##7785##
+
+##6685##
+服务端场景类中可以调用的组件包括： 正确答案：AB
+A:场景context组件
+B:角色role组件
+C:数据访问dao组件
+【解析】：考核场景层不能直接使用dao组件，dao组件只能在角色层进行调用
+##7785##
+
+##6685##
+服务端数据访问层可以操作的模型包括VO和PO. 正确答案：B
+A:正确
+B:错误
+【解析】：考核服务端数据访问层可操作的数据对象，平台规定VO不得进入数据访问层。
+##7785##
+
+##6685##
+服务端进行字符串的非空判断，平台提供的工具类是？ 正确答案：B
+A:StringUtils
+B:StringUtil
+C:StrUtil
+D:JSONUtil
+【解析】：考核字符串处理的工具类，平台提供StringUtil实现字符串处理
+##7785##
+
+##6685##
+平台提供了什么工具类进行日期处理？ 正确答案：D
+A:DateUtil
+B:DateTimeUtil
+C:EcpDateUtil
+D:EcpDate
+【解析】：考核日期处理的工具类，平台提供EcpDate工具类进行日期处理
+##7785##
+
+##6685##
+平台提供工具类UuidUtil可产生多少位的随机UUID？ 正确答案：C
+A:16
+B:24
+C:32
+D:36
+【解析】：考核工具类UuidUtil能够产生随机UUI字符串位数，平台提供的工具类产生的uuid已经截取掉4个“-”，生成32位随机字符串
+##7785##
+
+##6685##
+服务端如果想实现把文件读成字节数组，能够使用平台提供的哪些工具类实现？ 正确答案：AC
+A:FileUtil
+B:BaseUtil
+C:StreamUtil
+D:ScriptUtil
+【解析】：考核处理文件的工具类，目前FileUtil和StreamUtil都能够实现将文件转换为字符数组，不同在于FileUtil参数为文件路径，StreamUtil参数为文件对象
+##7785##
+
+##6685##
+平台可以通过什么工具类获取系统应用字符集编码？ 正确答案：C
+A:GenericsUtil
+B:SysPropUtil
+C:ConfigUtil
+D:RuntimeEnvUtil
+【解析】：考核平台配置工具类提供的服务，平台提供的ConfigUtil配置工具类可获取数据库类型、中间件服务器类型、应用字符集编码名称等
+##7785##
+
+##6685##
+服务端场景层通过什么注解注入角色类？ 正确答案：C
+A:Service
+B:ServiceReference
+C:Autowired
+D:Role
+【解析】：考核场景层注入角色的注解，场景层如果需要注入角色需要使用Autowired注解
+##7785##
+
+##6685##
+服务端角色层通过什么注解注入数据访问层dao类？ 正确答案：B
+A:Service
+B:ServiceReference
+C:Autowired
+D:Role
+【解析】：考核角色层注入dao的注解，角色层如果需要注入dao需要使用ServiceReference注解
+##7785##
+
+##6685##
+场景层发布OSGI服务，需要在场景实现类上标注什么注解？ 正确答案：C
+A:Service
+B:ServiceReference
+C:OSGiService
+D:OSGiReference
+【解析】：考核场景层发布OSGI服务的注解，场景层发布OSGI服务需要标记OSGiService注解
+##7785##
+
+##6685##
+在PO/VO转换器中声明什么注解，可以定义poClass以及voClass两个参数？ 正确答案：B
+A:topic
+B:Transfer
+C:OSGiService
+D:Service
+【解析】：考核模型转换类的注解，Transfer注解标记了PO/VO对应类的class
+##7785##
+
+##6685##
+开发环境远程调试docker搭建下的weblogic服务默认端口是8453。 正确答案：B
+A:正确
+B:错误
+【解析】：考核docker搭建的weblogic服务远程调试端口，由于docker将weblogic远程调试端口映射到其他端口，所以不再是weblogic配置的默认端口8453
+##7785##
+
+##6685##
+服务端代码中若要引用OSGi相关的接口和类，应使用？ 正确答案：A
+A:OSGiUtil
+B:OSGiService
+C:RuntimeEnvUtil
+D:OSGiServiceBeanPostProcessor
+【解析】：考核OSGI服务调用的工具类，平台提供OSGiUtil获取OSGI服务相关接口和类
+##7785##
+
+##6685##
+平台提供的通用服务不包括？ 正确答案：CD
+A:调度框架
+B:非结构化
+C:基础框架
+D:系统行为
+【解析】：考核平台提供的通用服务分类，其中基础框架属于平台核心引擎组成，系统行为属于平台基础应用组件分类下，这两类并不属于平台通用服务范畴。
+##7785##
+
+##6685##
+ECP平台支持的两种部署方式，包括集中部署和多级部署 正确答案：A
+A:正确
+B:错误
+【解析】：考核ECP平台的部署方式，支持集中部署和多级部署两种
+##7785##
+
+##6685##
+进行DAO层单元测试时，单元测试时基类为？ 正确答案：C
+A:AbstractTestCase
+B:AbstractTestCacheCase
+C:AbstractCacheTestCase
+D:TestCase
+【解析】：考核dao单元测试的基类，平台提供了AbstractTestCacheCase模拟了dao数据访问的测试环境，可实现数据访问层单元测试的数据存取测试
+##7785##
+
+##6685##
+参考模型VO模型的Topic注解中需要指定的属性值包括？ 正确答案：ABC
+A:classId
+B:typeId
+C:publishRM
+D:publishBCP
+【解析】：考核参考模型VO定义的注解属性，必须定义classId、typeId，publishRM三个属性，其中classId和typeId为参考模型的类别和类型，publishRM定义为true发布为参考模型
+##7785##
+
+##6685##
+客户端到服务端的模型序列化必须定义的模型属性是? 正确答案：A
+A:jcls
+B:className
+C:jsonClass
+D:classProperty
+【解析】：考核WEB端到服务端模型序列化的属性，jcls属性标记了模型序列化时序列化为对象的类信息
+##7785##
+
+##6685##
+服务端抛出的每个异常都有唯一的异常代码 正确答案：A
+A:正确
+B:错误
+【解析】：考核服务端异常代码的唯一性。服务端抛出的每个异常都有唯一的异常代码
+##7785##
+
+##6685##
+平台提供的业务异常通常分类为？ 正确答案：ABCD
+A:提示
+B:警告
+C:验证
+D:错误
+【解析】：考核平台业务异常的种类，由于业务需要，需要抛出的异常进行级别定义，根据应用需求，结合定义异常错误代码中异常类型字符（提示I、警告W、验证V、错误E），抛出的对应级别的异常。
+##7785##
+
+##6685##
+接口类、常量类、枚举类不需要单元测试 正确答案：A
+A:正确
+B:错误
+【解析】：接口类、常量类、枚举类不需要单元测试
+##7785##
+
+##6685##
+下面那些类必须有单元测试 正确答案：AB
+A:Context
+B:DAO
+C:PO
+D:VO
+【解析】：Context类至少有一个方法对VO的每一个属性都有赋值，并对每一个属性都有验证；DAO类至少有一个方法，对PO的基本增删改查进行测试
+##7785##
+
+##6685##
+所有的单元测试必须有断言，没有任何断言的测试都是不允许的； 正确答案：A
+A:正确
+B:错误
+【解析】：PO模型是在业务领域的data项目(bundle)下创建的,VO模型是在业务领域的service项目(bundle)下创建的。
+##7785##
+
+##6685##
+如何对一个返回值是void的方法进行单元测试 正确答案：B
+A:不用测试
+B:使用Verify验证方法是否被调用
+C:使用assertEquals比较
+D:使用Do..when..then 返回一个值
+【解析】：当我们测试一个void 方法的时候，根本没有办法去验证一个mock 对象所执行后的结
+果，因此唯一的方法就是检查方法是否被调用
+##7785##
+
+##6685##
+数据访问服务主要提供的接口 正确答案：ABC
+A:IEntityDAO
+B:ISQLTemplate
+C:IHibernateTemplate
+D:IHQLTemplate
+【解析】：数据访问服务主要提供的接口有IEntityDAO、ISQLTemplate、IHibernateTemplate
+##7785##
+
+##6685##
+数据访问服务提供主要业务功能 正确答案：ABCDE
+A:数据存储
+B:数据访问
+C:实体配置以及属性延迟加载
+D:事务一致性保证
+E:二级缓存扩展
+【解析】：数据访问服务提供主要业务功能有数据存储、数据访问、实体配置以及属性延迟加载、事务一致性保证、二级缓存扩展
+##7785##
+
+##6685##
+数据访问服务用到的开源框架 正确答案：AC
+A:Spring
+B:Ibaties
+C:Hibernate
+D:EJB
+【解析】：数据访问服务用到的开源框架有Spring、Hibernate等
+##7785##
+
+##6685##
+平台ISQLTemplate查询数据返回的数据类型 正确答案：ABCD
+A:Map
+B:Number
+C:Object[]
+D:PO对象
+【解析】：平台ISQLTemplate查询数据返回的数据类型有Map、Number、Object[]、PO对象
+##7785##
+
+##6685##
+缓存服务提供的主要功能有 正确答案：ABCD
+A:缓存数据存取
+B:Hibernate二级缓存扩展
+C:缓存查询
+D:缓存监听
+【解析】：缓存服务提供的主要功能有缓存数据存取、Hibernate二级缓存扩展、缓存查询、缓存监听
+##7785##
+
+##6685##
+缓存服务提供主要业务能力有 正确答案：ABCD
+A:兼容国网UAP平台缓存服务接口
+B:提供按主题分区存放
+C:支持本地缓存和集中式缓存
+D:提供缓存容量大小控制
+【解析】：兼容国网UAP平台缓存服务接口兼容国网UAP平台缓存服务接口、提供按主题分区存放、支持本地缓存和集中式缓存、提供缓存容量大小控制
+##7785##
+
+##6685##
+缓存对象清除策略evcitionPolicy属性，可选配置有 正确答案：ABC
+A:FIFO
+B:LFU
+C:LRU
+D:URL
+【解析】：缓存对象清除策略evcitionPolicy属性，可选配置有FIFO、LFU、LRU
+##7785##
+
+##6685##
+缓存服务主要接口有 正确答案：ABCDE
+A:ICache
+B:ICacheFactory
+C:IQueryCache
+D:ICacheEventListener
+E:ICacheDataPreload
+【解析】：缓存服务主要接口有Icache、ICacheFactory、IQueryCache、ICacheEventListener、ICacheDataPreload
+##7785##
+
+##6685##
+配置缓存扩展点必填属性有 正确答案：ABC
+A:classId
+B:typeId
+C:maxElementsInMemory
+D:eternal
+【解析】：配置缓存扩展点必填属性有classId、typeId、maxElementsInMemory
+##7785##
+
+##6685##
+规则引擎提供的主要功能有 正确答案：ABCD
+A:规则引用
+B:规则执行
+C:预置常用规则模版
+D:规则模版扩展
+【解析】：规则引擎提供的主要功能有规则引用、规则执行、预置常用规则模版、规则模版扩展
+##7785##
+
+##6685##
+规则引擎提供主要业务能力有 正确答案：ABCD
+A:业务控制
+B:界面控制
+C:模型转换
+D:流程控制
+【解析】：规则引擎提供主要业务能力有业务控制、界面控制、模型转换、流程控制
+##7785##
+
+##6685##
+规则模版处理器目前实行方式有 正确答案：AB
+A:客户端js代码
+B:服务端java代码
+C:com组件
+D:dll控件
+【解析】：规则模版处理器目前实行方式有客户端js代码、服务端java代码
+##7785##
+
+##6685##
+使用规则引擎的人员有 正确答案：ABCDE
+A:开发人员
+B:测试人员
+C:设计人员
+D:实施人员
+E:客户
+【解析】：使用规则引擎的人员有开发人员、测试人员、设计人员、实施人员、客户
+##7785##
+
+##6685##
+规则引擎主要在哪些组件上引用 正确答案：ACD
+A:流程
+B:菜单
+C:行为
+D:事件
+【解析】：规则引擎主要在流程、行为、事件组件上引用
+##7785##
+
+##6685##
+规则模版由下面哪几部分组成 正确答案：ABC
+A:模版参数
+B:模版结果
+C:模版处理器
+D:模版事件
+【解析】：规则模版由模版参数、模版结果、模版处理器组成
+##7785##
+
+##6685##
+非结构化服务主要提供的接口有 正确答案：ABCDE
+A:IUnStructureStorage
+B:IStorageService
+C:IStorage
+D:IDBStorage
+E:IFileStorage
+【解析】：非结构化服务主要提供的接口有IUnStructureStorage、IStorageService、Istorage、IDBStorage、IFileStorage
+##7785##
+
+##6685##
+非结构化服务提供的存储介质有 正确答案：AB
+A:File
+B:DB
+C:Memory
+D:Cloud
+【解析】：非结构化服务提供的存储介质有File、DB
+##7785##
+
+##6685##
+继承Istorge接口的是 正确答案：ACD
+A:IUnStructureStorage
+B:IStorageService
+C:IDBStorage
+D:IFileStorage
+E:IEntityAttachmentContext
+【解析】：继承Istorge接口的是IUnStructureStorage、IDBStorage、IFileStorage
+##7785##
+
+##6685##
+下面哪些是非结构化数据支持的文件类型 正确答案：AB
+A:.doc
+B:.xls
+C:.exe
+D:.bat
+E:.sh
+【解析】：非结构化数据支持的文件类型doc、xls等
+##7785##
+
+##6685##
+以下OSGi带来的突出优点是？ 正确答案：A
+A:模块化
+B:面向接口编程
+C:简化系统复杂性
+D:提升系统性能
+【解析】：OSGi带来的突出优点是模块化
+##7785##
+
+##6685##
+OSGi常用术语有哪些？ 正确答案：ABCD
+A:Bundle
+B:Plugin
+C:Active
+D:import/exprot
+【解析】：OSGi常用术语Bundle、Plugin、Active、import/exprot等
+##7785##
+
+##6685##
+Bundle的状态包括？ 正确答案：ABCD
+A:Installed
+B:Active
+C:Resolved
+D:Starting
+【解析】：Bundle的状态Installed、Active、Resolved、Starting
+##7785##
+
+##6685##
+引用OSGi服务，使用以下什么标签？ 正确答案：B
+A:<osgi:service>
+B:<osgi:reference>
+C:<osgi:api>
+D:<osgi:bundle>
+【解析】：引用OSGi服务，使用<osgi:reference>标签
+##7785##
+
+##6685##
+Bundle-SymbolicName出现了singleton:=true是因为？ 正确答案：BC
+A:MANIFEST.MF配置错误导致
+B:Bundle定义了扩展点
+C:Bundle实现了扩展点
+D:MANIFEST.MF默认就有此配置的
+【解析】：Bundle-SymbolicName出现了singleton:=true是Bundle定义和实现了扩展点
+##7785##
+
+##6685##
+定义了Import-Package:javax.servlet;version="2.3",以下哪个版本会被使用？ 正确答案：D
+A:Export-Package:javax.servlet
+B:Export-Package:javax.servlet;version="2.2"
+C:Export-Package:javax.servlet;version="2.3"
+D:Export-Package:javax.servlet;version="2.4"
+【解析】：Import-Package的版本只能比Export-Package的版本相同或者低
+##7785##
+
+##6685##
+由于依赖关系有问题，Bunlde处于Installed状态，用什么命令查看依赖关系问题？ 正确答案：C
+A:ss
+B:s
+C:diag
+D:show
+【解析】：由于依赖关系有问题，Bunlde处于Installed状态，用diag命令查看依赖关系问题
+##7785##
+
+##6685##
+以下配置，OSGi类加载过程中优先加载？ 正确答案：A
+A:Import-Package
+B:Require-Bundle
+C:自己Bundle的资源
+D:DynamicImport-Package
+【解析】：OSGi类加载过程中优先加载Import-Package
+##7785##
+
+##6685##
+下面关于Spring的说法正确的是（） 正确答案：AD
+A:Spring是一个轻量级的框架
+B:Spring是侵入式的框架
+C:Spring是一个重量级的框架
+D:Spring是一个IOC和AOP容器
+【解析】：Spring是轻量级的框架是一个IOC和AOP容器
+##7785##
+
+##6685##
+下面关于Spring配置文件说法正确的是（ ） 正确答案：BC
+A:Spring配置文件名必须叫appliCationcontext.xml
+B:Spring配置文件名可以不叫appliCationcontext.xml
+C:Spring配置文件可以多个
+D:Spring配置文件只能一个
+【解析】：Spring配置文件名可以不叫appliCationcontext.xml可以有多个 ）
+##7785##
+
+##6685##
+Spring依赖注入方式是（） 正确答案：AB
+A:set方法注入
+B:构造函数注入
+C:get方法注入
+D:接口的注入
+【解析】：Spring依赖注入方式是set方法注入、构造函数注入
+##7785##
+
+##6685##
+Spring AOP通知类型有哪几种（） 正确答案：ABCD
+A:Before通知
+B:After return通知
+C:Throws通知
+D:Around通知
+【解析】：Spring AOP通知类型有Before、After return、Throws、Around
+##7785##
+
+##6685##
+下面关于Spring Bean id属性配置说法正确的是（）） 正确答案：BD
+A:id属性是必须的，否则报错
+B:id属性不是必须的，可以没有
+C:id属性值是可以重复的
+D:id属性值是不可以重复的
+【解析】：下面关于Spring Bean id属性不是必须的，可以没有，不可以重复的
+##7785##
+
+##6685##
+下面关于Spring init-method()的说法正确的是（） 正确答案：C
+A:init-method()是在bean初始化最前面执行的
+B:init-method()是在构造函数之后，依赖注入之前执行的
+C:init-method()是在依赖注入之后执行的
+D:init-method()是在依赖注入之后，构造函数之前执行的
+【解析】：init-method()是在依赖注入之后执行的
+##7785##
+
+##6685##
+IOC的自动装载Autowire的方法是（） 正确答案：AB
+A:byName
+B:byType
+C:constructor
+D:byMethod
+【解析】：IOC的自动装载Autowire的方法是byName、byType
+##7785##
+
+##6685##
+下面关于Spring管理Bean的说法正确的是（） 正确答案：B
+A:工厂模式和单例模式管理Bean
+B:原型模式和单例模式管理Bean
+C:默认使用工厂模式管理Bean
+D:模式使用原型模式管理Bean
+【解析】：Spring是原型模式和单例模式管理Bean
+##7785##
+
+##6685##
+数据访问服务提供的PO固定实体基类 正确答案：B
+A:CommonEntity
+B:AbstractEntity
+C:PersistEntity
+D:AbstractGeneralEntity
+【解析】：数据访问服务提供的PO固定实体基类AbstractEntity
+##7785##
+
+##6685##
+数据访问服务提供的PO动态实体基类 正确答案：D
+A:CommonDynamicEntity
+B:AbstractEntity
+C:PersistEntity
+D:DynamicEntity
+【解析】：数据访问服务提供的PO动态实体基类DynamicEntity
+##7785##
+
+##6685##
+数据访问服务DAO基类名称 正确答案：C
+A:CommonDAO
+B:GeneralEntityDAO
+C:EntityDAO
+D:DynamicCommonDAO
+【解析】：数据访问服务DAO基类名称EntityDAO
+##7785##
+
+##6685##
+IDE工具数据模型文件后缀 正确答案：B
+A:.dataset
+B:.datasetx
+C:.entitysetx
+D:.entityset
+【解析】：IDE工具数据模型文件后缀datasetx
+##7785##
+
+##6685##
+调用存储过程方法返回结果集需要设置输出参数类型为 正确答案：B
+A:DataaccessResConst.CURSOR
+B:DataaccessResConst.CURSOR_RESULT
+C:DataaccessResConst.MAP
+D:DataaccessResConst.ROW
+【解析】：调用存储过程方法返回结果集需要设置输出参数类型为DataaccessResConst.CURSOR_RESULT
+##7785##
+
+##6685##
+缓存服务扩展点名称是 正确答案：B
+A:com.ygsoft.ecp.cache.point
+B:com.ygsoft.ecp.sercive.cache.point
+C:com.ygsoft.ecp.impl.cache.point
+D:com.ygsoft.ecp.sercive.cache
+【解析】：缓存服务扩展点名称是com.ygsoft.ecp.sercive.cache.point
+##7785##
+
+##6685##
+设置缓存个数限制，需设置扩展点哪个属性 正确答案：C
+A:maxSizeInMemory
+B:maxBytesInMemory
+C:maxElementsInMemory
+D:maxInMemory
+【解析】：设置缓存个数限制，需设置扩展点maxElementsInMemory属性
+##7785##
+
+##6685##
+设置缓存空闲过期时间限制，需设置扩展点哪个属性 正确答案：A
+A:timeToIdleSeconds
+B:timeToLiveSeconds
+C:idleTimeSeconds
+D:liveSeconds
+【解析】：设置缓存空闲过期时间限制，需设置扩展点timeToIdleSeconds属性
+##7785##
+
+##6685##
+设置缓存最长过期时间限制，需设置扩展点哪个属性 正确答案：B
+A:timeToIdleSeconds
+B:timeToLiveSeconds
+C:idleTimeSeconds
+D:liveSeconds
+【解析】：设置缓存最长过期时间限制，需设置扩展点timeToLiveSeconds属性
+##7785##
+
+##6685##
+获取缓存服务的入口类是 正确答案：A
+A:EcpService
+B:EcpCacheService
+C:CacheService
+D:CacheManager
+【解析】：获取缓存服务的入口类是EcpService
+##7785##
+
+##6685##
+规则模版文件名后缀是 正确答案：A
+A:.rtx
+B:.rtc
+C:.rtf
+D:.drl
+【解析】：规则模版文件名后缀是rtx
+##7785##
+
+##6685##
+规则模版文件内容格式是 正确答案：D
+A:java
+B:js
+C:xml
+D:json
+【解析】：规则模版文件内容格式是json
+##7785##
+
+##6685##
+规则模版参数个数 正确答案：D
+A:无
+B:1个
+C:2个
+D:多个
+【解析】：规则模版参数有多个
+##7785##
+
+##6685##
+规则模版结果个数 正确答案：B
+A:无
+B:1个
+C:2个
+D:多个
+【解析】：规则模版结果有1个
+##7785##
+
+##6685##
+非结构化数据服务访问入口类是 正确答案：A
+A:EcpService
+B:StorageService
+C:AttachmentService
+D:EntityAttachmentService
+【解析】：非结构化数据服务访问入口类是EcpService
+##7785##
+
+##6685##
+非结构化数据存储业务key可以是 正确答案：D
+A:单据主键
+B:管理对象主键
+C:凭证主键
+D:任意字符
+【解析】：非结构化数据存储业务key可以是任意字符
+##7785##
+
+##6685##
+非结构化平台临时存储目录为 正确答案：D
+A:c:\
+B:\etc
+C:\opt
+D:可以通过配置来指定
+【解析】：非结构化平台临时存储目录可以通过配置来指定
+##7785##
+
+##6685##
+数据访问服务能处理的大数据类型有BLOB和CLOB 正确答案：A
+A:正确
+B:错误
+【解析】：数据访问服务能处理的大数据类型有BLOB和CLOB
+##7785##
+
+##6685##
+事务环境过程需要访问前面保存数据需要调用flushSession方法刷新数据 正确答案：A
+A:正确
+B:错误
+【解析】：事务环境过程需要访问前面保存数据需要调用flushSession方法刷新数据
+##7785##
+
+##6685##
+清除二级缓存调用evictSessionFactory方法 正确答案：A
+A:正确
+B:错误
+【解析】：清除二级缓存调用evictSessionFactory方法
+##7785##
+
+##6685##
+清除一级缓存调用evict方法 正确答案：A
+A:正确
+B:错误
+【解析】：清除一级缓存调用evict方法
+##7785##
+
+##6685##
+调用ExectuSQL方法不会主动清除二级缓存 正确答案：A
+A:正确
+B:错误
+【解析】：调用ExectuSQL方法不会主动清除二级缓存
+##7785##
+
+##6685##
+默认配置的事务模式是REQUIRED 正确答案：A
+A:正确
+B:错误
+【解析】：默认配置的事务模式是REQUIRED
+##7785##
+
+##6685##
+配置了二级缓存的实体单元测试基类是AbstractCacheTestCase 正确答案：A
+A:正确
+B:错误
+【解析】：配置了二级缓存的实体单元测试基类是AbstractCacheTestCase
+##7785##
+
+##6685##
+数据访问服务查询记录条数默认是3000条 正确答案：B
+A:正确
+B:错误
+【解析】：数据访问服务查询记录条数默认是2000条
+##7785##
+
+##6685##
+平台实现的通用动态模型主要有管理对象、单据和通用实体 正确答案：A
+A:正确
+B:错误
+【解析】：平台实现的通用动态模型主要有管理对象、单据和通用实体
+##7785##
+
+##6685##
+缓存服务提供分布式事务支持 正确答案：B
+A:正确
+B:错误
+【解析】：缓存服务不提供分布式事务支持
+##7785##
+
+##6685##
+缓存服务提供分布式缓存实现 正确答案：B
+A:正确
+B:错误
+【解析】：缓存服务不提供分布式缓存实现
+##7785##
+
+##6685##
+缓存服务提供Hibernate二级缓存支持 正确答案：A
+A:正确
+B:错误
+【解析】：缓存服务提供Hibernate二级缓存支持
+##7785##
+
+##6685##
+缓存服务提供实体二级缓存白名单配置 正确答案：A
+A:正确
+B:错误
+【解析】：缓存服务提供实体二级缓存白名单配置
+##7785##
+
+##6685##
+规则模版处理器必须返回true或false信息 正确答案：A
+A:正确
+B:错误
+【解析】：规则模版处理器必须返回true或false信息
+##7785##
+
+##6685##
+系统预置服务端模版处理器都实现了IRuleProcessor接口 正确答案：A
+A:正确
+B:错误
+【解析】：系统预置服务端模版处理器都实现了IRuleProcessor接口
+##7785##
+
+##6685##
+非结构化数据存都存放于内存中 正确答案：B
+A:正确
+B:错误
+【解析】：非结构化数据不会都存放于内存中
+##7785##
+
+##6685##
+非结构化数据实现可以自定义扩展 正确答案：A
+A:正确
+B:错误
+【解析】：非结构化数据实现可以自定义扩展
+##7785##
+
+##6685##
+必须在XTCS表里指定非结构化数据配置 正确答案：B
+A:正确
+B:错误
+【解析】：不必一定在XTCS表里指定非结构化数据配置
+##7785##
+
+##6685##
+所有Bundle共用一个BundleContext上下文对象 正确答案：B
+A:正确
+B:错误
+【解析】：所有Bundle不会共用一个BundleContext上下文对象
+##7785##
+
+##6685##
+Eclipse运行OSGi应用，Bundle默认的启动级别是6 正确答案：B
+A:正确
+B:错误
+【解析】：Eclipse运行OSGi应用，Bundle默认的启动级别是4
+##7785##
+
+##6685##
+Bundle状态直接从Installed到Active 正确答案：B
+A:正确
+B:错误
+【解析】：Bundle状态从Installed到Active，需要经过Resolved、Starting
+##7785##
+
+##6685##
+Fragment Bunlde是可以变成Active状态的 正确答案：B
+A:正确
+B:错误
+【解析】：Fragment Bunlde是不可以变成Active状态的
+##7785##
+
+##6685##
+Bundle需要初始化一些业务数据，是可以在Activator中执行 正确答案：B
+A:正确
+B:错误
+【解析】：Bundle需要初始化一些业务数据，不可以在Activator中执行
+##7785##
+
+##6685##
+service Bundle是可以依赖其他的impl Bundle的 正确答案：B
+A:正确
+B:错误
+【解析】：service Bundle是不可以依赖其他的impl Bundle的
+##7785##
+
+##6685##
+Bundle的Activator.start()方法中，可以调用Thread.sleep()方法 正确答案：B
+A:正确
+B:错误
+【解析】：Bundle的Activator.start()方法中不可以调用Thread.sleep()方法
+##7785##
+
+##6685##
+Bundle的Activator.stop()方法可以使用Object.wait()方法 正确答案：B
+A:正确
+B:错误
+【解析】：Bundle的Activator.stop()方法不可以使用Object.wait()方法
+##7785##
+
+##6685##
+一个Bundle可以有多个Fragment Bundle 正确答案：A
+A:正确
+B:错误
+【解析】：一个Bundle可以有多个Fragment Bundle
+##7785##
+
+##6685##
+Spring Bean name属性配置是必须的，没有name会报错 正确答案：B
+A:正确
+B:错误
+【解析】：Spring Bean name属性配置不是必须的
+##7785##
+
+##6685##
+BeanFactory是工厂模式的实现，负责创建和管理Bean 正确答案：A
+A:正确
+B:错误
+【解析】：BeanFactory是工厂模式的实现，负责创建和管理Bean
+##7785##
+
+##6685##
+Spring框架实现了JTA事务 正确答案：B
+A:正确
+B:错误
+【解析】：Spring框架没有实现JTA事务
+##7785##
+
+##6685##
+Spring各模块之间是紧密的，相互依赖的 正确答案：B
+A:正确
+B:错误
+【解析】：Spring各模块之间是解耦的
+##7785##
+
+##6685##
+Spring核心模块是做IOC的，用来管理Bean的 正确答案：A
+A:正确
+B:错误
+【解析】：Spring核心模块是做IOC的，用来管理Bean的
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
+##6685##
+undefined 正确答案：undefined
+【解析】：undefined
+##7785##
+
